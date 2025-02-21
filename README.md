@@ -7,7 +7,7 @@ Useful information and code to help open science AI/ML efforts
 - define how annotations fit into the model lifecycle
 - develop a clear plan to maximize annotation team efficiency
 
-### Prep -  Clarify objectives/goals, priorities, and expectations.
+### Workshop Prep -  Clarify objectives/goals, priorities, and expectations.
 - What is the overall strategy for object detection in ESD/ARP
   - how can we use our annotation team most effectively
 - What are primary object detection use cases
