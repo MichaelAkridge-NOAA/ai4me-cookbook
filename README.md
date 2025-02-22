@@ -28,7 +28,10 @@ Useful information and code to help open science AI/ML efforts for marine ecosys
 - Quick primer on object detection pipeline (data → annotation → model training → deployment)
 - Role of annotations in model performance (importance of quality & consistency)
 - Where to find data, resouces, and so on?
-- 
+
+#### **Note:** AI/ML is non-linear. 
+Performance of the model and its output is not proportional to the input. Not just data input, but effort as well. Experimentation is key. [link](https://developers.google.com/machine-learning/managing-ml-projects/planning)
+
 #### 2. Models, Data & Annotation Strategies & Tools
 - Best practices for efficient annotation workflow
 - Review tools(CVAT, Label Studio, Viame) and discuss pros/cons
