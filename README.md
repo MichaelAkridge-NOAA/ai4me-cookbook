@@ -1,9 +1,9 @@
+# AI4ME Cookbook | AI for Marine Ecosystems Cookbook
 <img src="./docs/images/logo3.png" align="right" alt="logo" width="400"/>
 
-# AI4ME Cookbook | AI for Marine Ecosystems Cookbook
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
-## Workshop Brainstorm Session
+### Workshop Session
 ### Workshop Goals: TBD
 - Equip the team with a shared understanding of object detection workflows
 - define how annotations fit into the model lifecycle
