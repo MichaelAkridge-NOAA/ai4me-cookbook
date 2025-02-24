@@ -3,6 +3,8 @@
 
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
+### *** In Development ***
+
 ### Workshop Session
 ### Workshop Goals: TBD
 - Equip the team with a shared understanding of object detection workflows
