@@ -25,6 +25,7 @@ jobs:
         run: jupyter-book build .
 
       - name: Deploy to GitHub Pages
-        run: |
-          pip install ghp-import
-          ghp-import -n -p -f _build/html
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html
