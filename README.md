@@ -1,3 +1,5 @@
+<img src="./docs/images/logo3.png" align="right" alt="logo" width="400"/>
+
 # AI4ME Cookbook | AI for Marine Ecosystems Cookbook
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
