@@ -1,8 +1,8 @@
 # AI4ME Cookbook | AI for Marine Ecosystems Cookbook
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
-## Workshop Brainstorm
-### Workshop Goal: TBD
+## Workshop Brainstorm Session
+### Workshop Goals: TBD
 - Equip the team with a shared understanding of object detection workflows
 - define how annotations fit into the model lifecycle
 - develop a clear plan to maximize annotation team efficiency
@@ -14,19 +14,13 @@ Useful information and code to help open science AI/ML efforts for marine ecosys
 
 #### 1. Overview
 
-
-#### **Note:** AI/ML is non-linear. 
-
-
 #### 2. Models, Data & Annotation Strategies & Tools
 
-- 
-#### 3. Hands On 
+#### 3. Hands On Activities 
 
-
-### Q&A / Roundtable
+#### 4. Q&A / Roundtable
  
-### Next Steps
+#### 5. Next Steps
 
 ----------
 #### Disclaimer
