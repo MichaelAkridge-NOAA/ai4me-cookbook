@@ -27,3 +27,5 @@ parts:
       title: Open Science AI/ML Showcase
     - url: https://github.com/MichaelAkridge-NOAA/open-science-ai-toolkit
       title: Open Science AI/ML Toolkit
+    - url: https://github.com/noaa-ncai/learning-journey/
+      title: Open-science resources by NOAA Center for Artificial Intelligence (NCAI) 
