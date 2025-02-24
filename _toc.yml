@@ -9,13 +9,12 @@ defaults:  # The defaults key will be applied to all chapters and sub-sections
 parts:
   - caption: Welcome
     chapters:
-    - file: content/00_intro.md
+    - file: content/welcome.md
 
   - caption: Overview
     chapters:
     - file: content/01_overview/overview_placeholder.md
 
-  
   - caption: How to
     chapters:
     - file: content/02_how_to/how_to_placeholder.md
