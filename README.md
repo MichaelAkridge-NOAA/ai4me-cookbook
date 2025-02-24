@@ -7,7 +7,7 @@ Useful information and code to help open science AI/ML efforts for marine ecosys
 ### Workshop Goals: TBD
 - Equip the team with a shared understanding of object detection workflows
 - define how annotations fit into the model lifecycle
-- develop a clear plan to maximize annotation team efficiency
+- develop a clear plan to maximize team efficiency
 
 ### Workshop Prep -  Clarify objectives/goals, priorities, and expectations.
 
