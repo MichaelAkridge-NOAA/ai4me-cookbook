@@ -13,14 +13,12 @@ parts:
 
   - caption: Overview
     chapters:
-    - file: content/01_overview/placeholder.md
-    - file: content/01_overview/placeholder.md
+    - file: content/01_overview/overview_placeholder.md
+
   
   - caption: How to
     chapters:
-    - file: content/02_how_to/placeholder.md
-    - file: content/02_how_to/placeholder.md
-    - file: content/02_how_to/placeholder.md
+    - file: content/02_how_to/how_to_placeholder.md
 
   - caption: Other Resources
     chapters:
