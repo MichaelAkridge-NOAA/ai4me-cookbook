@@ -1,0 +1,10 @@
+name: ai4me-cookbook
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - matplotlib
+  - folium
+  - bokeh
+  - plotly

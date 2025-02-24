@@ -1,0 +1,30 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/00_intro.md
+title: AI4ME Cookbook
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: True
+parts:
+  - caption: Welcome
+    chapters:
+    - file: content/00_intro.md
+
+  - caption: Overview
+    chapters:
+    - file: content/01_overview/placeholder.md
+    - file: content/01_overview/placeholder.md
+  
+  - caption: How to
+    chapters:
+    - file: content/02_how_to/placeholder.md
+    - file: content/02_how_to/placeholder.md
+    - file: content/02_how_to/placeholder.md
+
+  - caption: Other Resources
+    chapters:
+    - url: https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
+      title: Awesome Ocean AI | list of resources & tools for marine image/video analysis, annotation, detection and classification
+    - url: https://github.com/MichaelAkridge-NOAA/open-science-ai-showcase
+      title: Open Science AI/ML Showcase | AI/ML models, tools, and deployment examples focused on marine ecosystem applications

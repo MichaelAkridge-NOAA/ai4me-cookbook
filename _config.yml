@@ -1,0 +1,47 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: AI4ME Cookbook
+author: michael.akridge
+logo: docs/images/logo.png
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  # execute_notebooks: force
+  execute_notebooks: cache
+  timeout: -1
+  exclude_patterns:
+    - '*_notebook.ipynb'
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: ai4me_cookbook.tex
+
+# Add a bibtex file so that we can create citations
+# bibtex_bibfiles:
+#   - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/MichaelAkridge-NOAA/ai4me-cookbook  # Online location of your book
+  # path_to_book: ""  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  favicon: "docs/images/favicon.ico" # A path to a favicon image
+  extra_navbar: <a href="https://www.noaa.gov">NOAA</a> # Will be displayed underneath the left navbar.
+  extra_footer: <a href="mailto:michael.akridge@noaa.gov">Contact</a> <br>
+sphinx:
+  config:
+    html_show_copyright: false
+
+launch_buttons:
+  notebook_interface: jupyterlab # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
