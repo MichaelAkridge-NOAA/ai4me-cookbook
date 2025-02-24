@@ -7,7 +7,7 @@ title: AI4ME Cookbook
 defaults:  # The defaults key will be applied to all chapters and sub-sections
   titlesonly: True
 parts:
-  - caption: Welcome
+  - caption: Getting Started
     chapters:
     - file: content/welcome.md
 
@@ -22,6 +22,8 @@ parts:
   - caption: Other Resources
     chapters:
     - url: https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
-      title: Awesome Ocean AI | list of resources & tools for marine image/video analysis, annotation, detection and classification
+      title: Awesome Ocean AI Resources
     - url: https://github.com/MichaelAkridge-NOAA/open-science-ai-showcase
-      title: Open Science AI/ML Showcase | AI/ML models, tools, and deployment examples focused on marine ecosystem applications
+      title: Open Science AI/ML Showcase
+    - url: https://github.com/MichaelAkridge-NOAA/open-science-ai-toolkit
+      title: Open Science AI/ML Toolkit
