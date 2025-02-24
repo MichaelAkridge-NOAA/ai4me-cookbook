@@ -1,4 +1,4 @@
-name: Deploy Jupyter CookBook
+name: Deploy Jupyter Book
 on:
   push:
     branches:
