@@ -1,4 +1,4 @@
-# AI4ME Cookbook | AI for Marine Ecosystems Cookbook
+# Getting Started
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
 ## Workshop Brainstorm
