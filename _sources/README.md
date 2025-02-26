@@ -1,5 +1,5 @@
 # AI4ME Cookbook | AI for Marine Ecosystems Cookbook
-<img src="./docs/images/logo5.png" align="right" alt="logo" width="400"/>
+<a href="https://michaelakridge-noaa.github.io/ai4me-cookbook/" target="_blank"><img src="./docs/images/logo5.png" align="right" alt="logo" width="400"/></a>
 
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
