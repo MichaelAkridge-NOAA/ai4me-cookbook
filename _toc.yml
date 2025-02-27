@@ -19,6 +19,10 @@ parts:
     chapters:
     - file: content/02_how_to/how_to_placeholder.md
 
+  - caption: Deployment
+    chapters:
+    - file: content/0X_deploy/01_ai4me_api.md
+    - file: content/0X_deploy/02_ai4me_api_google_colab_demo.ipynb
   - caption: Other Resources
     chapters:
     - url: https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
@@ -28,4 +32,4 @@ parts:
     - url: https://github.com/MichaelAkridge-NOAA/open-science-ai-toolkit
       title: Open Science AI/ML Toolkit
     - url: https://github.com/noaa-ncai/learning-journey/
-      title: Open-science resources by NOAA Center for Artificial Intelligence (NCAI) 
+      title: Open-science resources by NCAI
