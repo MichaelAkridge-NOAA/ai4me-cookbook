@@ -87,7 +87,7 @@ response = requests.post(url, headers=headers, files=files)
 ---
 
 ## 📌 Endpoints & Usage
-
+![](./docs/s3.png)
 ### 🔹 **✅ Health Check (Public)**
 🔹 **Check if the API is live**
 ```http
