@@ -2,13 +2,14 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: content/00_welcome.md
+root: content
 title: AI4ME Cookbook
 defaults:  # The defaults key will be applied to all chapters and sub-sections
   titlesonly: True
 parts:
-  - caption: Getting Started
+  - caption: Welcome
     chapters:
+    - file: content/00_welcome.md
     - file: content/01_getting_started.md
 
   - caption: Overview
@@ -19,7 +20,7 @@ parts:
     chapters:
     - file: content/02_how_to/how_to_placeholder.md
 
-  - caption: Deployment
+  - caption: Deployment Stage
     chapters:
     - file: content/0X_deploy/01_ai4me_api.md
     - file: content/0X_deploy/02_ai4me_api_google_colab_demo.ipynb
