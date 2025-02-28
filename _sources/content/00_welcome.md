@@ -18,7 +18,7 @@ Workshop Goals:
 - Best practices for efficient annotation workflow
 - Review tools(CVAT, Label Studio, Viame) and discuss pros/cons
 - Discuss integrating QA/QC checks and techniques
-- 
+
 #### 3. Hands On | AI/ML Development Exercises & Examples
 - Exploratory data analysis(EDA)
 - Annotation 
