@@ -1,3 +1,7 @@
+---
+title: AI/ML Lunch & Learn: Object Detection
+format: revealjs
+---
 ![](slide_images/slide_1.png)
 
 ---
