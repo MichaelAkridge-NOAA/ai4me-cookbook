@@ -1,3 +1,3 @@
-# Exercise - Annotation
+# Exercise - Model Training
 
 ## Placeholder
