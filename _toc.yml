@@ -6,19 +6,35 @@ root: content/00_welcome.md
 defaults:  # The defaults key will be applied to all chapters and sub-sections
   titlesonly: True
 parts:
-  - caption: Modelue 1 | AI/ML Basics
+  - caption: Module 1 | AI/ML Basics
     chapters:
-    - file: content/01_overview/01_AI_ML Lunch & Learn_Object Detection.md
+    - file: content/01_module/01_AI_ML Lunch & Learn_Object Detection.md
       format: revealjs
-
-  - caption: Modelue 2 | AI/ML Development
+    - file: content/01_module/02_ml_model_lifecycle.md
+    - file: content/01_module/03_role_of_annotations_in_model_performance.md
+    - file: content/01_module/04_where_to_find_data.md
+  
+  - caption: Module 2 | AI/ML Data Preparation, Annotation, and Techniques
     chapters:
-    - file: content/02_how_to/how_to_placeholder.md
+    - file: content/02_module/01_best_practices_for_annotation.md
+    - file: content/02_module/02_annotation_tools.md
+    - file: content/02_module/03_data_techniques.md
 
-  - caption: Module 3 | Deployment
+  - caption: Module 3 | AI/ML Development Exercises & Examples
     chapters:
-    - file: content/0X_deploy/01_ai4me_api.md
-    - file: content/0X_deploy/02_ai4me_api_google_colab_demo.ipynb
+    - file: content/03_module/00_EDA_example.md
+    - file: content/03_module/01_annotation_example.md
+    - file: content/03_module/02_dataset_prep.md
+    - file: content/03_module/03_model_training.md
+
+  - caption: Module 4 | Deployment & Model Management
+    chapters:
+    - file: content/04_module/01_ai4me_api.md
+    - file: content/04_module/02_ai4me_api_google_colab_demo.ipynb
+
+  - caption: Q&A/Roundtable Discussions
+    chapters:
+    - file: content/05_module/01_qa_roundtable.md
 
   - caption: Other Resources
     chapters:
