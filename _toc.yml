@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: content
+root: index
 title: AI4ME Cookbook
 defaults:  # The defaults key will be applied to all chapters and sub-sections
   titlesonly: True
