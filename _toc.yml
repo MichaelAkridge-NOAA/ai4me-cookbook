@@ -13,7 +13,7 @@ parts:
   - caption: Overview
     chapters:
     - file: content/01_overview/00_overview_placeholder.md
-    - file: content/01_AI_ML Lunch & Learn_Object Detection.md
+    - file: content/01_overview/01_AI_ML Lunch & Learn_Object Detection.md
       format: revealjs
 
   - caption: How to
