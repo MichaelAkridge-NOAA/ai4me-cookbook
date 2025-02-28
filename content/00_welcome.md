@@ -4,8 +4,10 @@ Useful information and code to help open science AI/ML efforts for marine ecosys
 
 ###  Workshop | Part 1
 Workshop Goals: 
-- Equip the team with a shared understanding of object detection workflows
-- define how annotations fit into the model lifecycle
+- Equip users with a shared understanding of AI/ML(object detection) workflows and fundamentals
+- Define how annotations fit into the model lifecycle
+- Build and train basic models using marine datasets.
+- Explore training results and graphs.
 
 ## Draft Agenda
 

@@ -34,7 +34,7 @@ html:
   revealjs_auto_slide: 5000  #  Auto-slide every 5 seconds (optional)
   favicon: "docs/images/favicon.ico"
   extra_footer: |
-    <a href="mailto:michael.akridge@noaa.gov">Contact</a> <br>
+    <a href="mailto:michael.akridge@noaa.gov">Contact</a>  <a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook"> Github</a><br>
 
 # Launch button settings
 launch_buttons:
