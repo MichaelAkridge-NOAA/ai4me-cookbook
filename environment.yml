@@ -8,3 +8,4 @@ dependencies:
   - folium
   - bokeh
   - plotly
+  - Pillow
