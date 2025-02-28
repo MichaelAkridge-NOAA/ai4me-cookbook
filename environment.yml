@@ -9,3 +9,4 @@ dependencies:
   - bokeh
   - plotly
   - Pillow
+  - sphinx-revealjs

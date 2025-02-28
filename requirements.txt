@@ -2,3 +2,4 @@ jupyter-book
 ghp-import
 requests
 Pillow
+sphinx-revealjs
