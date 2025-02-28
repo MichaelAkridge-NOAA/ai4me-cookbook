@@ -36,6 +36,7 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_download_button: true
+  use_revealjs: true
   favicon: "docs/images/favicon.ico" # A path to a favicon image
   extra_navbar: <a href="https://www.noaa.gov">NOAA</a> # Will be displayed underneath the left navbar.
   extra_footer: <a href="mailto:michael.akridge@noaa.gov">Contact</a> <br>
