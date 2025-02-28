@@ -3,28 +3,32 @@
 
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
-### *** In Development ***
+###  Workshop | Part 1
+Workshop Goals: 
+- Equip users with a shared understanding of AI/ML workflows and fundamentals
+- Define how annotations fit into the model lifecycle
+- Build & train basic models using marine datasets.
+- Explore training results and graphs.
+- Deploy models
 
-### Workshop Session
-### Workshop Goals: TBD
-- Equip the team with a shared understanding of object detection workflows
-- define how annotations fit into the model lifecycle
-- develop a clear plan to maximize team efficiency
-
-### Workshop Prep -  Clarify objectives/goals, priorities, and expectations.
-
-
-### Draft Agenda
-
-#### 1. Overview
-
+## Agenda (Draft)
+#### 1. AI/ML Basics / Overview
+- Quick primer on object detection pipeline (data → annotation → model training → deployment)
+- Role of annotations in model performance (importance of quality & consistency)
+- Where to find data, resouces, and so on?
 #### 2. Models, Data & Annotation Strategies & Tools
-
-#### 3. Hands On Activities 
-
-#### 4. Q&A / Roundtable
- 
-#### 5. Next Steps
+- Best practices for efficient annotation workflow
+- Review tools(CVAT, Label Studio, Viame) and discuss pros/cons
+- Discuss integrating QA/QC checks and techniques
+#### 3. Hands On | AI/ML Development Exercises & Examples
+- Exploratory data analysis(EDA)
+- Annotation 
+- Dataset Prep
+- Model Development & Training
+- Model Deployment
+### 4. Model Deployment 
+### 5. Q&A / Roundtable
+### Next Steps
 
 ----------
 #### Disclaimer
