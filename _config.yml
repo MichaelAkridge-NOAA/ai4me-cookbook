@@ -6,11 +6,9 @@ author: michael.akridge
 copyright: "2025"
 logo: docs/images/logo3.png
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
+# Execution settings for notebooks
 execute:
-  # execute_notebooks: force
-  execute_notebooks: cache
+  execute_notebooks: "off"
   timeout: -1
   exclude_patterns:
     - '*_notebook.ipynb'
@@ -20,34 +18,31 @@ latex:
   latex_documents:
     targetname: ai4me_cookbook.tex
 
-# Add a bibtex file so that we can create citations
-# bibtex_bibfiles:
-#   - references.bib
-
-# Information about where the book exists on the web
+# Repository settings
 repository:
   url: https://github.com/MichaelAkridge-NOAA/ai4me-cookbook  # Online location of your book
-  # path_to_book: ""  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  branch: main  # Which branch of the repository should be used when creating links
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# Enable Reveal.js slides
 html:
   use_issues_button: true
   use_repository_button: true
   use_download_button: true
-  use_revealjs: true
-  favicon: "docs/images/favicon.ico" # A path to a favicon image
-  extra_navbar: <a href="https://www.noaa.gov">NOAA</a> # Will be displayed underneath the left navbar.
-  extra_footer: <a href="mailto:michael.akridge@noaa.gov">Contact</a> <br>
-sphinx:
-  config:
-    html_show_copyright: false
+  use_revealjs: true  #  Ensure Reveal.js is enabled
+  revealjs_theme: "black"  # Options: black, white, night, serif, etc.
+  revealjs_scroll: true  #  Allow scrolling inside slides
+  revealjs_auto_slide: 5000  #  Auto-slide every 5 seconds (optional)
+  favicon: "docs/images/favicon.ico"
+  extra_footer: |
+    <a href="mailto:michael.akridge@noaa.gov">Contact</a> <br>
 
+# Launch button settings
 launch_buttons:
-  notebook_interface: jupyterlab # The interface interactive links will activate ["classic", "jupyterlab"]
+  notebook_interface: jupyterlab
   binderhub_url: "https://mybinder.org"
   colab_url: "https://colab.research.google.com"
 
-execute:
-  execute_notebooks: "off"
+# Sphinx settings
+sphinx:
+  config:
+    html_show_copyright: false
