@@ -499,7 +499,7 @@ document.write(`
 <hr class="docutils" />
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">patches</span>
@@ -573,25 +573,19 @@ document.write(`
         <span class="n">file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="c1"># -------------------------------</span>
-<span class="c1"># Run Test</span>
+<span class="c1"># Run </span>
 <span class="c1"># -------------------------------</span>
 <span class="n">display_urchin_detections</span><span class="p">(</span><span class="s2">&quot;https://storage.googleapis.com/nmfs_odp_pifsc/PIFSC/ESD/ARP/data_management/temp/example_urchin.jpg&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">patches</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Enter your API key: ··········
+Response status: 200
+Response text: {&quot;model&quot;:&quot;sea_urchin_detector&quot;,&quot;detections&quot;:[{&quot;class&quot;:&quot;urchin&quot;,&quot;confidence&quot;:0.8505,&quot;bbox&quot;:[2974.38,765.22,3528.17,1394.35]},{&quot;class&quot;:&quot;urchin&quot;,&quot;confidence&quot;:0.7354,&quot;bbox&quot;:[4257.12,2783.82,4684.24,3146.24]},{&quot;class&quot;:&quot;urchin&quot;,&quot;confidence&quot;:0.5763,&quot;bbox&quot;:[4879.12,3000.89,5229.92,3388.92]}]}
 </pre></div>
 </div>
+<img alt="../../_images/581daaa23b67d0fd3eacce643a236f310175eae7ba1bbbb2e8c1bf5a6fc80625.png" src="../../_images/581daaa23b67d0fd3eacce643a236f310175eae7ba1bbbb2e8c1bf5a6fc80625.png" />
 </div>
 </div>
 </section>
@@ -599,7 +593,7 @@ document.write(`
 <h1>Example: Use API with Python to classify coral health (bleaching)<a class="headerlink" href="#example-use-api-with-python-to-classify-coral-health-bleaching" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">getpass</span>
