@@ -1,6 +1,5 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
 root: index
 title: AI4ME Cookbook
@@ -24,6 +23,7 @@ parts:
     chapters:
     - file: content/0X_deploy/01_ai4me_api.md
     - file: content/0X_deploy/02_ai4me_api_google_colab_demo.ipynb
+
   - caption: Other Resources
     chapters:
     - url: https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
