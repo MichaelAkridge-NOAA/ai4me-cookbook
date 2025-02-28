@@ -36,7 +36,7 @@ parts:
     chapters:
     - file: content/05_module/01_qa_roundtable.md
 
-  - caption: Other Resources
+  - caption: Resources
     chapters:
     - url: https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
       title: Awesome Ocean AI Resources
