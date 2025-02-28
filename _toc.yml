@@ -6,21 +6,16 @@ root: content/00_welcome.md
 defaults:  # The defaults key will be applied to all chapters and sub-sections
   titlesonly: True
 parts:
-  - caption: Welcome
+  - caption: Modelue 1 | AI/ML Basics
     chapters:
-    - file: content/01_getting_started.md
-
-  - caption: Overview
-    chapters:
-    - file: content/01_overview/00_overview_placeholder.md
     - file: content/01_overview/01_AI_ML Lunch & Learn_Object Detection.md
       format: revealjs
 
-  - caption: How to
+  - caption: Modelue 2 | AI/ML Development
     chapters:
     - file: content/02_how_to/how_to_placeholder.md
 
-  - caption: Deployment Stage
+  - caption: Module 3 | Deployment
     chapters:
     - file: content/0X_deploy/01_ai4me_api.md
     - file: content/0X_deploy/02_ai4me_api_google_colab_demo.ipynb
