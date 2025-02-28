@@ -11,7 +11,7 @@ Workshop Goals:
 - Explore training results and graphs.
 - Deploy models
 
-## Agenda (Draft)
+### Agenda (Draft)
 #### 1. AI/ML Basics / Overview
 - Quick primer on object detection pipeline (data → annotation → model training → deployment)
 - Role of annotations in model performance (importance of quality & consistency)
