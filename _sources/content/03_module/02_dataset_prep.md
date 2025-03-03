@@ -13,7 +13,6 @@
     - Labels must closely enclose each object. No space should exist between an object, and it's bounding box. No objects should be missing a label.
 - Background images. 
     - Background images are images with no objects that are added to a dataset to reduce False Positives (FP).  
-    - 0-10% background images to help reduce FPs
 
 ## Split Dataset for Training
 - **Labeled Data** is split into three parts:
@@ -28,17 +27,12 @@ graph TD;
     A --> D[Test Dataset]
     
     B --> E[Used to train the model]
-    C --> F[Used to tune hyperparameters]
+    C --> F[Used to validate and tune model]
     D --> G[Used to evaluate the model]
 ```
 ![](../01_module/slide_images/slide_38.png)
 
-## Develop a Benchmark Test Dataset
-
-## Consider Data Augmentation
-
-## Check Bias and Balance
-
-
-## Read More: 
-### [Data Drift Machine Learning](https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/)
+## Other Helpful Dataset Prep Tasks
+- Develop a Benchmark Test Dataset
+- Consider Data Augmentation
+- Check Bias and Balance
