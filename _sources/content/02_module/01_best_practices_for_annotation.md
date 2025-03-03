@@ -13,11 +13,11 @@
 - Two main approaches. No right or wrong answer. 
 - **Experimentation** and then **consistency** is key. 
 
-1. Estimate and draw full bounding boxes (for full object learning)
+1. **Estimate and draw full bounding boxes** (for full object learning)
     - pro: helpful for other downstream opencv tasks like segmenation and sizing techniques
     - con: subjective and time consuming. 
     - **Suggestion:** If full object learning is important, try instance segmentation instead
-2. Or Draw Bounding box only around the visible portion (recommeneded)
+2. Or **Draw Bounding box only around the visible portion** (recommeneded)
     - pro: grounded in what is actually visable
     - cons: inconsistent box sizes. postential for more false postives/negatives
     - **Important Dataset Note:** 
