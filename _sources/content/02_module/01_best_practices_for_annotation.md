@@ -1,3 +1,3 @@
 # Annotation Best Practices
 
-## Placeholder
+![](../01_module/slide_images/slide_56.png)
