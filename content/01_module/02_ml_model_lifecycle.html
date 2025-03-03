@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. AI/ML Model Lifecycle &#8212; AI4ME Cookbook</title>
+    <title>2. AI/ML Model Project Lifecycle &#8212; AI4ME Cookbook</title>
   
   
   
@@ -57,6 +57,14 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/01_module/02_ml_model_lifecycle';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -183,7 +191,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1 | AI/ML Basics</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. Review | AI/ML Lunch &amp; Learn: Object Detection</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. AI/ML Model Lifecycle</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. AI/ML Model Project Lifecycle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_role_of_annotations_in_model_performance.html">3. Role of Annotations in Model Performance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_where_to_find_data.html">4. Where to Find Data</a></li>
 </ul>
@@ -405,7 +413,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>AI/ML Model Lifecycle</h1>
+    <h1>AI/ML Model Project Lifecycle</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -415,12 +423,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle-examples">2.1. 0. Simple Lifecycle Examples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.2. 1. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.2.1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#similar-to-common-data-science-workflow">2.1. Similar to Common Data Science Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle-examples">2.2. Simple Lifecycle Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.3. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.3.1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key">2.3. 2. Experimentation is key.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key">2.4. Experimentation is key.</a></li>
 </ul>
             </nav>
         </div>
@@ -432,18 +441,32 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ai-ml-model-lifecycle">
-<h1><span class="section-number">2. </span>AI/ML Model Lifecycle<a class="headerlink" href="#ai-ml-model-lifecycle" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ai-ml-model-project-lifecycle">
+<h1><span class="section-number">2. </span>AI/ML Model Project Lifecycle<a class="headerlink" href="#ai-ml-model-project-lifecycle" title="Link to this heading">#</a></h1>
+<section id="similar-to-common-data-science-workflow">
+<h2><span class="section-number">2.1. </span>Similar to Common Data Science Workflow<a class="headerlink" href="#similar-to-common-data-science-workflow" title="Link to this heading">#</a></h2>
+<pre  class="mermaid">
+        graph TD;
+    A[Ask an Interesting Question] --&gt; B[Get the Data];
+    B --&gt; C[Explore the Data];
+    C --&gt; D[Model the Data];
+    D --&gt; E[Communicate &amp; Visualize Results];
+
+    % Indicating Iterations &amp; Feedback Loops
+    E --Refine Understanding--&gt; A;
+    C --Data Cleaning &amp; Feature Engineering--&gt; B;
+    D --Revisit Data Exploration--&gt; C;
+    </pre></section>
 <section id="simple-lifecycle-examples">
-<h2><span class="section-number">2.1. </span>0. Simple Lifecycle Examples<a class="headerlink" href="#simple-lifecycle-examples" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.2. </span>Simple Lifecycle Examples<a class="headerlink" href="#simple-lifecycle-examples" title="Link to this heading">#</a></h2>
 <p><img alt="" src="../../_images/slide_26.png" />
 <img alt="" src="../../_images/slide_43.png" />
 <img alt="" src="../../_images/slide_44.png" /></p>
 </section>
 <section id="ai-ml-is-non-linear">
-<h2><span class="section-number">2.2. </span>1. AI/ML is Non-Linear<a class="headerlink" href="#ai-ml-is-non-linear" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>AI/ML is Non-Linear<a class="headerlink" href="#ai-ml-is-non-linear" title="Link to this heading">#</a></h2>
 <section id="performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">
-<h3><span class="section-number">2.2.1. </span>Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.<a class="headerlink" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.3.1. </span>Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.<a class="headerlink" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well" title="Link to this heading">#</a></h3>
 <p><img alt="" src="../../_images/effort-success.png" /></p>
 <ul class="simple">
 <li><p>Figure: “illustrates the uncertainty in ML development by showing the significant increase in effort but only minimal gains in model quality.”<a class="reference external" href="https://developers.google.com/machine-learning/managing-ml-projects/planning">Source: Google Kaggle(AI//ML &amp; ML competition platform) Case Study</a></p></li>
@@ -451,7 +474,7 @@ document.write(`
 </section>
 </section>
 <section id="experimentation-is-key">
-<h2><span class="section-number">2.3. </span>2. Experimentation is key.<a class="headerlink" href="#experimentation-is-key" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.4. </span>Experimentation is key.<a class="headerlink" href="#experimentation-is-key" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>try different architectures</p></li>
 <li><p>try and tune <a class="reference external" href="https://docs.ultralytics.com/guides/hyperparameter-tuning/">hyperparameters</a></p></li>
@@ -524,12 +547,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle-examples">2.1. 0. Simple Lifecycle Examples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.2. 1. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.2.1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#similar-to-common-data-science-workflow">2.1. Similar to Common Data Science Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle-examples">2.2. Simple Lifecycle Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.3. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.3.1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key">2.3. 2. Experimentation is key.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key">2.4. Experimentation is key.</a></li>
 </ul>
   </nav></div>
 
