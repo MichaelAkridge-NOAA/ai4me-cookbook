@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>13. Exercise - Model Training &#8212; AI4ME Cookbook</title>
+    <title>18. Model Management &#8212; AI4ME Cookbook</title>
   
   
   
@@ -57,12 +57,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/03_module/03_model_training';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/04_module/03_model_maintenance';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="14. 🌊 AI for Marine Ecosystems (AI4ME) API" href="../04_module/01_ai4me_api.html" />
-    <link rel="prev" title="12. Exercise - Dataset Prep" href="02_dataset_prep.html" />
+    <link rel="next" title="Q&amp;A | Roundtable Discussion" href="../05_module/01_qa_roundtable.html" />
+    <link rel="prev" title="15. AI4ME | AI for Marine Ecosystems API Demo" href="02_ai4me_api_google_colab_demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,19 +196,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../02_module/03_data_techniques.html">9. Data Tools &amp; Techniques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Development Exercises &amp; Examples</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="00_EDA_example.html">10. Exercise - Exploratory Data Analysis (EDA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_annotation_example.html">11. Exercise - Annotation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_dataset_prep.html">12. Exercise - Dataset Prep</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">13. Exercise - Model Training</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_module/00_EDA_example.html">10. Exercise - Exploratory Data Analysis (EDA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_module/01_annotation_example.html">11. Exercise - Annotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_module/02_dataset_prep.html">12. Exercise - Dataset Prep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_module/03_model_training.html">13. Exercise - Model Training</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Deployment &amp; Model Management</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">14. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">15. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_ai4me_api.html">14. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_ai4me_api_google_colab_demo.html">15. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">18. Model Management</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">18. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions</span></p>
 <ul class="nav bd-sidenav">
@@ -291,7 +291,7 @@
       
       
       
-      <li><a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/03_module/03_model_training.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/04_module/03_model_maintenance.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -321,7 +321,7 @@
       
       
       
-      <li><a href="../../_sources/content/03_module/03_model_training.md" target="_blank"
+      <li><a href="../../_sources/content/04_module/03_model_maintenance.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -405,7 +405,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise - Model Training</h1>
+    <h1>Model Management</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -415,7 +415,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">13.1. Read More:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">18.1. Maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read">18.2. Read:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">18.2.1. Model-Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">18.2.2. Data Drift Machine Learning</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -427,13 +432,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-model-training">
-<h1><span class="section-number">13. </span>Exercise - Model Training<a class="headerlink" href="#exercise-model-training" title="Link to this heading">#</a></h1>
-<p><a class="reference external" href="https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results/#dataset">Tips for Best Training Results</a></p>
-<hr class="docutils" />
-<section id="read-more">
-<h2><span class="section-number">13.1. </span>Read More:<a class="headerlink" href="#read-more" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://karpathy.github.io/2019/04/25/recipe/">Recipe for Training Neural Networks</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="model-management">
+<h1><span class="section-number">18. </span>Model Management<a class="headerlink" href="#model-management" title="Link to this heading">#</a></h1>
+<section id="maintenance">
+<h2><span class="section-number">18.1. </span>Maintenance<a class="headerlink" href="#maintenance" title="Link to this heading">#</a></h2>
+</section>
+<section id="read">
+<h2><span class="section-number">18.2. </span>Read:<a class="headerlink" href="#read" title="Link to this heading">#</a></h2>
+<section id="model-maintenance">
+<h3><span class="section-number">18.2.1. </span><a class="reference external" href="https://www.ultralytics.com/blog/optimize-computer-vision-solutions-with-smart-model-maintenance">Model-Maintenance</a><a class="headerlink" href="#model-maintenance" title="Link to this heading">#</a></h3>
+</section>
+<section id="data-drift-machine-learning">
+<h3><span class="section-number">18.2.2. </span><a class="reference external" href="https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/">Data Drift Machine Learning</a><a class="headerlink" href="#data-drift-machine-learning" title="Link to this heading">#</a></h3>
+</section>
 </section>
 </section>
 
@@ -450,7 +461,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./content/03_module"
+            path: "./content/04_module"
         },
         predefinedOutput: true
     }
@@ -468,20 +479,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02_dataset_prep.html"
+       href="02_ai4me_api_google_colab_demo.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">12. </span>Exercise - Dataset Prep</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>AI4ME | AI for Marine Ecosystems API Demo</p>
       </div>
     </a>
     <a class="right-next"
-       href="../04_module/01_ai4me_api.html"
+       href="../05_module/01_qa_roundtable.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">14. </span>🌊 AI for Marine Ecosystems (AI4ME) API</p>
+        <p class="prev-next-title">Q&amp;A | Roundtable Discussion</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -501,7 +512,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">13.1. Read More:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">18.1. Maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read">18.2. Read:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">18.2.1. Model-Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">18.2.2. Data Drift Machine Learning</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

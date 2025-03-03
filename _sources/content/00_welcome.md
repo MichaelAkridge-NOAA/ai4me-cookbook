@@ -1,5 +1,5 @@
 # Welcome to the AI4ME Cookbook
-## AI for Marine Ecosystems Cookbook
+## AI for Marine Ecosystems (AI4ME)
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
 ###  Workshop | Part 1
