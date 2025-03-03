@@ -3,3 +3,4 @@ ghp-import
 requests
 Pillow
 sphinx-revealjs
+sphinxcontrib-mermaid

@@ -10,3 +10,4 @@ dependencies:
   - plotly
   - Pillow
   - sphinx-revealjs
+  - sphinxcontrib-mermaid
