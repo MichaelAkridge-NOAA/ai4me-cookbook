@@ -182,7 +182,7 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1 | AI/ML Basics</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. AI/ML Lunch &amp; Learn: Object Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. Review | AI/ML Lunch &amp; Learn: Object Detection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_ml_model_lifecycle.html">2. AI/ML Model Lifecycle</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Role of Annotations in Model Performance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_where_to_find_data.html">4. Where to Find Data</a></li>
@@ -414,11 +414,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-80-data-management-20-model-building">3.1. Machine Learning = 80% Data Management + 20% Model Building</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-machine-learning-80-of-your-time-is-spent-preparing-and-cleaning-the-data-and-only-20-of-the-time-is-spent-on-the-actual-model-building-andrew-ng-former-stanford-ai-director-professor">3.1.1. “In machine learning, 80% of your time is spent preparing and cleaning the data, and only 20% of the time is spent on the actual model building.”  - Andrew Ng (former Stanford AI Director/Professor)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#garbage-in-garbage-out">3.2. Garbage in, garbage out</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotations-are-the-foundation-of-model-performance">3.1. Annotations are the <strong>foundation</strong> of model performance.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-80-data-management-20-model-building">3.2. Machine Learning = 80% Data Management + 20% Model Building</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tldr-garbage-in-garbage-out">3.3. TLDR: Garbage in, garbage out</a></li>
 </ul>
             </nav>
         </div>
@@ -432,18 +430,26 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="role-of-annotations-in-model-performance">
 <h1><span class="section-number">3. </span>Role of Annotations in Model Performance<a class="headerlink" href="#role-of-annotations-in-model-performance" title="Link to this heading">#</a></h1>
+<section id="annotations-are-the-foundation-of-model-performance">
+<h2><span class="section-number">3.1. </span>Annotations are the <strong>foundation</strong> of model performance.<a class="headerlink" href="#annotations-are-the-foundation-of-model-performance" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>A core pillar of model performance</p></li>
-<li><p>Annotations the ground truth that the model learns from</p></li>
+<li><p>They provide the <strong>ground truth</strong> that a model learns from.</p></li>
+<li><p>Machine learning depends heavily on <strong>data quality</strong></p></li>
+<li><p><strong>High-quality, well labeled annotations = Better model generalization &amp; accuracy.</strong></p></li>
 </ul>
+</section>
 <section id="machine-learning-80-data-management-20-model-building">
-<h2><span class="section-number">3.1. </span>Machine Learning = 80% Data Management + 20% Model Building<a class="headerlink" href="#machine-learning-80-data-management-20-model-building" title="Link to this heading">#</a></h2>
-<section id="in-machine-learning-80-of-your-time-is-spent-preparing-and-cleaning-the-data-and-only-20-of-the-time-is-spent-on-the-actual-model-building-andrew-ng-former-stanford-ai-director-professor">
-<h3><span class="section-number">3.1.1. </span>“In machine learning, 80% of your time is spent preparing and cleaning the data, and only 20% of the time is spent on the actual model building.”  - Andrew Ng (former Stanford AI Director/Professor)<a class="headerlink" href="#in-machine-learning-80-of-your-time-is-spent-preparing-and-cleaning-the-data-and-only-20-of-the-time-is-spent-on-the-actual-model-building-andrew-ng-former-stanford-ai-director-professor" title="Link to this heading">#</a></h3>
+<h2><span class="section-number">3.2. </span>Machine Learning = 80% Data Management + 20% Model Building<a class="headerlink" href="#machine-learning-80-data-management-20-model-building" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p><strong>“In machine learning, 80% of your time is spent preparing and cleaning the data, and only 20% of the time is spent on actual model building.”</strong><br />
+— <em>Andrew Ng, former Stanford AI Director/Professor</em></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Annotations fall into the <strong>80% of the effort</strong> spent on data prep and cleaning.</p></li>
+</ul>
 </section>
-</section>
-<section id="garbage-in-garbage-out">
-<h2><span class="section-number">3.2. </span>Garbage in, garbage out<a class="headerlink" href="#garbage-in-garbage-out" title="Link to this heading">#</a></h2>
+<section id="tldr-garbage-in-garbage-out">
+<h2><span class="section-number">3.3. </span>TLDR: Garbage in, garbage out<a class="headerlink" href="#tldr-garbage-in-garbage-out" title="Link to this heading">#</a></h2>
 <p><img alt="" src="../../_images/slide_56.png" /></p>
 <ul class="simple">
 <li><p>Poor or inconsistent annotations can lead to poor performance, while high-quality annotations can significantly improve accuracy.</p></li>
@@ -515,11 +521,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-80-data-management-20-model-building">3.1. Machine Learning = 80% Data Management + 20% Model Building</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-machine-learning-80-of-your-time-is-spent-preparing-and-cleaning-the-data-and-only-20-of-the-time-is-spent-on-the-actual-model-building-andrew-ng-former-stanford-ai-director-professor">3.1.1. “In machine learning, 80% of your time is spent preparing and cleaning the data, and only 20% of the time is spent on the actual model building.”  - Andrew Ng (former Stanford AI Director/Professor)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#garbage-in-garbage-out">3.2. Garbage in, garbage out</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotations-are-the-foundation-of-model-performance">3.1. Annotations are the <strong>foundation</strong> of model performance.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-80-data-management-20-model-building">3.2. Machine Learning = 80% Data Management + 20% Model Building</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tldr-garbage-in-garbage-out">3.3. TLDR: Garbage in, garbage out</a></li>
 </ul>
   </nav></div>
 

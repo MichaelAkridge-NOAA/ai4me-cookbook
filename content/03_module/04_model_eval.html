@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Exercise - Model Eval &#8212; AI4ME Cookbook</title>
+    <title>Exercise - Model Evaluation &#8212; AI4ME Cookbook</title>
   
   
   
@@ -182,7 +182,7 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1 | AI/ML Basics</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../01_module/01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. AI/ML Lunch &amp; Learn: Object Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_module/01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. Review | AI/ML Lunch &amp; Learn: Object Detection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_module/02_ml_model_lifecycle.html">2. AI/ML Model Lifecycle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_module/03_role_of_annotations_in_model_performance.html">3. Role of Annotations in Model Performance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_module/04_where_to_find_data.html">4. Where to Find Data</a></li>
@@ -404,7 +404,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise - Model Eval</h1>
+    <h1>Exercise - Model Evaluation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -414,7 +414,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#all-models-are-wrong-some-are-useful-george-box-bio">“All models are wrong, some are useful.” - George Box bio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-evaluating-models-remember"><strong>When Evaluating Models, Remember:</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lessons"><strong>Key Lessons:</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance-read-more">Model-Maintenance | Read More:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">Model-Maintenance</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">Data Drift Machine Learning</a></li>
@@ -431,10 +432,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-model-eval">
-<h1>Exercise - Model Eval<a class="headerlink" href="#exercise-model-eval" title="Link to this heading">#</a></h1>
-<section id="all-models-are-wrong-some-are-useful-george-box-bio">
-<h2>“All models are wrong, some are useful.” - George Box <a class="reference external" href="https://en.wikipedia.org/wiki/George_E._P._Box">bio</a><a class="headerlink" href="#all-models-are-wrong-some-are-useful-george-box-bio" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-model-evaluation">
+<h1>Exercise - Model Evaluation<a class="headerlink" href="#exercise-model-evaluation" title="Link to this heading">#</a></h1>
+<section id="when-evaluating-models-remember">
+<h2><strong>When Evaluating Models, Remember:</strong><a class="headerlink" href="#when-evaluating-models-remember" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p><strong>“All models are wrong, some are useful.”</strong><br />
+— <em>George Box</em> <a class="reference external" href="https://en.wikipedia.org/wiki/George_E._P._Box">(bio)</a></p>
+</div></blockquote>
+</section>
+<section id="key-lessons">
+<h2><strong>Key Lessons:</strong><a class="headerlink" href="#key-lessons" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Don’t sweat initial model performance</strong>. No model is perfect and early models are rarely even close. But they can still provide value and <strong>improve with iteration</strong>.</p></li>
+<li><p><strong>Confidence scores</strong> indicate how certain a model is about its predictions. Lower confidence may require further training and tuning.</p></li>
+<li><p>Even imperfect models can assist in <strong>data gathering, hypothesis testing, and guiding further research</strong>.</p></li>
+<li><p><strong>Human-in-the-loop</strong> approaches can improve model performance by refining labels and reducing errors over time.</p></li>
+<li><p>Models should be seen as <strong>tools</strong> to support decision-making, not as absolute truth.</p></li>
+<li><p>Model predictions should <strong>complement, not replace, expert human validation</strong>.</p></li>
+<li><p>Always evaluate a model’s <strong>limitations, biases, and real-world applicability</strong>.</p></li>
+</ul>
 <p><img alt="" src="../../_images/slide_60.png" /></p>
 <p><img alt="" src="../../_images/slide_62.png" /></p>
 <p><img alt="" src="../../_images/slide_61.png" /></p>
@@ -496,7 +513,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#all-models-are-wrong-some-are-useful-george-box-bio">“All models are wrong, some are useful.” - George Box bio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-evaluating-models-remember"><strong>When Evaluating Models, Remember:</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lessons"><strong>Key Lessons:</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance-read-more">Model-Maintenance | Read More:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">Model-Maintenance</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">Data Drift Machine Learning</a></li>

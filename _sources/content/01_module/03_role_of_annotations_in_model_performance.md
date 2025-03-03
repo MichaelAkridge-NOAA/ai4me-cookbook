@@ -1,10 +1,16 @@
 # Role of Annotations in Model Performance
-- A core pillar of model performance
-- Annotations the ground truth that the model learns from
 
-## Machine Learning = 80% Data Management + 20% Model Building 
-#### “In machine learning, 80% of your time is spent preparing and cleaning the data, and only 20% of the time is spent on the actual model building.”  - Andrew Ng (former Stanford AI Director/Professor) 
+### Annotations are the **foundation** of model performance. 
+- They provide the **ground truth** that a model learns from.
+- Machine learning depends heavily on **data quality**
+- **High-quality, well labeled annotations = Better model generalization & accuracy.**
 
-## Garbage in, garbage out
+### Machine Learning = 80% Data Management + 20% Model Building
+
+> **“In machine learning, 80% of your time is spent preparing and cleaning the data, and only 20% of the time is spent on actual model building.”**  
+> — *Andrew Ng, former Stanford AI Director/Professor*
+- Annotations fall into the **80% of the effort** spent on data prep and cleaning.
+
+## TLDR: Garbage in, garbage out
 ![](../01_module/slide_images/slide_56.png)
 - Poor or inconsistent annotations can lead to poor performance, while high-quality annotations can significantly improve accuracy. 
