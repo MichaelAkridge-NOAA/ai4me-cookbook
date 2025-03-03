@@ -1,6 +1,6 @@
 # Model Deployment
 
-Once a model is trained, it can then be **deployed**. Deployment strategies vary based on use cases. Some examples:  
+Once a model is trained, it can then be **deployed**. Deployment strategies vary based on use cases and needs. Some examples:  
 
 - **In Applications**  – Models can be integrated into mobile, desktop, or web apps for real-time predictions. 
 - **On Edge (on device) Deployment**  – Running models on local devices without needing internet connectivity.  
