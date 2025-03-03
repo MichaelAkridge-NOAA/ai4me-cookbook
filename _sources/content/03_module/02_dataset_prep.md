@@ -16,6 +16,30 @@
     - 0-10% background images to help reduce FPs
 
 ## Split Dataset for Training
+- **Labeled Data** is split into three parts:
+  - **Training Dataset**: Used to train the model.
+  - **Validation Dataset**: Used to validate and tune model.
+  - **Test Dataset**: Used to evaluate the final model.
+
 ![](../01_module/slide_images/slide_38.png)
 
+```mermaid
+graph TD;
+    A[Labeled Data] --> B[Training Dataset]
+    A --> C[Validation Dataset]
+    A --> D[Test Dataset]
+    
+    B --> E[Used to train the model]
+    C --> F[Used to tune hyperparameters]
+    D --> G[Used to evaluate the model]
+```
+
 ## Develop a Benchmark Test Dataset
+
+## Consider Data Augmentation
+
+## Check Bias and Balance
+
+
+## Read More: 
+### [Data Drift Machine Learning](https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/)

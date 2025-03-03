@@ -415,6 +415,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-basics">10.1. Dataset Basics:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset-for-training">10.2. Split Dataset for Training</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#develop-a-benchmark-test-dataset">10.3. Develop a Benchmark Test Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consider-data-augmentation">10.4. Consider Data Augmentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-bias-and-balance">10.5. Check Bias and Balance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">10.6. Read More:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">10.6.1. Data Drift Machine Learning</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -460,10 +466,41 @@ document.write(`
 </section>
 <section id="split-dataset-for-training">
 <h2><span class="section-number">10.2. </span>Split Dataset for Training<a class="headerlink" href="#split-dataset-for-training" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Labeled Data</strong> is split into three parts:</p>
+<ul>
+<li><p><strong>Training Dataset</strong>: Used to train the model.</p></li>
+<li><p><strong>Validation Dataset</strong>: Used to validate and tune model.</p></li>
+<li><p><strong>Test Dataset</strong>: Used to evaluate the final model.</p></li>
+</ul>
+</li>
+</ul>
 <p><img alt="" src="../../_images/slide_38.png" /></p>
+<div class="highlight-mermaid notranslate"><div class="highlight"><pre><span></span>graph TD;
+    A[Labeled Data] --&gt; B[Training Dataset]
+    A --&gt; C[Validation Dataset]
+    A --&gt; D[Test Dataset]
+    
+    B --&gt; E[Used to train the model]
+    C --&gt; F[Used to tune hyperparameters]
+    D --&gt; G[Used to evaluate the model]
+</pre></div>
+</div>
 </section>
 <section id="develop-a-benchmark-test-dataset">
 <h2><span class="section-number">10.3. </span>Develop a Benchmark Test Dataset<a class="headerlink" href="#develop-a-benchmark-test-dataset" title="Link to this heading">#</a></h2>
+</section>
+<section id="consider-data-augmentation">
+<h2><span class="section-number">10.4. </span>Consider Data Augmentation<a class="headerlink" href="#consider-data-augmentation" title="Link to this heading">#</a></h2>
+</section>
+<section id="check-bias-and-balance">
+<h2><span class="section-number">10.5. </span>Check Bias and Balance<a class="headerlink" href="#check-bias-and-balance" title="Link to this heading">#</a></h2>
+</section>
+<section id="read-more">
+<h2><span class="section-number">10.6. </span>Read More:<a class="headerlink" href="#read-more" title="Link to this heading">#</a></h2>
+<section id="data-drift-machine-learning">
+<h3><span class="section-number">10.6.1. </span><a class="reference external" href="https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/">Data Drift Machine Learning</a><a class="headerlink" href="#data-drift-machine-learning" title="Link to this heading">#</a></h3>
+</section>
 </section>
 </section>
 
@@ -534,6 +571,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-basics">10.1. Dataset Basics:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset-for-training">10.2. Split Dataset for Training</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#develop-a-benchmark-test-dataset">10.3. Develop a Benchmark Test Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consider-data-augmentation">10.4. Consider Data Augmentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-bias-and-balance">10.5. Check Bias and Balance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">10.6. Read More:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">10.6.1. Data Drift Machine Learning</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

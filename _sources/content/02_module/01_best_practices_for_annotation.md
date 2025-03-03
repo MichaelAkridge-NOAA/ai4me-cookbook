@@ -1,8 +1,5 @@
 # Annotation Best Practices
 
-- Image variety. 
-    - Must be representative of the environment. 
-    - recommended: images from different regions, seasons, conditions, lighting, angles, different sources
 - Label consistency. 
     - All instances of all classes in all images must be labelled. 
     - Partial labelling will impact performance.

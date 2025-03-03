@@ -1,6 +1,6 @@
 # AI/ML Model Lifecycle
 
-### 0. Simple Lifecycle
+### 0. Simple Lifecycle Examples
 ![](slide_images/slide_26.png)
 ![](slide_images/slide_43.png)
 ![](slide_images/slide_44.png)
@@ -14,3 +14,4 @@
 - try different architectures  
 - try and tune [hyperparameters](https://docs.ultralytics.com/guides/hyperparameter-tuning/)
 - test different training techniques like data augmentation or different optimizers
+

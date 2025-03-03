@@ -35,3 +35,7 @@ Workshop Goals:
 ### Next Steps
 - another workshop?
 - user exercises
+
+---
+
+### [Glossary](https://www.ultralytics.com/glossary)
