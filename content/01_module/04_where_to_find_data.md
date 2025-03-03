@@ -6,7 +6,7 @@
 
 ## 2. Partners
 - https://coralnet.ucsd.edu
-- 
+
 ## 3. Public datasets 
 - [Github](https://github.com/)
 - [HuggingFace | AI Community](https://huggingface.co/datasets)

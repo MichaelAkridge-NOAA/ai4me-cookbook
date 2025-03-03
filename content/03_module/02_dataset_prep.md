@@ -21,9 +21,7 @@
   - **Validation Dataset**: Used to validate and tune model.
   - **Test Dataset**: Used to evaluate the final model.
 
-![](../01_module/slide_images/slide_38.png)
-
-```mermaid
+```{mermaid}
 graph TD;
     A[Labeled Data] --> B[Training Dataset]
     A --> C[Validation Dataset]
@@ -33,6 +31,7 @@ graph TD;
     C --> F[Used to tune hyperparameters]
     D --> G[Used to evaluate the model]
 ```
+![](../01_module/slide_images/slide_38.png)
 
 ## Develop a Benchmark Test Dataset
 
