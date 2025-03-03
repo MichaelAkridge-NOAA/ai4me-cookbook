@@ -191,7 +191,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../02_module/01_best_practices_for_annotation.html">5. Annotation Best Practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02_module/02_annotation_tools.html">6. Annotation Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02_module/03_data_techniques.html">7. Data Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_module/03_data_techniques.html">7. Data Tools &amp; Techniques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Development Exercises &amp; Examples</span></p>
 <ul class="current nav bd-sidenav">
@@ -412,7 +412,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#placeholder">10.1. Placeholder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-basics">10.1. Dataset Basics:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset-for-training">10.2. Split Dataset for Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#develop-a-benchmark-test-dataset">10.3. Develop a Benchmark Test Dataset</a></li>
 </ul>
             </nav>
         </div>
@@ -426,8 +428,42 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="exercise-dataset-prep">
 <h1><span class="section-number">10. </span>Exercise - Dataset Prep<a class="headerlink" href="#exercise-dataset-prep" title="Link to this heading">#</a></h1>
-<section id="placeholder">
-<h2><span class="section-number">10.1. </span>Placeholder<a class="headerlink" href="#placeholder" title="Link to this heading">#</a></h2>
+<section id="dataset-basics">
+<h2><span class="section-number">10.1. </span>Dataset Basics:<a class="headerlink" href="#dataset-basics" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Images per class. | ≥ 1500 images per class recommended</p></li>
+<li><p>Instances per class. |  ≥ 10000 instances (labeled objects) per class recommended</p></li>
+<li><p>Image variety.</p>
+<ul>
+<li><p>Must be representative of the environment.</p></li>
+<li><p>recommended: images from different regions, seasons, conditions, lighting, angles, different sources</p></li>
+</ul>
+</li>
+<li><p>Label consistency.</p>
+<ul>
+<li><p>All instances of all classes in all images must be labelled.</p></li>
+<li><p>Partial labelling will impact performance.</p></li>
+</ul>
+</li>
+<li><p>Label accuracy.</p>
+<ul>
+<li><p>Labels must closely enclose each object. No space should exist between an object, and it’s bounding box. No objects should be missing a label.</p></li>
+</ul>
+</li>
+<li><p>Background images.</p>
+<ul>
+<li><p>Background images are images with no objects that are added to a dataset to reduce False Positives (FP).</p></li>
+<li><p>0-10% background images to help reduce FPs</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="split-dataset-for-training">
+<h2><span class="section-number">10.2. </span>Split Dataset for Training<a class="headerlink" href="#split-dataset-for-training" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../../_images/slide_38.png" /></p>
+</section>
+<section id="develop-a-benchmark-test-dataset">
+<h2><span class="section-number">10.3. </span>Develop a Benchmark Test Dataset<a class="headerlink" href="#develop-a-benchmark-test-dataset" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -495,7 +531,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#placeholder">10.1. Placeholder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-basics">10.1. Dataset Basics:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset-for-training">10.2. Split Dataset for Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#develop-a-benchmark-test-dataset">10.3. Develop a Benchmark Test Dataset</a></li>
 </ul>
   </nav></div>
 

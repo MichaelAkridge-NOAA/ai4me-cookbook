@@ -191,7 +191,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../02_module/01_best_practices_for_annotation.html">5. Annotation Best Practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02_module/02_annotation_tools.html">6. Annotation Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02_module/03_data_techniques.html">7. Data Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_module/03_data_techniques.html">7. Data Tools &amp; Techniques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Development Exercises &amp; Examples</span></p>
 <ul class="nav bd-sidenav">
@@ -412,12 +412,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.1. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.1.1. 1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key-try">2.1.2. 2. Experimentation is key. Try:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle">2.1. 0. Simple Lifecycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.2. 1. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.2.1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle">2.2. Simple Lifecycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key">2.3. 2. Experimentation is key.</a></li>
 </ul>
             </nav>
         </div>
@@ -431,29 +431,29 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ai-ml-model-lifecycle">
 <h1><span class="section-number">2. </span>AI/ML Model Lifecycle<a class="headerlink" href="#ai-ml-model-lifecycle" title="Link to this heading">#</a></h1>
-<section id="ai-ml-is-non-linear">
-<h2><span class="section-number">2.1. </span>AI/ML is Non-Linear<a class="headerlink" href="#ai-ml-is-non-linear" title="Link to this heading">#</a></h2>
-<section id="performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">
-<h3><span class="section-number">2.1.1. </span>1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.<a class="headerlink" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well" title="Link to this heading">#</a></h3>
-<p><img alt="" src="../../_images/effort-success.png" /></p>
-<ul class="simple">
-<li><p>Figure: “illustrates the uncertainty in ML development by showing the significant increase in effort but only minimal gains in model quality.”<a class="reference external" href="https://developers.google.com/machine-learning/managing-ml-projects/planning">Source: Google Kaggle Case Study</a></p></li>
-</ul>
-</section>
-<section id="experimentation-is-key-try">
-<h3><span class="section-number">2.1.2. </span>2. Experimentation is key. Try:<a class="headerlink" href="#experimentation-is-key-try" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>different architectures</p></li>
-<li><p>tune hyperparameters</p></li>
-<li><p>test different training techniques like data augmentation or different optimizers</p></li>
-</ul>
-</section>
-</section>
 <section id="simple-lifecycle">
-<h2><span class="section-number">2.2. </span>Simple Lifecycle<a class="headerlink" href="#simple-lifecycle" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.1. </span>0. Simple Lifecycle<a class="headerlink" href="#simple-lifecycle" title="Link to this heading">#</a></h2>
 <p><img alt="" src="../../_images/slide_26.png" />
 <img alt="" src="../../_images/slide_43.png" />
 <img alt="" src="../../_images/slide_44.png" /></p>
+</section>
+<section id="ai-ml-is-non-linear">
+<h2><span class="section-number">2.2. </span>1. AI/ML is Non-Linear<a class="headerlink" href="#ai-ml-is-non-linear" title="Link to this heading">#</a></h2>
+<section id="performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">
+<h3><span class="section-number">2.2.1. </span>Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.<a class="headerlink" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well" title="Link to this heading">#</a></h3>
+<p><img alt="" src="../../_images/effort-success.png" /></p>
+<ul class="simple">
+<li><p>Figure: “illustrates the uncertainty in ML development by showing the significant increase in effort but only minimal gains in model quality.”<a class="reference external" href="https://developers.google.com/machine-learning/managing-ml-projects/planning">Source: Google Kaggle(AI//ML &amp; ML competition platform) Case Study</a></p></li>
+</ul>
+</section>
+</section>
+<section id="experimentation-is-key">
+<h2><span class="section-number">2.3. </span>2. Experimentation is key.<a class="headerlink" href="#experimentation-is-key" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>try different architectures</p></li>
+<li><p>try and tune <a class="reference external" href="https://docs.ultralytics.com/guides/hyperparameter-tuning/">hyperparameters</a></p></li>
+<li><p>test different training techniques like data augmentation or different optimizers</p></li>
+</ul>
 </section>
 </section>
 
@@ -521,12 +521,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.1. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.1.1. 1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key-try">2.1.2. 2. Experimentation is key. Try:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle">2.1. 0. Simple Lifecycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-is-non-linear">2.2. 1. AI/ML is Non-Linear</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-of-the-model-and-its-output-is-not-proportional-to-the-input-not-just-data-input-but-effort-as-well">2.2.1. Performance of the model and its output is not proportional to the input. Not just data input, but effort as well.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-lifecycle">2.2. Simple Lifecycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimentation-is-key">2.3. 2. Experimentation is key.</a></li>
 </ul>
   </nav></div>
 

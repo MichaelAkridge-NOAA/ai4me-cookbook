@@ -191,7 +191,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Annotation Best Practices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_annotation_tools.html">6. Annotation Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_data_techniques.html">7. Data Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_data_techniques.html">7. Data Tools &amp; Techniques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Development Exercises &amp; Examples</span></p>
 <ul class="nav bd-sidenav">
@@ -389,7 +389,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -405,6 +407,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-partially-visible-occluded-objects-like-urchins">5.1. What about Partially Visible (Occluded) Objects (like urchins)?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-annotation-flow-for-occluded-objects">5.1.1. Example Annotation Flow for Occluded Objects:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -416,7 +429,76 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="annotation-best-practices">
 <h1><span class="section-number">5. </span>Annotation Best Practices<a class="headerlink" href="#annotation-best-practices" title="Link to this heading">#</a></h1>
-<p><img alt="" src="../../_images/slide_56.png" /></p>
+<ul class="simple">
+<li><p>Image variety.</p>
+<ul>
+<li><p>Must be representative of the environment.</p></li>
+<li><p>recommended: images from different regions, seasons, conditions, lighting, angles, different sources</p></li>
+</ul>
+</li>
+<li><p>Label consistency.</p>
+<ul>
+<li><p>All instances of all classes in all images must be labelled.</p></li>
+<li><p>Partial labelling will impact performance.</p></li>
+</ul>
+</li>
+<li><p>Label accuracy.</p>
+<ul>
+<li><p>Ensure tight and consistent bounding boxes.</p></li>
+<li><p>Labels must closely enclose each object.</p></li>
+<li><p>No space should exist between an object, and it’s bounding box.</p></li>
+<li><p>No objects should be missing a label.</p></li>
+</ul>
+</li>
+</ul>
+<section id="what-about-partially-visible-occluded-objects-like-urchins">
+<h2><span class="section-number">5.1. </span>What about Partially Visible (Occluded) Objects (like urchins)?<a class="headerlink" href="#what-about-partially-visible-occluded-objects-like-urchins" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Two main approaches. No right or wrong answer.</p></li>
+<li><p><strong>Experimentation</strong> and then <strong>consistency</strong> is key.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Estimate and draw full bounding boxes (for full object learning)</p>
+<ul class="simple">
+<li><p>pro: helpful for other downstream opencv tasks like segmenation and sizing techniques</p></li>
+<li><p>con: subjective and time consuming.</p></li>
+<li><p><strong>Suggestion:</strong> If full object learning is important, try instance segmentation instead</p></li>
+</ul>
+</li>
+<li><p>Or Draw Bounding box only around the visible portion (recommeneded)</p>
+<ul class="simple">
+<li><p>pro: grounded in what is actually visable</p></li>
+<li><p>cons: inconsistent box sizes. postential for more false postives/negatives</p></li>
+<li><p><strong>Important Dataset Note:</strong></p>
+<ul>
+<li><p>For this techinque, ensure a good balance of fully visible and partially occluded objects in final training dataset</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<section id="example-annotation-flow-for-occluded-objects">
+<h3><span class="section-number">5.1.1. </span>Example Annotation Flow for Occluded Objects:<a class="headerlink" href="#example-annotation-flow-for-occluded-objects" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Fully visible:</p>
+<ul>
+<li><p>Draw a tight bounding box around the entire object.</p></li>
+</ul>
+</li>
+<li><p>Partially Visable:</p>
+<ul>
+<li><p>Draw a box around just the exposed portion</p></li>
+</ul>
+</li>
+<li><p>Mostly covered:</p>
+<ul>
+<li><p>If confident annotate it.</p></li>
+<li><p>But if unsure, just skip it.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -473,6 +555,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-partially-visible-occluded-objects-like-urchins">5.1. What about Partially Visible (Occluded) Objects (like urchins)?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-annotation-flow-for-occluded-objects">5.1.1. Example Annotation Flow for Occluded Objects:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
