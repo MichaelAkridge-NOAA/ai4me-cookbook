@@ -1,3 +1,3 @@
 # Annotation Tools
 
-## Placeholder
+![](../01_module/slide_images/slide_34.png)
