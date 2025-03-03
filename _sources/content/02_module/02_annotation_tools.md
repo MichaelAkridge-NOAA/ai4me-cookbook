@@ -1,11 +1,12 @@
 # Annotation Tools
-- https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
+
+# The Tool Matters Less than the Pipeline
 
 # Tips and Tricks | When Picking a Tool: 
 - Look at Features
 - Ease of Use 
 - Ease of Installation
-- Ease of getting your annotations out in a common format
+- **Ease of getting your annotations out in a common format**
 - Look for Open source 
 - Look to see if the Tool is supported/still being developed
 - Look at the Users/Community
