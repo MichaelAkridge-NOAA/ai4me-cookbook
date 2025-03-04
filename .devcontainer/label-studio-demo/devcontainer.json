@@ -12,6 +12,5 @@
       "label": "Label Studio",
       "onAutoForward": "openBrowser"
     }
-  },
-  "postStartCommand": "chmod +x /workspace/post_start.sh && /workspace/post_start.sh"
+  }
 }
