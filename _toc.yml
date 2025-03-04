@@ -25,7 +25,8 @@ parts:
   - caption: Module 3 | AI/ML Development Exercises & Examples
     numbered: true
     chapters:
-    - file: content/03_module/00_EDA_example.md
+    - file: content/03_module/00_EDA.md
+        - file: content/03_module/00_EDA_example.ipynb
     - file: content/03_module/01_annotation_example.md
     - file: content/03_module/02_dataset_prep.md
     - file: content/03_module/03_model_training.md
@@ -38,9 +39,10 @@ parts:
     - file: content/04_module/02_ai4me_api_google_colab_demo.ipynb
     - file: content/04_module/03_model_maintenance.md
 
-  - caption: Q&A/Roundtable Discussions
+  - caption: Q&A/Roundtable Discussions & Resources
     chapters:
     - file: content/05_module/01_qa_roundtable.md
+    - file: content/01_resources.md
 
   - caption: Resources
     chapters:
