@@ -1,18 +1,17 @@
 {
-  "name": "Label Studio Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "docker-in-docker": "latest"
+  "name": "Label Studio | AI4ME Annotation Tool",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "label-studio",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "workspaceFolder": "/workspaces/ai4me-cookbook/cloud/label-studio-demo",
-  "postCreateCommand": "cd /workspaces/ai4me-cookbook/cloud/label-studio-demo && docker-compose up -d",
   "forwardPorts": [8080],
-  "mounts": [
-    "source=labelstudio-data,target=/workspace/data,type=volume"
-  ],
-  "customizations": {
-    "vscode": {
-      "extensions": ["ms-azuretools.vscode-docker"]
+  "portsAttributes": {
+    "8080": {
+      "label": "Label Studio",
+      "onAutoForward": "openBrowser"
     }
-  }
+  },
+  "postStartCommand": "chmod +x /workspace/post_start.sh && /workspace/post_start.sh"
 }

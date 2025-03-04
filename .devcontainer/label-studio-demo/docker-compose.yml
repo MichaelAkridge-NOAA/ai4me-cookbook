@@ -5,11 +5,8 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - labelstudio-data:/label-studio/data
-      - ./config:/label-studio/config
+      - ./data:/label-studio/data  # Store Label Studio data persistently
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
       - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/data
     restart: unless-stopped
-volumes:
-  labelstudio-data:
