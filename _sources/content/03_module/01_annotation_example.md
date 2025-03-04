@@ -8,3 +8,5 @@
 ![](docs/s2.png)
 ### Click link and it will open the Label Studio App
 ![](docs/s3.png)
+
+- Click signup and create a login
