@@ -61,7 +61,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="24. Model Evaluation" href="../04_module/04_model_eval.html" />
+    <link rel="next" title="26. Model Evaluation" href="../04_module/04_model_eval.html" />
     <link rel="prev" title="17. Model Training" href="03_model_training.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -211,16 +211,20 @@
 
 
 
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">24. Model Evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">25. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">26. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">27. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">26. Model Evaluation</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">30. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">29. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">30. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">31. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">34. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -483,13 +487,26 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-training-script">19. Simple Training Script</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-training-logs">20. View Training Logs</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-model-and-logs">21. Download Model and Logs</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-metrics">22. Print Metrics</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimize-export-model-to-different-formats">22.1. Optimize &amp; Export Model to Different Formats</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-training-results">21. <strong>Explanation of Training Results</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-loss-metrics">21.1. <strong>1. Training Loss Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-for">21.1.1. <strong>What to look for?</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-example">23. Advanced Example</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations">23.1. Important Note:Some hyperparameters are already on by default and must be turned off like optomizer &amp; some data augmentations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-metrics">21.2. <strong>2. Validation Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">21.2.1. <strong>What to look for?</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-from-epoch-progress">21.3. <strong>3. Observations from Epoch Progress</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#final-takeaways">22. <strong>Final Takeaways</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-model-and-logs">23. Download Model and Logs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-metrics">24. Print Metrics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimize-export-model-to-different-formats">24.1. Optimize &amp; Export Model to Different Formats</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-example">25. Advanced Example</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations">25.1. Important Note:Some hyperparameters are already on by default and must be turned off like optomizer &amp; some data augmentations</a></li>
 </ul>
 </li>
 </ul>
@@ -862,8 +879,60 @@ Weights saved to /content/fish_dataset/yolo11n_fish_weights_v1.pth
 </div>
 </div>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="explanation-of-training-results">
+<h1><span class="section-number">21. </span><strong>Explanation of Training Results</strong><a class="headerlink" href="#explanation-of-training-results" title="Link to this heading">#</a></h1>
+<section id="training-loss-metrics">
+<h2><span class="section-number">21.1. </span><strong>1. Training Loss Metrics</strong><a class="headerlink" href="#training-loss-metrics" title="Link to this heading">#</a></h2>
+<p>Each epoch reports three loss values:</p>
+<ul class="simple">
+<li><p><strong>Box Loss</strong>: Measures the error in bounding box predictions.</p></li>
+<li><p><strong>Cls Loss</strong>: Classification loss, measuring the accuracy of class assignments.</p></li>
+<li><p><strong>DFL Loss</strong>: Distribution Focal Loss, related to precise bounding box localization.</p></li>
+</ul>
+<section id="what-to-look-for">
+<h3><span class="section-number">21.1.1. </span><strong>What to look for?</strong><a class="headerlink" href="#what-to-look-for" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Loss values should generally <strong>decrease over epochs</strong>, indicating improved learning.</p></li>
+<li><p>Your results show a <strong>steady decrease in all three losses</strong>, which suggests successful model training.</p></li>
+</ul>
+</section>
+</section>
+<section id="validation-metrics">
+<h2><span class="section-number">21.2. </span><strong>2. Validation Metrics</strong><a class="headerlink" href="#validation-metrics" title="Link to this heading">#</a></h2>
+<p>These metrics evaluate model performance on a validation set after each epoch:</p>
+<ul class="simple">
+<li><p><strong>Precision (P)</strong>: How many predicted objects are correct? (Higher is better)</p></li>
+<li><p><strong>Recall (R)</strong>: How many actual objects were detected? (Higher is better)</p></li>
+<li><p><strong>mAP50</strong>: Mean Average Precision at IoU 0.5 (a key detection accuracy metric).</p></li>
+<li><p><strong>mAP50-95</strong>: Mean Average Precision across IoU thresholds (more strict than mAP50).</p></li>
+</ul>
+<section id="id1">
+<h3><span class="section-number">21.2.1. </span><strong>What to look for?</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Your <strong>mAP50</strong> increased from <strong>0.649 (Epoch 1) to 0.927 (Epoch 5)</strong>, showing strong improvement.</p></li>
+<li><p><strong>Precision and Recall improved</strong>, meaning the model is both detecting more objects and making fewer false positives.</p></li>
+<li><p><strong>mAP50-95 also increased (0.331 → 0.6)</strong>, showing improved performance under stricter evaluation.</p></li>
+</ul>
+</section>
+</section>
+<section id="observations-from-epoch-progress">
+<h2><span class="section-number">21.3. </span><strong>3. Observations from Epoch Progress</strong><a class="headerlink" href="#observations-from-epoch-progress" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Epoch 1</strong>: Low recall (0.267), meaning many objects were missed.</p></li>
+<li><p><strong>Epoch 2</strong>: Precision dropped, recall improved; suggests the model is learning but still misclassifying.</p></li>
+<li><p><strong>Epoch 3-4</strong>: <strong>Significant improvement in recall and mAP</strong>, meaning the model is becoming more accurate.</p></li>
+<li><p><strong>Epoch 5</strong>: Best performance with <strong>high precision (0.891), recall (0.844), and mAP50 (0.927)</strong>.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="final-takeaways">
+<h1><span class="section-number">22. </span><strong>Final Takeaways</strong><a class="headerlink" href="#final-takeaways" title="Link to this heading">#</a></h1>
+<p><strong>The model is learning well</strong>: Losses decrease, and detection accuracy improves significantly.<br />
+<strong>Epoch 5 is the best-performing epoch</strong>: High precision, recall, and mAP.<br />
+<strong>Potential next steps</strong>: If training longer, monitor overfitting (gap between train &amp; val metrics). Consider fine-tuning if the performance levels off.</p>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="download-model-and-logs">
-<h1><span class="section-number">21. </span>Download Model and Logs<a class="headerlink" href="#download-model-and-logs" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">23. </span>Download Model and Logs<a class="headerlink" href="#download-model-and-logs" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
@@ -969,7 +1038,7 @@ Weights saved to /content/fish_dataset/yolo11n_fish_weights_v1.pth
 </div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="print-metrics">
-<h1><span class="section-number">22. </span>Print Metrics<a class="headerlink" href="#print-metrics" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">24. </span>Print Metrics<a class="headerlink" href="#print-metrics" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Evaluate model performance</span>
@@ -1347,7 +1416,7 @@ task: &#39;detect&#39;
 </div>
 </div>
 <section id="optimize-export-model-to-different-formats">
-<h2><span class="section-number">22.1. </span>Optimize &amp; Export Model to Different Formats<a class="headerlink" href="#optimize-export-model-to-different-formats" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">24.1. </span>Optimize &amp; Export Model to Different Formats<a class="headerlink" href="#optimize-export-model-to-different-formats" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
@@ -1388,9 +1457,9 @@ task: &#39;detect&#39;
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="advanced-example">
-<h1><span class="section-number">23. </span>Advanced Example<a class="headerlink" href="#advanced-example" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">25. </span>Advanced Example<a class="headerlink" href="#advanced-example" title="Link to this heading">#</a></h1>
 <section id="important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations">
-<h2><span class="section-number">23.1. </span>Important Note:Some hyperparameters are already on by default and must be turned off like optomizer &amp; some data augmentations<a class="headerlink" href="#important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">25.1. </span>Important Note:Some hyperparameters are already on by default and must be turned off like optomizer &amp; some data augmentations<a class="headerlink" href="#important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
@@ -1492,7 +1561,7 @@ task: &#39;detect&#39;
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">24. </span>Model Evaluation</p>
+        <p class="prev-next-title"><span class="section-number">26. </span>Model Evaluation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1518,13 +1587,26 @@ task: &#39;detect&#39;
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-training-script">19. Simple Training Script</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-training-logs">20. View Training Logs</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-model-and-logs">21. Download Model and Logs</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-metrics">22. Print Metrics</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimize-export-model-to-different-formats">22.1. Optimize &amp; Export Model to Different Formats</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-training-results">21. <strong>Explanation of Training Results</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-loss-metrics">21.1. <strong>1. Training Loss Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-for">21.1.1. <strong>What to look for?</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-example">23. Advanced Example</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations">23.1. Important Note:Some hyperparameters are already on by default and must be turned off like optomizer &amp; some data augmentations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-metrics">21.2. <strong>2. Validation Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">21.2.1. <strong>What to look for?</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-from-epoch-progress">21.3. <strong>3. Observations from Epoch Progress</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#final-takeaways">22. <strong>Final Takeaways</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-model-and-logs">23. Download Model and Logs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-metrics">24. Print Metrics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimize-export-model-to-different-formats">24.1. Optimize &amp; Export Model to Different Formats</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-example">25. Advanced Example</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-note-some-hyperparameters-are-already-on-by-default-and-must-be-turned-off-like-optomizer-some-data-augmentations">25.1. Important Note:Some hyperparameters are already on by default and must be turned off like optomizer &amp; some data augmentations</a></li>
 </ul>
 </li>
 </ul>

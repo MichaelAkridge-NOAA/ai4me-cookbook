@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>24. Model Evaluation &#8212; AI4ME Cookbook</title>
+    <title>26. Model Evaluation &#8212; AI4ME Cookbook</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="25. Model Deployment" href="00_model_deployment.html" />
+    <link rel="next" title="29. Model Deployment" href="00_model_deployment.html" />
     <link rel="prev" title="18. 🛠️ Exercise - Model Training" href="../03_module/03_model_training_example.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -211,16 +211,20 @@
 
 
 
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">24. Model Evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_model_deployment.html">25. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_ai4me_api.html">26. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_ai4me_api_google_colab_demo.html">27. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">26. Model Evaluation</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="03_model_maintenance.html">30. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_model_deployment.html">29. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_ai4me_api.html">30. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_ai4me_api_google_colab_demo.html">31. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_model_maintenance.html">34. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -428,14 +432,33 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-evaluating-models-remember">24.1. <strong>When Evaluating Models, Remember:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lessons">24.2. <strong>Key Lessons:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance-read-more">24.3. Model-Maintenance | Read More:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">24.3.1. Model-Maintenance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">24.3.2. Data Drift Machine Learning</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">26. Model Evaluation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-evaluating-models-remember">26.1. <strong>When Evaluating Models, Remember:</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lessons">26.2. <strong>Key Lessons:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-training-results">27. <strong>Explanation of Training Results</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-loss-metrics">27.1. <strong>1. Training Loss Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-for">27.1.1. <strong>What to look for?</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-metrics">27.2. <strong>2. Validation Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">27.2.1. <strong>What to look for?</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-from-epoch-progress">27.3. <strong>3. Observations from Epoch Progress</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#final-takeaways">28. <strong>Final Takeaways</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance-read-more">28.1. Model-Maintenance | Read More:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">28.1.1. Model-Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">28.1.2. Data Drift Machine Learning</a></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -447,16 +470,16 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="model-evaluation">
-<h1><span class="section-number">24. </span>Model Evaluation<a class="headerlink" href="#model-evaluation" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">26. </span>Model Evaluation<a class="headerlink" href="#model-evaluation" title="Link to this heading">#</a></h1>
 <section id="when-evaluating-models-remember">
-<h2><span class="section-number">24.1. </span><strong>When Evaluating Models, Remember:</strong><a class="headerlink" href="#when-evaluating-models-remember" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">26.1. </span><strong>When Evaluating Models, Remember:</strong><a class="headerlink" href="#when-evaluating-models-remember" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><p><strong>“All models are wrong, some are useful.”</strong><br />
 — <em>George Box</em> <a class="reference external" href="https://en.wikipedia.org/wiki/George_E._P._Box">(bio)</a></p>
 </div></blockquote>
 </section>
 <section id="key-lessons">
-<h2><span class="section-number">24.2. </span><strong>Key Lessons:</strong><a class="headerlink" href="#key-lessons" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">26.2. </span><strong>Key Lessons:</strong><a class="headerlink" href="#key-lessons" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Don’t sweat initial model performance</strong>. No model is perfect and early models are rarely even close. But they can still provide value and <strong>improve with iteration</strong>.</p></li>
 <li><p><strong>Confidence scores</strong> indicate how certain a model is about its predictions. Lower confidence may require further training and tuning.</p></li>
@@ -470,13 +493,65 @@ document.write(`
 <p><img alt="" src="../../_images/slide_62.png" /></p>
 <p><img alt="" src="../../_images/slide_61.png" /></p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="explanation-of-training-results">
+<h1><span class="section-number">27. </span><strong>Explanation of Training Results</strong><a class="headerlink" href="#explanation-of-training-results" title="Link to this heading">#</a></h1>
+<section id="training-loss-metrics">
+<h2><span class="section-number">27.1. </span><strong>1. Training Loss Metrics</strong><a class="headerlink" href="#training-loss-metrics" title="Link to this heading">#</a></h2>
+<p>Each epoch reports three loss values:</p>
+<ul class="simple">
+<li><p><strong>Box Loss</strong>: Measures the error in bounding box predictions.</p></li>
+<li><p><strong>Cls Loss</strong>: Classification loss, measuring the accuracy of class assignments.</p></li>
+<li><p><strong>DFL Loss</strong>: Distribution Focal Loss, related to precise bounding box localization.</p></li>
+</ul>
+<section id="what-to-look-for">
+<h3><span class="section-number">27.1.1. </span><strong>What to look for?</strong><a class="headerlink" href="#what-to-look-for" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Loss values should generally <strong>decrease over epochs</strong>, indicating improved learning.</p></li>
+<li><p>Your results show a <strong>steady decrease in all three losses</strong>, which suggests successful model training.</p></li>
+</ul>
+</section>
+</section>
+<section id="validation-metrics">
+<h2><span class="section-number">27.2. </span><strong>2. Validation Metrics</strong><a class="headerlink" href="#validation-metrics" title="Link to this heading">#</a></h2>
+<p>These metrics evaluate model performance on a validation set after each epoch:</p>
+<ul class="simple">
+<li><p><strong>Precision (P)</strong>: How many predicted objects are correct? (Higher is better)</p></li>
+<li><p><strong>Recall (R)</strong>: How many actual objects were detected? (Higher is better)</p></li>
+<li><p><strong>mAP50</strong>: Mean Average Precision at IoU 0.5 (a key detection accuracy metric).</p></li>
+<li><p><strong>mAP50-95</strong>: Mean Average Precision across IoU thresholds (more strict than mAP50).</p></li>
+</ul>
+<section id="id1">
+<h3><span class="section-number">27.2.1. </span><strong>What to look for?</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Your <strong>mAP50</strong> increased from <strong>0.649 (Epoch 1) to 0.927 (Epoch 5)</strong>, showing strong improvement.</p></li>
+<li><p><strong>Precision and Recall improved</strong>, meaning the model is both detecting more objects and making fewer false positives.</p></li>
+<li><p><strong>mAP50-95 also increased (0.331 → 0.6)</strong>, showing improved performance under stricter evaluation.</p></li>
+</ul>
+</section>
+</section>
+<section id="observations-from-epoch-progress">
+<h2><span class="section-number">27.3. </span><strong>3. Observations from Epoch Progress</strong><a class="headerlink" href="#observations-from-epoch-progress" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Epoch 1</strong>: Low recall (0.267), meaning many objects were missed.</p></li>
+<li><p><strong>Epoch 2</strong>: Precision dropped, recall improved; suggests the model is learning but still misclassifying.</p></li>
+<li><p><strong>Epoch 3-4</strong>: <strong>Significant improvement in recall and mAP</strong>, meaning the model is becoming more accurate.</p></li>
+<li><p><strong>Epoch 5</strong>: Best performance with <strong>high precision (0.891), recall (0.844), and mAP50 (0.927)</strong>.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="final-takeaways">
+<h1><span class="section-number">28. </span><strong>Final Takeaways</strong><a class="headerlink" href="#final-takeaways" title="Link to this heading">#</a></h1>
+<p><strong>The model is learning well</strong>: Losses decrease, and detection accuracy improves significantly.<br />
+<strong>Epoch 5 is the best-performing epoch</strong>: High precision, recall, and mAP.<br />
+<strong>Potential next steps</strong>: If training longer, monitor overfitting (gap between train &amp; val metrics). Consider fine-tuning if the performance levels off.</p>
 <section id="model-maintenance-read-more">
-<h2><span class="section-number">24.3. </span>Model-Maintenance | Read More:<a class="headerlink" href="#model-maintenance-read-more" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">28.1. </span>Model-Maintenance | Read More:<a class="headerlink" href="#model-maintenance-read-more" title="Link to this heading">#</a></h2>
 <section id="model-maintenance">
-<h3><span class="section-number">24.3.1. </span><a class="reference external" href="https://www.ultralytics.com/blog/optimize-computer-vision-solutions-with-smart-model-maintenance">Model-Maintenance</a><a class="headerlink" href="#model-maintenance" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">28.1.1. </span><a class="reference external" href="https://www.ultralytics.com/blog/optimize-computer-vision-solutions-with-smart-model-maintenance">Model-Maintenance</a><a class="headerlink" href="#model-maintenance" title="Link to this heading">#</a></h3>
 </section>
 <section id="data-drift-machine-learning">
-<h3><span class="section-number">24.3.2. </span><a class="reference external" href="https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/">Data Drift Machine Learning</a><a class="headerlink" href="#data-drift-machine-learning" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">28.1.2. </span><a class="reference external" href="https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/">Data Drift Machine Learning</a><a class="headerlink" href="#data-drift-machine-learning" title="Link to this heading">#</a></h3>
 </section>
 </section>
 </section>
@@ -525,7 +600,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">25. </span>Model Deployment</p>
+        <p class="prev-next-title"><span class="section-number">29. </span>Model Deployment</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -545,14 +620,33 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-evaluating-models-remember">24.1. <strong>When Evaluating Models, Remember:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lessons">24.2. <strong>Key Lessons:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance-read-more">24.3. Model-Maintenance | Read More:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">24.3.1. Model-Maintenance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">24.3.2. Data Drift Machine Learning</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">26. Model Evaluation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-evaluating-models-remember">26.1. <strong>When Evaluating Models, Remember:</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-lessons">26.2. <strong>Key Lessons:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-training-results">27. <strong>Explanation of Training Results</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-loss-metrics">27.1. <strong>1. Training Loss Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-for">27.1.1. <strong>What to look for?</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-metrics">27.2. <strong>2. Validation Metrics</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">27.2.1. <strong>What to look for?</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-from-epoch-progress">27.3. <strong>3. Observations from Epoch Progress</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#final-takeaways">28. <strong>Final Takeaways</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance-read-more">28.1. Model-Maintenance | Read More:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">28.1.1. Model-Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">28.1.2. Data Drift Machine Learning</a></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
