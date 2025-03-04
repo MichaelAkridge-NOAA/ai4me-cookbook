@@ -1,6 +1,7 @@
 # AI/ML Model Project Lifecycle
 
 ### Similar to Common Data Science Workflow
+
 ```{mermaid}
 graph TD;
     A[Ask an Interesting Question] --> B[Get the Data];
