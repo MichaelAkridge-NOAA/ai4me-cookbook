@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; AI4ME Cookbook</title>
+    <title>16. Example 02 &#8212; AI4ME Cookbook</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="16. Model Training" href="03_model_training.html" />
+    <link rel="next" title="17. Model Training" href="03_model_training.html" />
     <link rel="prev" title="15. Dataset Prep" href="02_dataset_prep.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -197,14 +197,15 @@
 <li class="toctree-l1"><a class="reference internal" href="01_annotation_example.html">10. 🛠️ Exercise - Annotation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Model Development &amp; Training</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_EDA.html">11. Exploratory Data Analysis (EDA)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example.html">12. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 01</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example_2.html">13. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="02_dataset_prep.html">15. Dataset Prep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_model_training.html">16. Model Training</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_model_training_example.html">17. 🛠️ Exercise - Model Training</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">16. Example 02</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_model_training.html">17. Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_model_training_example.html">18. 🛠️ Exercise - Model Training</a></li>
 
 
 
@@ -213,13 +214,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">23. Model Evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">24. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">25. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">26. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">24. Model Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">25. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">26. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">27. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">29. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">30. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -453,9 +454,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -466,19 +465,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Example 02</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -530,6 +521,65 @@ document.write(`
 </div>
 </div>
 </div>
+<section id="example-02">
+<h1><span class="section-number">16. </span>Example 02<a class="headerlink" href="#example-02" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="c1"># Define dataset paths</span>
+<span class="n">source_images</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\dataset_example\images&quot;</span>  <span class="c1"># Folder containing all images</span>
+<span class="n">source_labels</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\dataset_example\labels&quot;</span>  <span class="c1"># Folder containing all labels</span>
+<span class="n">output_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\dataset_example\split&quot;</span>  <span class="c1"># Folder where images and labels will be organized</span>
+
+<span class="c1"># Split ratios</span>
+<span class="n">split_ratio</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;train&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">}</span>
+
+<span class="c1"># Ensure output folders exist</span>
+<span class="k">for</span> <span class="n">split</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">]:</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="s2">&quot;images&quot;</span><span class="p">,</span> <span class="n">split</span><span class="p">),</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="s2">&quot;labels&quot;</span><span class="p">,</span> <span class="n">split</span><span class="p">),</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Get all image filenames (without extensions)</span>
+<span class="n">image_filenames</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">source_images</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">))]</span>
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">image_filenames</span><span class="p">)</span>
+
+<span class="c1"># Compute split sizes</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">image_filenames</span><span class="p">)</span>
+<span class="n">train_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">total</span> <span class="o">*</span> <span class="n">split_ratio</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">])</span>
+<span class="n">val_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">total</span> <span class="o">*</span> <span class="n">split_ratio</span><span class="p">[</span><span class="s2">&quot;val&quot;</span><span class="p">])</span>
+
+<span class="c1"># Assign each image to a split</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">img_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">image_filenames</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">train_count</span><span class="p">:</span>
+        <span class="n">split</span> <span class="o">=</span> <span class="s2">&quot;train&quot;</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">train_count</span> <span class="o">+</span> <span class="n">val_count</span><span class="p">:</span>
+        <span class="n">split</span> <span class="o">=</span> <span class="s2">&quot;val&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">split</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span>
+
+    <span class="c1"># Define source and destination paths</span>
+    <span class="n">img_src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_images</span><span class="p">,</span> <span class="n">img_name</span><span class="p">)</span>
+    <span class="n">lbl_src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_labels</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">img_name</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
+
+    <span class="n">img_dest</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="s2">&quot;images&quot;</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">img_name</span><span class="p">)</span>
+    <span class="n">lbl_dest</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="s2">&quot;labels&quot;</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">img_name</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Copy image</span>
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">img_src</span><span class="p">,</span> <span class="n">img_dest</span><span class="p">)</span>
+
+    <span class="c1"># Copy label if it exists</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">lbl_src</span><span class="p">):</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">lbl_src</span><span class="p">,</span> <span class="n">lbl_dest</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset successfully split into train, val, and test sets.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -575,7 +625,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">16. </span>Model Training</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>Model Training</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -585,21 +635,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
