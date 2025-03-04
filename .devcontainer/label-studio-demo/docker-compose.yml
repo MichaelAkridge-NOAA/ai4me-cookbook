@@ -1,12 +1,13 @@
 services:
   label-studio:
-    image: heartexlabs/label-studio:latest
+    build:
+      context: .  # Build from the Dockerfile
     container_name: label-studio
-    ports:
-      - "8080:8080"
     volumes:
-      - ./data:/label-studio/data  # Store Label Studio data persistently
+      - .:/app  # Syncs project files with container
+    ports:
+      - "8080:8080"  # Expose Label Studio on port 8080
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
-      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/data
+      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/app/data
     restart: unless-stopped
