@@ -29,6 +29,7 @@ parts:
     - file: content/03_module/00_EDA_example.ipynb
     - file: content/03_module/00_EDA_example_2.ipynb
     - file: content/03_module/02_dataset_prep.md
+    - file: content/03_module/02_dataset_prep_example.ipynb
     - file: content/03_module/03_model_training.md
     - file: content/03_module/03_model_training_example.ipynb
 
