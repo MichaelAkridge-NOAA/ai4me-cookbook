@@ -5,7 +5,7 @@
 > — *George Box* [(bio)](https://en.wikipedia.org/wiki/George_E._P._Box)  
 
 ### **Key Lessons:**  
-- **Don't sweat initial model performance**. No model is perfect and early models are rarely even close. But they can still provide value and **improve with iteration**.   
+- **Don't sweat initial model performance**. No model is perfect and early models are rarely even close. But they can still provide value and **improve with iteration**. Focus on good data, correct labels, and an iterative improvement process. 
 - **Confidence scores** indicate how certain a model is about its predictions. Lower confidence may require further training and tuning.  
 - Even imperfect models can assist in **data gathering, hypothesis testing, and guiding further research**.  
 - **Human-in-the-loop** approaches can improve model performance by refining labels and reducing errors over time.  

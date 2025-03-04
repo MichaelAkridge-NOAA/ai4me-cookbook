@@ -9,7 +9,7 @@
 - Understand class distribution (balance of object categories)
 - Check for missing or corrupt data (empty annotations, unreadable images)
 
-## Build in QA/QC in the pipeline 
+## Tip: Try to build QA/QC in the pipeline 
 > Quality assurance and Quality control (QA/QC)
 - Review samples batches of annotated or predicted data
 - Use automated tools to spot common errors
