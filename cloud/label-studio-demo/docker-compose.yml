@@ -1,15 +1,15 @@
 services:
   label-studio:
-    image: heartexlabs/label-studio:latest
+    build: .  # This tells Docker Compose to build the image using the Dockerfile
     container_name: label-studio
     ports:
       - "8080:8080"
     volumes:
-      - ./data/data:/label-studio/data
-      - ./data/media:/label-studio/data/media  # Ensure media folder is mapped
-      - ./data/export:/label-studio/data/export  # Ensure export folder is mapped
-      - ./data/uploads:/label-studio/data/uploads  # Ensure uploads folder is mapped
-      - ./data/config:/label-studio/config  # Store configs persistently
+      - ./data:/label-studio/data
+      - ./data/media:/label-studio/data/media
+      - ./data/export:/label-studio/data/export
+      - ./data/uploads:/label-studio/data/uploads
+      - ./config:/label-studio/config
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
       - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/data
