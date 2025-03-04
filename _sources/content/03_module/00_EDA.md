@@ -1,4 +1,4 @@
-# Exercise - Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 - helps you understand dataset
 - detect potential issues 
 - and refine preprocessing steps
