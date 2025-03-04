@@ -13,5 +13,21 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postStartCommand": "chmod +x /app/post_start.sh && /app/post_start.sh"
-}
+  "postStartCommand": "chmod +x /app/post_start.sh && /app/post_start.sh",
+  "mounts": [
+    {
+      "source": "${localWorkspaceFolder}/data",
+      "target": "/app/data",
+      "type": "bind"
+    },
+    {
+      "source": "${localWorkspaceFolder}/config",
+      "target": "/app/config",
+      "type": "bind"
+    },
+    {
+      "source": "${localWorkspaceFolder}/storage",
+      "target": "/app/storage",
+      "type": "bind"
+    }
+  ]
