@@ -31,7 +31,7 @@ Workshop Goals:
 ### Next Steps
 ---
 | Label Studio |  
-[![Open in GitHub Codespaces](./docs/badge_python.png)](https://codespaces.new/MichaelAkridge-NOAA/ai4me-cookbook?devcontainer_path=.devcontainer%2Flabel-studio-demo%2Fdevcontainer.json)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/ai4me-cookbook?devcontainer_path=.devcontainer%2Flabel-studio-demo%2Fdevcontainer.json)
 
 ----------
 #### Disclaimer
