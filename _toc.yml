@@ -12,12 +12,12 @@ parts:
     - file: content/01_module/01_AI_ML Lunch & Learn_Object Detection.md
       format: revealjs
     - file: content/01_module/02_ml_model_lifecycle.md
-    - file: content/01_module/03_role_of_annotations_in_model_performance.md
     - file: content/01_module/04_where_to_find_data.md
   
   - caption: Module 2 | AI/ML Annotation, and Tools
     numbered: true
     chapters:
+    - file: content/01_module/03_role_of_annotations_in_model_performance.md
     - file: content/02_module/01_best_practices_for_annotation.md
     - file: content/02_module/02_annotation_tools.md
     - file: content/03_module/01_annotation_example.md
