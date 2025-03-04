@@ -16,19 +16,19 @@ Workshop Goals:
 - Role of annotations in model performance (importance of quality & consistency)
 - Where to find data, resouces, and so on?
 
-#### 2. Models, Data & Annotation Strategies & Tools
+#### 2. Annotation Strategies & Tools
 - Best practices for efficient annotation workflow
 - Review tools(CVAT, Label Studio, Viame) and discuss pros/cons
 - Discuss integrating QA/QC checks and techniques
 
-#### 3. Hands On | AI/ML Development Exercises & Examples
+#### 3. Hands On | AI/ML Development Exercises & Training
 - Exploratory data analysis(EDA)
 - Annotation 
 - Dataset Prep
 - Model Development & Training
 - Model Deployment
 
-### 4. Model Deployment 
+### 4. Model Eval, Deployment & Management
 
 ### 5. Q&A / Roundtable
 

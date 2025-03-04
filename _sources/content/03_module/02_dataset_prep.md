@@ -32,6 +32,15 @@ graph TD;
 ```
 ![](../01_module/slide_images/slide_38.png)
 
+
+
+![](../01_module/slide_images/slide_29.png)
+
+---
+
+![](../01_module/slide_images/slide_30.png)
+
+
 ## Other Helpful Dataset Prep Tasks
 - Develop a Benchmark Test Dataset
 - Consider Data Augmentation

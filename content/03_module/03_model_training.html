@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>16. 🛠️ Exercise - Model Training &#8212; AI4ME Cookbook</title>
+    <title>16. Model Training &#8212; AI4ME Cookbook</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="17. Model Evaluation" href="../04_module/04_model_eval.html" />
+    <link rel="next" title="17. 🛠️ Exercise - Model Training" href="03_model_training_example.html" />
     <link rel="prev" title="15. Dataset Prep" href="02_dataset_prep.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -203,17 +203,23 @@
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example_2.html">13. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="02_dataset_prep.html">15. Dataset Prep</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">16. 🛠️ Exercise - Model Training</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">16. Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_model_training_example.html">17. 🛠️ Exercise - Model Training</a></li>
+
+
+
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">17. Model Evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">18. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">19. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">20. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">23. Model Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">24. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">25. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">26. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">23. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">29. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -411,7 +417,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🛠️ Exercise - Model Training</h1>
+    <h1>Model Training</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -421,7 +427,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">16.1. Read More:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-pick-a-task">16.1. Step 1 - Pick a Task</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-select-a-baseline-model">16.2. Step 2 - Select a Baseline Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">16.2.1. Read More:</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -433,13 +443,31 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-model-training">
-<h1><span class="section-number">16. </span>🛠️ Exercise - Model Training<a class="headerlink" href="#exercise-model-training" title="Link to this heading">#</a></h1>
-<p><a class="reference external" href="https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results/#dataset">Tips for Best Training Results</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="model-training">
+<h1><span class="section-number">16. </span>Model Training<a class="headerlink" href="#model-training" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>dataset prep (data split)</p></li>
+<li><p>model train</p></li>
+<li><p>model eval</p></li>
+</ul>
+<section id="step-1-pick-a-task">
+<h2><span class="section-number">16.1. </span>Step 1 - Pick a Task<a class="headerlink" href="#step-1-pick-a-task" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../../_images/slide_47.png" /></p>
+</section>
+<section id="step-2-select-a-baseline-model">
+<h2><span class="section-number">16.2. </span>Step 2 - Select a Baseline Model<a class="headerlink" href="#step-2-select-a-baseline-model" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../../_images/slide_48.png" /></p>
+<p><img alt="" src="../../_images/slide_50.png" /></p>
+<p><img alt="" src="../../_images/slide_51.png" /></p>
+<p><img alt="" src="../../_images/slide_52.png" /></p>
+<p><img alt="" src="../../_images/slide_53.png" /></p>
+<p><img alt="" src="../../_images/slide_54.png" /></p>
 <hr class="docutils" />
 <section id="read-more">
-<h2><span class="section-number">16.1. </span>Read More:<a class="headerlink" href="#read-more" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://karpathy.github.io/2019/04/25/recipe/">Recipe for Training Neural Networks</a></p>
+<h3><span class="section-number">16.2.1. </span>Read More:<a class="headerlink" href="#read-more" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results/#dataset">Tips for Best Training Results</a>
+<a class="reference external" href="https://karpathy.github.io/2019/04/25/recipe/">Recipe for Training Neural Networks</a></p>
+</section>
 </section>
 </section>
 
@@ -483,11 +511,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../04_module/04_model_eval.html"
+       href="03_model_training_example.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">17. </span>Model Evaluation</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>🛠️ Exercise - Model Training</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -507,7 +535,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">16.1. Read More:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-pick-a-task">16.1. Step 1 - Pick a Task</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-select-a-baseline-model">16.2. Step 2 - Select a Baseline Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">16.2.1. Read More:</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

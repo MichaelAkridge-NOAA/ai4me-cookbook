@@ -204,17 +204,23 @@
 <li class="toctree-l1"><a class="reference internal" href="03_module/00_EDA_example_2.html">13. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="03_module/02_dataset_prep.html">15. Dataset Prep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_module/03_model_training.html">16. 🛠️ Exercise - Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_module/03_model_training.html">16. Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_module/03_model_training_example.html">17. 🛠️ Exercise - Model Training</a></li>
+
+
+
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="04_module/04_model_eval.html">17. Model Evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_module/00_model_deployment.html">18. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_module/01_ai4me_api.html">19. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_module/02_ai4me_api_google_colab_demo.html">20. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_module/04_model_eval.html">23. Model Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_module/00_model_deployment.html">24. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_module/01_ai4me_api.html">25. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_module/02_ai4me_api_google_colab_demo.html">26. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="04_module/03_model_maintenance.html">23. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_module/03_model_maintenance.html">29. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -428,9 +434,9 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#draft-agenda">Draft Agenda</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-basics-overview">1. AI/ML Basics / Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#models-data-annotation-strategies-tools">2. Models, Data &amp; Annotation Strategies &amp; Tools</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hands-on-ai-ml-development-exercises-examples">3. Hands On | AI/ML Development Exercises &amp; Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-deployment">4. Model Deployment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation-strategies-tools">2. Annotation Strategies &amp; Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hands-on-ai-ml-development-exercises-training">3. Hands On | AI/ML Development Exercises &amp; Training</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-eval-deployment-management">4. Model Eval, Deployment &amp; Management</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q-a-roundtable">5. Q&amp;A / Roundtable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
@@ -473,16 +479,16 @@ document.write(`
 <li><p>Where to find data, resouces, and so on?</p></li>
 </ul>
 </section>
-<section id="models-data-annotation-strategies-tools">
-<h3>2. Models, Data &amp; Annotation Strategies &amp; Tools<a class="headerlink" href="#models-data-annotation-strategies-tools" title="Link to this heading">#</a></h3>
+<section id="annotation-strategies-tools">
+<h3>2. Annotation Strategies &amp; Tools<a class="headerlink" href="#annotation-strategies-tools" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Best practices for efficient annotation workflow</p></li>
 <li><p>Review tools(CVAT, Label Studio, Viame) and discuss pros/cons</p></li>
 <li><p>Discuss integrating QA/QC checks and techniques</p></li>
 </ul>
 </section>
-<section id="hands-on-ai-ml-development-exercises-examples">
-<h3>3. Hands On | AI/ML Development Exercises &amp; Examples<a class="headerlink" href="#hands-on-ai-ml-development-exercises-examples" title="Link to this heading">#</a></h3>
+<section id="hands-on-ai-ml-development-exercises-training">
+<h3>3. Hands On | AI/ML Development Exercises &amp; Training<a class="headerlink" href="#hands-on-ai-ml-development-exercises-training" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Exploratory data analysis(EDA)</p></li>
 <li><p>Annotation</p></li>
@@ -491,8 +497,8 @@ document.write(`
 <li><p>Model Deployment</p></li>
 </ul>
 </section>
-<section id="model-deployment">
-<h3>4. Model Deployment<a class="headerlink" href="#model-deployment" title="Link to this heading">#</a></h3>
+<section id="model-eval-deployment-management">
+<h3>4. Model Eval, Deployment &amp; Management<a class="headerlink" href="#model-eval-deployment-management" title="Link to this heading">#</a></h3>
 </section>
 <section id="q-a-roundtable">
 <h3>5. Q&amp;A / Roundtable<a class="headerlink" href="#q-a-roundtable" title="Link to this heading">#</a></h3>
@@ -584,9 +590,9 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#draft-agenda">Draft Agenda</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-ml-basics-overview">1. AI/ML Basics / Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#models-data-annotation-strategies-tools">2. Models, Data &amp; Annotation Strategies &amp; Tools</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hands-on-ai-ml-development-exercises-examples">3. Hands On | AI/ML Development Exercises &amp; Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-deployment">4. Model Deployment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation-strategies-tools">2. Annotation Strategies &amp; Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hands-on-ai-ml-development-exercises-training">3. Hands On | AI/ML Development Exercises &amp; Training</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-eval-deployment-management">4. Model Eval, Deployment &amp; Management</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q-a-roundtable">5. Q&amp;A / Roundtable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
