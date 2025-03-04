@@ -4,11 +4,12 @@ services:
       context: .  # Build from the Dockerfile
     container_name: label-studio
     volumes:
-      - .:/app  # Syncs project files with container
+      - ./data:/app/data  # Store project data in a mapped folder
+      - ./config:/app/config  # Store Label Studio config separately
+      - ./storage:/app/storage  # Optional: Map storage for file uploads
     ports:
       - "8080:8080"  # Expose Label Studio on port 8080
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
       - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/app/data
-      - LABEL_STUDIO_DISABLE_AUTH=true
     restart: unless-stopped
