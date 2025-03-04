@@ -35,7 +35,7 @@ parts:
   - caption: Module 4 | Deployment & Model Management
     numbered: true
     chapters:
-    - file: content/04_module/01_model_deployment.md
+    - file: content/04_module/00_model_deployment.md
     - file: content/04_module/01_ai4me_api.md
     - file: content/04_module/02_ai4me_api_google_colab_demo.ipynb
     - file: content/04_module/03_model_maintenance.md

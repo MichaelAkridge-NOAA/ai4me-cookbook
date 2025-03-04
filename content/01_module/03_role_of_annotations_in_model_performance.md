@@ -1,4 +1,5 @@
 # Role of Annotations in Model Performance
+Data annotation is the process of labeling data to make it usable for training machine learning models.
 
 ### Annotations are the **foundation** of model performance. 
 - They provide the **ground truth** that a model learns from.
