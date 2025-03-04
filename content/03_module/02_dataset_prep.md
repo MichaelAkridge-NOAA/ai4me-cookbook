@@ -1,4 +1,4 @@
-# Exercise - Dataset Prep
+# Dataset Prep
 
 ## Dataset Basics:
 - Images per class. | ≥ 1500 images per class recommended

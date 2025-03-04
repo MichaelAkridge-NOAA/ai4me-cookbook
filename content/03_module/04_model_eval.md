@@ -1,4 +1,4 @@
-# Exercise - Model Evaluation
+# Model Evaluation
 
 ### **When Evaluating Models, Remember:**  
 > **"All models are wrong, some are useful."**  
