@@ -15,12 +15,11 @@ parts:
     - file: content/01_module/03_role_of_annotations_in_model_performance.md
     - file: content/01_module/04_where_to_find_data.md
   
-  - caption: Module 2 | AI/ML Data Preparation, Annotation, and Techniques
+  - caption: Module 2 | AI/ML Annotation, and Tools
     numbered: true
     chapters:
     - file: content/02_module/01_best_practices_for_annotation.md
     - file: content/02_module/02_annotation_tools.md
-    - file: content/02_module/03_data_techniques.md
 
   - caption: Module 3 | AI/ML Development Exercises & Examples
     numbered: true
