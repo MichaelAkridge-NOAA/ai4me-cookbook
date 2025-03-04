@@ -7,6 +7,7 @@
 
 ## Courses
 - https://www.coursera.org/learn/ai-for-everyone
+- https://www.kaggle.com/learn/intro-to-machine-learning
 - https://www.linkedin.com/learning/topics/artificial-intelligence
 - https://course.elementsofai.com/
 - https://developers.google.com/machine-learning/foundational-courses

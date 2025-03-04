@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Resources &#8212; AI4ME Cookbook</title>
+    <title>Annotation Tool Demo - Google Cloud Shell Guide &#8212; AI4ME Cookbook</title>
   
   
   
@@ -18,50 +18,49 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/01_resources';</script>
-    <link rel="icon" href="../_static/favicon.ico"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Q&amp;A | Roundtable Discussion" href="05_module/01_qa_roundtable.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cloud/label-studio-demo/TUTORIAL';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -93,7 +92,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../search.html"
+      action="../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -124,6 +123,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -142,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="00_welcome.html">
+<a class="navbar-brand logo" href="../../content/00_welcome.html">
   
   
   
@@ -153,8 +154,8 @@
       
     
     
-    <img src="../_static/logo3.png" class="logo__image only-light" alt="AI4ME Cookbook - Home"/>
-    <script>document.write(`<img src="../_static/logo3.png" class="logo__image only-dark" alt="AI4ME Cookbook - Home"/>`);</script>
+    <img src="../../_static/logo3.png" class="logo__image only-light" alt="AI4ME Cookbook - Home"/>
+    <script>document.write(`<img src="../../_static/logo3.png" class="logo__image only-dark" alt="AI4ME Cookbook - Home"/>`);</script>
   
   
 </a></div>
@@ -174,50 +175,50 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="00_welcome.html">
+                <a class="reference internal" href="../../content/00_welcome.html">
                     Welcome to the AI4ME Cookbook
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1 | AI/ML Basics</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_module/01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. Review | AI/ML Lunch &amp; Learn: Object Detection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_module/02_ml_model_lifecycle.html">2. AI/ML Model Project Lifecycle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_module/03_role_of_annotations_in_model_performance.html">3. Role of Annotations in Model Performance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_module/04_where_to_find_data.html">4. Where to Find Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/01_module/01_AI_ML%20Lunch%20%26%20Learn_Object%20Detection.html">1. Review | AI/ML Lunch &amp; Learn: Object Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/01_module/02_ml_model_lifecycle.html">2. AI/ML Model Project Lifecycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/01_module/03_role_of_annotations_in_model_performance.html">3. Role of Annotations in Model Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/01_module/04_where_to_find_data.html">4. Where to Find Data</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2 | AI/ML Data Preparation, Annotation, and Techniques</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="02_module/01_best_practices_for_annotation.html">5. Annotation Best Practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/02_module/01_best_practices_for_annotation.html">5. Annotation Best Practices</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="02_module/02_annotation_tools.html">7. Annotation Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/02_module/02_annotation_tools.html">7. Annotation Tools</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="02_module/03_data_techniques.html">10. Data Tools &amp; Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/02_module/03_data_techniques.html">10. Data Tools &amp; Techniques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Development Exercises &amp; Examples</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="03_module/00_EDA.html">11. Exercise - Exploratory Data Analysis (EDA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_module/00_EDA_example.html">12. Exercise - Exploratory Data Analysis (EDA) | Example 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_module/00_EDA_example_2.html">13. Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/03_module/00_EDA.html">11. Exercise - Exploratory Data Analysis (EDA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/03_module/00_EDA_example.html">12. Exercise - Exploratory Data Analysis (EDA) | Example 01</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/03_module/00_EDA_example_2.html">13. Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="03_module/01_annotation_example.html">15. Exercise - Annotation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_module/02_dataset_prep.html">16. Exercise - Dataset Prep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_module/03_model_training.html">17. Exercise - Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/03_module/01_annotation_example.html">15. Exercise - Annotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/03_module/02_dataset_prep.html">16. Exercise - Dataset Prep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/03_module/03_model_training.html">17. Exercise - Model Training</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Deployment &amp; Model Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="04_module/00_model_deployment.html">18. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_module/01_ai4me_api.html">19. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_module/02_ai4me_api_google_colab_demo.html">20. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/04_module/00_model_deployment.html">18. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/04_module/01_ai4me_api.html">19. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/04_module/02_ai4me_api_google_colab_demo.html">20. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="04_module/03_model_maintenance.html">23. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/04_module/03_model_maintenance.html">23. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions &amp; Resources</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="05_module/01_qa_roundtable.html">Q&amp;A | Roundtable Discussion</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Resources</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../content/05_module/01_qa_roundtable.html">Q&amp;A | Roundtable Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../content/01_resources.html">Resources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -296,7 +297,7 @@
       
       
       
-      <li><a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/01_resources.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/issues/new?title=Issue%20on%20page%20%2Fcloud/label-studio-demo/TUTORIAL.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -326,7 +327,7 @@
       
       
       
-      <li><a href="../_sources/content/01_resources.md" target="_blank"
+      <li><a href="../../_sources/cloud/label-studio-demo/TUTORIAL.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -410,7 +411,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Resources</h1>
+    <h1>Annotation Tool Demo - Google Cloud Shell Guide</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -420,11 +421,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#courses">Courses</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#startertools">StarterTools</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cheatsheets">Cheatsheets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-running-the-environment">Step 1: Running the Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-access-the-app">Step 2: Access the App</a></li>
 </ul>
             </nav>
         </div>
@@ -436,49 +434,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="resources">
-<h1>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h1>
-<section id="glossary">
-<h2><a class="reference external" href="https://www.ultralytics.com/glossary">Glossary</a><a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
-</section>
-<section id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="annotation-tool-demo-google-cloud-shell-guide">
+<h1>Annotation Tool Demo - Google Cloud Shell Guide<a class="headerlink" href="#annotation-tool-demo-google-cloud-shell-guide" title="Link to this heading">#</a></h1>
+<p>For more details, visit the Github here:</p>
 <ul class="simple">
-<li><p><a class="github reference external" href="https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai">MichaelAkridge-NOAA/awesome-ocean-ai</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook">MichaelAkridge-NOAA/ai4me-cookbook</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/HumanSignal/label-studio">HumanSignal/label-studio</a></p></li>
 </ul>
+<section id="step-1-running-the-environment">
+<h2>Step 1: Running the Environment<a class="headerlink" href="#step-1-running-the-environment" title="Link to this heading">#</a></h2>
+<p>In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> below, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">compose</span> <span class="n">up</span>
+</pre></div>
+</div>
 </section>
-<section id="courses">
-<h2>Courses<a class="headerlink" href="#courses" title="Link to this heading">#</a></h2>
+<section id="step-2-access-the-app">
+<h2>Step 2: Access the App<a class="headerlink" href="#step-2-access-the-app" title="Link to this heading">#</a></h2>
+<p>Once the container is running, you can visit it by::</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.coursera.org/learn/ai-for-everyone">https://www.coursera.org/learn/ai-for-everyone</a></p></li>
-<li><p><a class="reference external" href="https://www.kaggle.com/learn/intro-to-machine-learning">https://www.kaggle.com/learn/intro-to-machine-learning</a></p></li>
-<li><p><a class="reference external" href="https://www.linkedin.com/learning/topics/artificial-intelligence">https://www.linkedin.com/learning/topics/artificial-intelligence</a></p></li>
-<li><p><a class="reference external" href="https://course.elementsofai.com/">https://course.elementsofai.com/</a></p></li>
-<li><p><a class="reference external" href="https://developers.google.com/machine-learning/foundational-courses">https://developers.google.com/machine-learning/foundational-courses</a></p></li>
-<li><p><a class="reference external" href="https://developers.google.com/machine-learning/advanced-courses">https://developers.google.com/machine-learning/advanced-courses</a></p></li>
-<li><p><a class="reference external" href="https://developers.google.com/machine-learning/crash-course/">https://developers.google.com/machine-learning/crash-course/</a></p></li>
-<li><p><a class="reference external" href="https://doc.csod.com/client/doc/default.aspx">Commerce Learning Center (CLC)</a></p></li>
-<li><p><a class="reference external" href="https://online.stanford.edu/programs/artificial-intelligence-professional-program">https://online.stanford.edu/programs/artificial-intelligence-professional-program</a></p></li>
-<li><p><a class="github reference external" href="https://github.com/noaa-ncai/learning-journey/tree/main">noaa-ncai/learning-journey</a></p></li>
-</ul>
-</section>
-<section id="startertools">
-<h2>StarterTools<a class="headerlink" href="#startertools" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://colab.research.google.com">https://colab.research.google.com</a>   (Free GPU Access)</p></li>
-<li><p><a class="reference external" href="https://notebooklm.google/">https://notebooklm.google/</a></p></li>
-</ul>
-</section>
-<section id="cheatsheets">
-<h2>Cheatsheets<a class="headerlink" href="#cheatsheets" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.asimovinstitute.org/neural-network-zoo/">https://www.asimovinstitute.org/neural-network-zoo/</a></p></li>
-<li><p><a class="reference external" href="https://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/">https://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/</a></p></li>
-<li><p><a class="reference external" href="https://matplotlib.org/cheatsheets/">https://matplotlib.org/cheatsheets/</a></p></li>
-<li><p><a class="reference external" href="https://pytorch.org/tutorials/beginner/ptcheat.html">https://pytorch.org/tutorials/beginner/ptcheat.html</a></p></li>
-<li><p><a class="reference external" href="https://media.datacamp.com/legacy/image/upload/v1660903348/Keras_Cheat_Sheet_gssmi8.pdf">https://media.datacamp.com/legacy/image/upload/v1660903348/Keras_Cheat_Sheet_gssmi8.pdf</a></p></li>
-<li><p><a class="reference external" href="https://www.altoros.com/visuals/tensorflow-cheat-sheet/">https://www.altoros.com/visuals/tensorflow-cheat-sheet/</a></p></li>
-<li><p><a class="reference external" href="https://roboflow.github.io/cheatsheet-supervision/">https://roboflow.github.io/cheatsheet-supervision/</a></p></li>
+<li><p>Clicking the Web Preview button <walkthrough-web-preview-icon></walkthrough-web-preview-icon></p></li>
+<li><p>and select “Preview on port 8080” To Access your Environment</p></li>
 </ul>
 </section>
 </section>
@@ -496,7 +471,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./content"
+            path: "./cloud/label-studio-demo"
         },
         predefinedOutput: true
     }
@@ -513,15 +488,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="05_module/01_qa_roundtable.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Q&amp;A | Roundtable Discussion</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -538,11 +504,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#courses">Courses</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#startertools">StarterTools</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cheatsheets">Cheatsheets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-running-the-environment">Step 1: Running the Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-access-the-app">Step 2: Access the App</a></li>
 </ul>
   </nav></div>
 
@@ -588,8 +551,8 @@ By michael.akridge
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
