@@ -9,7 +9,7 @@ graph TD;
     C --> D[Model the Data];
     D --> E[Communicate & Visualize Results];
 
-    % Indicating Iterations & Feedback Loops
+    %% Indicating Iterations & Feedback Loops
     E --Refine Understanding--> A;
     C --Data Cleaning & Feature Engineering--> B;
     D --Revisit Data Exploration--> C;
