@@ -4,9 +4,9 @@ services:
       context: .  # Build from the Dockerfile
     container_name: label-studio
     volumes:
-      - ./data:/app/data  # Store project data in a mapped folder
-      - ./config:/app/config  # Store Label Studio config separately
-      - ./storage:/app/storage  # Optional: Map storage for file uploads
+      - /workspaces/ai4me-cookbook/data:/app/data
+      - /workspaces/ai4me-cookbook/config:/app/config
+      - /workspaces/ai4me-cookbook/storage:/app/storage
     ports:
       - "8080:8080"  # Expose Label Studio on port 8080
     environment:
