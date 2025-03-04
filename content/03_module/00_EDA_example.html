@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>12. Exercise - Exploratory Data Analysis (EDA) &#8212; AI4ME Cookbook</title>
+    <title>12. Exercise - Exploratory Data Analysis (EDA) | Example 01 &#8212; AI4ME Cookbook</title>
   
   
   
@@ -199,7 +199,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Development Exercises &amp; Examples</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_EDA.html">11. Exercise - Exploratory Data Analysis (EDA)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Exercise - Exploratory Data Analysis (EDA)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Exercise - Exploratory Data Analysis (EDA) | Example 01</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example_2.html">13. Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="01_annotation_example.html">15. Exercise - Annotation</a></li>
@@ -459,7 +459,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise - Exploratory Data Analysis (EDA)</h1>
+    <h1>Exercise - Exploratory Data Analysis (EDA) | Example 01</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -484,8 +484,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-exploratory-data-analysis-eda">
-<h1><span class="section-number">12. </span>Exercise - Exploratory Data Analysis (EDA)<a class="headerlink" href="#exercise-exploratory-data-analysis-eda" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-exploratory-data-analysis-eda-example-01">
+<h1><span class="section-number">12. </span>Exercise - Exploratory Data Analysis (EDA) | Example 01<a class="headerlink" href="#exercise-exploratory-data-analysis-eda-example-01" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>helps you understand dataset</p></li>
 <li><p>detect potential issues</p></li>
@@ -500,37 +500,6 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 📌 Step 1: Install Required Libraries (If Not Installed)</span>
 <span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">opencv</span><span class="o">-</span><span class="n">python</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">matplotlib</span> <span class="n">tqdm</span> <span class="n">albumentations</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: opencv-python in /usr/local/lib/python3.11/dist-packages (4.11.0.86)
-Requirement already satisfied: numpy in /usr/local/lib/python3.11/dist-packages (1.26.4)
-Requirement already satisfied: pandas in /usr/local/lib/python3.11/dist-packages (2.2.2)
-Requirement already satisfied: matplotlib in /usr/local/lib/python3.11/dist-packages (3.10.0)
-Requirement already satisfied: tqdm in /usr/local/lib/python3.11/dist-packages (4.67.1)
-Requirement already satisfied: albumentations in /usr/local/lib/python3.11/dist-packages (2.0.4)
-Requirement already satisfied: python-dateutil&gt;=2.8.2 in /usr/local/lib/python3.11/dist-packages (from pandas) (2.8.2)
-Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.11/dist-packages (from pandas) (2025.1)
-Requirement already satisfied: tzdata&gt;=2022.7 in /usr/local/lib/python3.11/dist-packages (from pandas) (2025.1)
-Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (1.3.1)
-Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (0.12.1)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (4.56.0)
-Requirement already satisfied: kiwisolver&gt;=1.3.1 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (1.4.8)
-Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (24.2)
-Requirement already satisfied: pillow&gt;=8 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (11.1.0)
-Requirement already satisfied: pyparsing&gt;=2.3.1 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (3.2.1)
-Requirement already satisfied: scipy&gt;=1.10.0 in /usr/local/lib/python3.11/dist-packages (from albumentations) (1.13.1)
-Requirement already satisfied: PyYAML in /usr/local/lib/python3.11/dist-packages (from albumentations) (6.0.2)
-Requirement already satisfied: pydantic&gt;=2.9.2 in /usr/local/lib/python3.11/dist-packages (from albumentations) (2.10.6)
-Requirement already satisfied: albucore==0.0.23 in /usr/local/lib/python3.11/dist-packages (from albumentations) (0.0.23)
-Requirement already satisfied: opencv-python-headless&gt;=4.9.0.80 in /usr/local/lib/python3.11/dist-packages (from albumentations) (4.11.0.86)
-Requirement already satisfied: stringzilla&gt;=3.10.4 in /usr/local/lib/python3.11/dist-packages (from albucore==0.0.23-&gt;albumentations) (3.12.1)
-Requirement already satisfied: simsimd&gt;=5.9.2 in /usr/local/lib/python3.11/dist-packages (from albucore==0.0.23-&gt;albumentations) (6.2.1)
-Requirement already satisfied: annotated-types&gt;=0.6.0 in /usr/local/lib/python3.11/dist-packages (from pydantic&gt;=2.9.2-&gt;albumentations) (0.7.0)
-Requirement already satisfied: pydantic-core==2.27.2 in /usr/local/lib/python3.11/dist-packages (from pydantic&gt;=2.9.2-&gt;albumentations) (2.27.2)
-Requirement already satisfied: typing-extensions&gt;=4.12.2 in /usr/local/lib/python3.11/dist-packages (from pydantic&gt;=2.9.2-&gt;albumentations) (4.12.2)
-Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil&gt;=2.8.2-&gt;pandas) (1.17.0)
 </pre></div>
 </div>
 </div>
