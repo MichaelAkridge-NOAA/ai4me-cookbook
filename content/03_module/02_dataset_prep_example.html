@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>15. Dataset Prep &#8212; AI4ME Cookbook</title>
+    <title>&lt;no title&gt; &#8212; AI4ME Cookbook</title>
   
   
   
@@ -57,20 +57,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
-    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
-    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script type="module">
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
-window.addEventListener("load", () => mermaid.run());
-</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/03_module/02_dataset_prep';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/03_module/02_dataset_prep_example';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="02_dataset_prep_example.html" />
-    <link rel="prev" title="13. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool" href="00_EDA_example_2.html" />
+    <link rel="next" title="16. Model Training" href="03_model_training.html" />
+    <link rel="prev" title="15. Dataset Prep" href="02_dataset_prep.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -205,12 +197,12 @@ window.addEventListener("load", () => mermaid.run());
 <li class="toctree-l1"><a class="reference internal" href="01_annotation_example.html">10. 🛠️ Exercise - Annotation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Model Development &amp; Training</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_EDA.html">11. Exploratory Data Analysis (EDA)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example.html">12. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 01</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example_2.html">13. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">15. Dataset Prep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_dataset_prep.html">15. Dataset Prep</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_model_training.html">16. Model Training</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_model_training_example.html">17. 🛠️ Exercise - Model Training</a></li>
 
@@ -286,6 +278,55 @@ window.addEventListener("load", () => mermaid.run());
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/MichaelAkridge-NOAA/ai4me-cookbook/main?urlpath=lab/tree/content/03_module/02_dataset_prep_example.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/MichaelAkridge-NOAA/ai4me-cookbook/blob/main/content/03_module/02_dataset_prep_example.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -311,7 +352,7 @@ window.addEventListener("load", () => mermaid.run());
       
       
       
-      <li><a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/03_module/02_dataset_prep.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/03_module/02_dataset_prep_example.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -341,7 +382,7 @@ window.addEventListener("load", () => mermaid.run());
       
       
       
-      <li><a href="../../_sources/content/03_module/02_dataset_prep.md" target="_blank"
+      <li><a href="../../_sources/content/03_module/02_dataset_prep_example.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -351,7 +392,7 @@ window.addEventListener("load", () => mermaid.run());
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -425,7 +466,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Dataset Prep</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -434,12 +475,9 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-basics">15.1. Dataset Basics:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset-for-training">15.2. Split Dataset for Training</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-helpful-dataset-prep-tasks">15.3. Other Helpful Dataset Prep Tasks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-consistency-checks">15.4. Data Consistency Checks</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
+
             </nav>
         </div>
     </div>
@@ -450,74 +488,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="dataset-prep">
-<h1><span class="section-number">15. </span>Dataset Prep<a class="headerlink" href="#dataset-prep" title="Link to this heading">#</a></h1>
-<section id="dataset-basics">
-<h2><span class="section-number">15.1. </span>Dataset Basics:<a class="headerlink" href="#dataset-basics" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Images per class. | ≥ 1500 images per class recommended</p></li>
-<li><p>Instances per class. |  ≥ 10000 instances (labeled objects) per class recommended</p></li>
-<li><p>Image variety.</p>
-<ul>
-<li><p>Must be representative of the environment.</p></li>
-<li><p>recommended: images from different regions, seasons, conditions, lighting, angles, different sources</p></li>
-</ul>
-</li>
-<li><p>Label consistency.</p>
-<ul>
-<li><p>All instances of all classes in all images must be labelled.</p></li>
-<li><p>Partial labelling will impact performance.</p></li>
-</ul>
-</li>
-<li><p>Label accuracy.</p>
-<ul>
-<li><p>Labels must closely enclose each object. No space should exist between an object, and it’s bounding box. No objects should be missing a label.</p></li>
-</ul>
-</li>
-<li><p>Background images.</p>
-<ul>
-<li><p>Background images are images with no objects that are added to a dataset to reduce False Positives (FP).</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="split-dataset-for-training">
-<h2><span class="section-number">15.2. </span>Split Dataset for Training<a class="headerlink" href="#split-dataset-for-training" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Labeled Data</strong> is split into three parts:</p>
-<ul>
-<li><p><strong>Training Dataset</strong>: Used to train the model.</p></li>
-<li><p><strong>Validation Dataset</strong>: Used to validate and tune model.</p></li>
-<li><p><strong>Test Dataset</strong>: Used to evaluate the final model.</p></li>
-</ul>
-</li>
-</ul>
-<pre  class="mermaid">
-        graph TD;
-    A[Labeled Data] --&gt; B[Training Dataset]
-    A --&gt; C[Validation Dataset]
-    A --&gt; D[Test Dataset]
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="c1"># Define paths</span>
+<span class="n">source_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\dataset_example&quot;</span>  <span class="c1"># Folder where all images are stored before splitting</span>
+<span class="n">output_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\dataset_example\split&quot;</span>  <span class="c1"># Folder where images will be organized</span>
+
+<span class="c1"># Define categories</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;CORAL&quot;</span><span class="p">,</span> <span class="s2">&quot;CORAL_BL&quot;</span><span class="p">]</span>  
+<span class="n">split_ratio</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;train&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">}</span>
+
+<span class="c1"># Create folders</span>
+<span class="k">for</span> <span class="n">split</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Split data</span>
+<span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
+    <span class="n">images</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">category</span><span class="p">))</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
     
-    B --&gt; E[Used to train the model]
-    C --&gt; F[Used to validate and tune model]
-    D --&gt; G[Used to evaluate the model]
-    </pre><p><img alt="" src="../../_images/slide_38.png" /></p>
-<p><img alt="" src="../../_images/slide_29.png" /></p>
-<hr class="docutils" />
-<p><img alt="" src="../../_images/slide_30.png" /></p>
-</section>
-<section id="other-helpful-dataset-prep-tasks">
-<h2><span class="section-number">15.3. </span>Other Helpful Dataset Prep Tasks<a class="headerlink" href="#other-helpful-dataset-prep-tasks" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Develop a Benchmark Test Dataset</p></li>
-<li><p>Consider Data Augmentation</p></li>
-<li><p>Check Bias and Balance</p></li>
-</ul>
-</section>
-<section id="data-consistency-checks">
-<h2><span class="section-number">15.4. </span>Data Consistency Checks<a class="headerlink" href="#data-consistency-checks" title="Link to this heading">#</a></h2>
-</section>
-</section>
+    <span class="n">train_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span> <span class="o">*</span> <span class="n">split_ratio</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">])</span>
+    <span class="n">val_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span> <span class="o">*</span> <span class="n">split_ratio</span><span class="p">[</span><span class="s2">&quot;val&quot;</span><span class="p">])</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">img</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">images</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">train_count</span><span class="p">:</span>
+            <span class="n">split</span> <span class="o">=</span> <span class="s2">&quot;train&quot;</span>
+        <span class="k">elif</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">train_count</span> <span class="o">+</span> <span class="n">val_count</span><span class="p">:</span>
+            <span class="n">split</span> <span class="o">=</span> <span class="s2">&quot;val&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">split</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span>
+
+        <span class="n">src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+        <span class="n">dest</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dest</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -550,20 +562,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="00_EDA_example_2.html"
+       href="02_dataset_prep.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">13. </span>🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Dataset Prep</p>
       </div>
     </a>
     <a class="right-next"
-       href="02_dataset_prep_example.html"
+       href="03_model_training.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title"><span class="section-number">16. </span>Model Training</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -582,12 +594,9 @@ document.write(`
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-basics">15.1. Dataset Basics:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-dataset-for-training">15.2. Split Dataset for Training</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-helpful-dataset-prep-tasks">15.3. Other Helpful Dataset Prep Tasks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-consistency-checks">15.4. Data Consistency Checks</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
+
   </nav></div>
 
 </div></div>
