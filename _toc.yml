@@ -14,7 +14,7 @@ parts:
     - file: content/01_module/02_ml_model_lifecycle.md
     - file: content/01_module/04_where_to_find_data.md
   
-  - caption: Module 2 | AI/ML Annotation, and Tools
+  - caption: Module 2 | AI/ML Annotation and Tools
     numbered: true
     chapters:
     - file: content/01_module/03_role_of_annotations_in_model_performance.md
@@ -22,7 +22,7 @@ parts:
     - file: content/02_module/02_annotation_tools.md
     - file: content/03_module/01_annotation_example.md
 
-  - caption: Module 3 | AI/ML Development Exercises & Examples
+  - caption: Module 3 | AI/ML Model Development & Training
     numbered: true
     chapters:
     - file: content/03_module/00_EDA.md
@@ -31,9 +31,10 @@ parts:
     - file: content/03_module/02_dataset_prep.md
     - file: content/03_module/03_model_training.md
 
-  - caption: Module 4 | Deployment & Model Management
+  - caption: Module 4 | Model Eval, Deployment & Management
     numbered: true
     chapters:
+    - file: content/04_module/04_model_eval.md
     - file: content/04_module/00_model_deployment.md
     - file: content/04_module/01_ai4me_api.md
     - file: content/04_module/02_ai4me_api_google_colab_demo.ipynb

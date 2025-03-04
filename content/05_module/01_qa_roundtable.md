@@ -6,3 +6,5 @@
 - Whats slowing down annotation efforts and how can we improve our systems
 - How can annotations be better tailored for model use?
 - Ideas for improving annotation throughput without sacrificing quality (inital model to create predictions for human verification)
+
+## Next Steps
