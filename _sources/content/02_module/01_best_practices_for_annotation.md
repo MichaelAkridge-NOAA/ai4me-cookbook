@@ -9,6 +9,12 @@
     - No space should exist between an object, and it's bounding box. 
     - No objects should be missing a label.
 
+# Precision & Accuracy 
+- **Precision** indicates the consistency of annotations
+- **Accuracy** refers to how close the annotated data is to the true values
+
+> High accuracy and precision lead to better-trained models by reducing noise
+
 ## What about Partially Visible (Occluded) Objects (like urchins)?
 - Two main approaches. No right or wrong answer. 
 - **Experimentation** and then **consistency** is key. 

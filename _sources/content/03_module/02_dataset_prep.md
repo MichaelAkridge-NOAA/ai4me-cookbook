@@ -36,3 +36,5 @@ graph TD;
 - Develop a Benchmark Test Dataset
 - Consider Data Augmentation
 - Check Bias and Balance
+
+## Data Consistency Checks

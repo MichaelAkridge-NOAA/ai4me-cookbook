@@ -6,6 +6,7 @@
 
 ## 2. Partners
 - https://coralnet.ucsd.edu
+- and so on
 
 ## 3. Public datasets 
 - [Github](https://github.com/)

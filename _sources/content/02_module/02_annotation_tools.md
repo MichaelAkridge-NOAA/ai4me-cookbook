@@ -1,6 +1,7 @@
 # Annotation Tools
 
 # The Tool Matters Less than the Pipeline
+- work smarter, not harder. Use a tool or tools that help automate tasks
 
 # Tips and Tricks | When Picking a Tool: 
 - Look at Features
