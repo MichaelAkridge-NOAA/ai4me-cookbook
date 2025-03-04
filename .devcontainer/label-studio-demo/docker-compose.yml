@@ -4,7 +4,7 @@ services:
       context: .  # Build from the Dockerfile
     container_name: label-studio
     volumes:
-      - /workspaces/ai4me-cookbook/data:/label-studio/data:rw
+      - /data:/label-studio/data:rw
     ports:
       - "8080:8080"  # Expose Label Studio on port 8080
     environment:
