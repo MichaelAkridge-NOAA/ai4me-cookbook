@@ -13,29 +13,32 @@ Workshop Goals:
 
 #### 1. AI/ML Basics / Overview
 - Quick primer on object detection pipeline (data → annotation → model training → deployment)
-- Role of annotations in model performance (importance of quality & consistency)
+- AI/ML Project Lifecycles
 - Where to find data, resouces, and so on?
 
 #### 2. Annotation Strategies & Tools
+- Role of annotations in model performance (importance of quality & consistency)
 - Best practices for efficient annotation workflow
 - Review tools(CVAT, Label Studio, Viame) and discuss pros/cons
-- Discuss integrating QA/QC checks and techniques
+- 🛠️ Exercise - Annotation
 
 #### 3. Hands On | AI/ML Development Exercises & Training
 - Exploratory data analysis(EDA)
-- Annotation 
+- 🛠️ Exercise - EDA
 - Dataset Prep
-- Model Development & Training
-- Model Deployment
+- Model Training
+- 🛠️ Exercise - Model Training
 
 ### 4. Model Eval, Deployment & Management
+- Model Evaluation
+- Model Deployment
+- AI4ME API
+- Model Management
 
 ### 5. Q&A / Roundtable
-
-### Next Steps
-- another workshop?
-- user exercises
-
+- Q&A
+- Resouces
+- Next Steps
 ---
 
 ### [Glossary](https://www.ultralytics.com/glossary)
