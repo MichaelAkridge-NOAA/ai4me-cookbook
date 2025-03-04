@@ -423,8 +423,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Annotation Best Practices</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precision-accuracy">6. Precision &amp; Accuracy</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-partially-visible-occluded-objects-like-urchins">6.1. What about Partially Visible (Occluded) Objects (like urchins)?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-annotation-flow-for-occluded-objects">6.1.1. Example Annotation Flow for Occluded Objects:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-initially-looks-the-same">6.1. Example: Initially looks the same</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zoom-to-see-the-difference-in-accuracy">6.2. Zoom to see the difference in Accuracy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-partially-visible-occluded-objects-like-urchins">6.3. What about Partially Visible (Occluded) Objects (like urchins)?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-annotation-flow-for-occluded-objects">6.3.1. Example Annotation Flow for Occluded Objects:</a></li>
 </ul>
 </li>
 </ul>
@@ -455,7 +457,8 @@ document.write(`
 <li><p>Ensure tight and consistent bounding boxes.</p></li>
 <li><p>Labels must closely enclose each object.</p></li>
 <li><p>No space should exist between an object, and it’s bounding box.</p></li>
-<li><p>No objects should be missing a label.</p></li>
+<li><p>No objects should be missing a label.
+<img alt="" src="../../_images/annotation_example.png" /></p></li>
 </ul>
 </li>
 </ul>
@@ -466,11 +469,19 @@ document.write(`
 <li><p><strong>Precision</strong> indicates the consistency of annotations</p></li>
 <li><p><strong>Accuracy</strong> refers to how close the annotated data is to the true values</p></li>
 </ul>
+<section id="example-initially-looks-the-same">
+<h2><span class="section-number">6.1. </span>Example: Initially looks the same<a class="headerlink" href="#example-initially-looks-the-same" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../../_images/annotation_example_02.png" /></p>
+</section>
+<section id="zoom-to-see-the-difference-in-accuracy">
+<h2><span class="section-number">6.2. </span>Zoom to see the difference in Accuracy<a class="headerlink" href="#zoom-to-see-the-difference-in-accuracy" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../../_images/annotation_example_03.png" /></p>
 <blockquote>
 <div><p>High accuracy and precision lead to better-trained models by reducing noise</p>
 </div></blockquote>
+</section>
 <section id="what-about-partially-visible-occluded-objects-like-urchins">
-<h2><span class="section-number">6.1. </span>What about Partially Visible (Occluded) Objects (like urchins)?<a class="headerlink" href="#what-about-partially-visible-occluded-objects-like-urchins" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.3. </span>What about Partially Visible (Occluded) Objects (like urchins)?<a class="headerlink" href="#what-about-partially-visible-occluded-objects-like-urchins" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Two main approaches. No right or wrong answer.</p></li>
 <li><p><strong>Experimentation</strong> and then <strong>consistency</strong> is key.</p></li>
@@ -496,7 +507,7 @@ document.write(`
 </li>
 </ol>
 <section id="example-annotation-flow-for-occluded-objects">
-<h3><span class="section-number">6.1.1. </span>Example Annotation Flow for Occluded Objects:<a class="headerlink" href="#example-annotation-flow-for-occluded-objects" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">6.3.1. </span>Example Annotation Flow for Occluded Objects:<a class="headerlink" href="#example-annotation-flow-for-occluded-objects" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fully visible:</p>
 <ul>
@@ -585,8 +596,10 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Annotation Best Practices</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precision-accuracy">6. Precision &amp; Accuracy</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-partially-visible-occluded-objects-like-urchins">6.1. What about Partially Visible (Occluded) Objects (like urchins)?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-annotation-flow-for-occluded-objects">6.1.1. Example Annotation Flow for Occluded Objects:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-initially-looks-the-same">6.1. Example: Initially looks the same</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zoom-to-see-the-difference-in-accuracy">6.2. Zoom to see the difference in Accuracy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-about-partially-visible-occluded-objects-like-urchins">6.3. What about Partially Visible (Occluded) Objects (like urchins)?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-annotation-flow-for-occluded-objects">6.3.1. Example Annotation Flow for Occluded Objects:</a></li>
 </ul>
 </li>
 </ul>

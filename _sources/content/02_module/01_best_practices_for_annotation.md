@@ -8,11 +8,14 @@
     - Labels must closely enclose each object. 
     - No space should exist between an object, and it's bounding box. 
     - No objects should be missing a label.
-
+![](docs/annotation_example.png)
 # Precision & Accuracy 
 - **Precision** indicates the consistency of annotations
 - **Accuracy** refers to how close the annotated data is to the true values
-
+## Example: Initially looks the same
+![](docs/annotation_example_02.png)
+## Zoom to see the difference in Accuracy
+![](docs/annotation_example_03.png)
 > High accuracy and precision lead to better-trained models by reducing noise
 
 ## What about Partially Visible (Occluded) Objects (like urchins)?
