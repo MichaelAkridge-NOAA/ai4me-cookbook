@@ -10,4 +10,5 @@ services:
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
       - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/app/data
+      - LABEL_STUDIO_DISABLE_AUTH=true
     restart: unless-stopped
