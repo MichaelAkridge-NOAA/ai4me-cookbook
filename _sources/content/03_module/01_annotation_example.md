@@ -1,5 +1,5 @@
 # Exercise - Annotation
 
-## QA/QC
-- Using automated tools to spot common errors
-- Having another person double-check the annotations
+### Label Studio Annotation Demo 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/ai4me-cookbook?devcontainer_path=.devcontainer%2Flabel-studio-demo%2Fdevcontainer.json)
+
