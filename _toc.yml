@@ -45,8 +45,6 @@ parts:
   - caption: Q&A/Roundtable Discussions
     chapters:
     - file: content/05_module/01_qa_roundtable.md
-    - file: content/01_resources.md
-
   - caption: Resources
     chapters:
     - file: content/01_resources.md
