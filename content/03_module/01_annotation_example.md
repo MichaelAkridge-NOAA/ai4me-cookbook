@@ -4,13 +4,11 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/ai4me-cookbook?devcontainer_path=.devcontainer%2Flabel-studio-demo%2Fdevcontainer.json)
 
 ````{div} full-width
-```{sidebar} Install Label Studio Locally
-- [Label Studio Github](https://github.com/HumanSignal/label-studio)
-```
-```{code-cell} <python>
-:tags: [margin]
+```{sidebar} Note: To Install Label Studio Locally
+[Label Studio Github](https://github.com/HumanSignal/label-studio)
+
 pip install label-studio
-```
+
 ```
 ````
 ### Once in Codespace, wait or click bottom right to view build progress
