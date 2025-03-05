@@ -432,8 +432,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control-using-hugging-face-with-git">34.1. Model Version Control using Hugging Face with Git</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">34.1.1. Example Model Repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control">34.1. Model Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-hugging-face-with-git">34.1.1. Using Hugging Face with Git</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">34.1.2. Example Model Repo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">34.2. Maintenance</a></li>
@@ -455,17 +456,20 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="model-management">
 <h1><span class="section-number">34. </span>Model Management<a class="headerlink" href="#model-management" title="Link to this heading">#</a></h1>
-<section id="model-version-control-using-hugging-face-with-git">
-<h2><span class="section-number">34.1. </span>Model Version Control using Hugging Face with Git<a class="headerlink" href="#model-version-control-using-hugging-face-with-git" title="Link to this heading">#</a></h2>
+<section id="model-version-control">
+<h2><span class="section-number">34.1. </span>Model Version Control<a class="headerlink" href="#model-version-control" title="Link to this heading">#</a></h2>
+<section id="using-hugging-face-with-git">
+<h3><span class="section-number">34.1.1. </span>Using Hugging Face with Git<a class="headerlink" href="#using-hugging-face-with-git" title="Link to this heading">#</a></h3>
 <p>Hugging Face provides a Git-based system (like Github) for managing model versions, making it easy to track changes, collaborate, and deploy updates efficiently. Each model repository on Hugging Face operates like a Git repository, allowing you to push updates, create branches, and maintain different versions.</p>
 <ul class="simple">
 <li><p>Branches: You can use branches to develop new features, experiment with different training strategies, or maintain stable and experimental versions of your model (e.g., main, dev, v1.0, v2.0).</p></li>
 <li><p>Commits &amp; Tags: Every push to the repo creates a new commit, ensuring version history is preserved. You can use tags to mark specific model releases (e.g., v1.0, v1.1).</p></li>
-<li><p>Pull Requests: If working in a team, you can use pull requests to review and merge changes, similar to GitHub workflows.
-Model Card Updates: Along with model weights and configurations, you can update the <a class="reference external" href="http://README.md">README.md</a> (model card) to document changes in each version.</p></li>
+<li><p>Pull Requests: If working in a team, you can use pull requests to review and merge changes, similar to GitHub workflows.</p></li>
+<li><p>Model Card Updates: Along with model weights and configurations, you can update the <a class="reference external" href="http://README.md">README.md</a> (model card) to document changes in each version.</p></li>
 </ul>
+</section>
 <section id="example-model-repo">
-<h3><span class="section-number">34.1.1. </span><a class="reference external" href="https://huggingface.co/akridge">Example Model Repo</a><a class="headerlink" href="#example-model-repo" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">34.1.2. </span><a class="reference external" href="https://huggingface.co/akridge">Example Model Repo</a><a class="headerlink" href="#example-model-repo" title="Link to this heading">#</a></h3>
 <p><img alt="" src="../../_images/s4.png" /></p>
 </section>
 </section>
@@ -547,8 +551,9 @@ Model Card Updates: Along with model weights and configurations, you can update 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control-using-hugging-face-with-git">34.1. Model Version Control using Hugging Face with Git</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">34.1.1. Example Model Repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control">34.1. Model Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-hugging-face-with-git">34.1.1. Using Hugging Face with Git</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">34.1.2. Example Model Repo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">34.2. Maintenance</a></li>
