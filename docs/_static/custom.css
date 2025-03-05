@@ -1,14 +1,19 @@
-/* Make the main content wider */
+/* Increase overall book width */
 .bd-container {
-    max-width: 95%;  /* Adjust the percentage to your preference */
+    max-width: 95% !important;  /* Adjust as needed */
 }
 
-/* Adjust width for Jupyter notebooks */
+/* Widen Jupyter notebook cells */
 .cell_output {
     max-width: 95%;
 }
 
-/* Make Reveal.js slides wider */
+/* Expand content width inside Reveal.js slides */
 .reveal {
     max-width: 90% !important;
+}
+
+/* Make markdown and content use more width */
+.bd-content {
+    max-width: 95%;
 }
