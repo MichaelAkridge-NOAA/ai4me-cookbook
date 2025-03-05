@@ -3,7 +3,9 @@
   "dockerComposeFile": "./docker-compose.yml",
   "service": "label-studio",
   "workspaceFolder": "/app",
-  "settings": {"terminal.integrated.shell.linux": "/bin/bash"},
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
   "forwardPorts": [8080],
   "portsAttributes": {
     "8080": {
@@ -11,4 +13,5 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postStartCommand": "chmod +x /app/post_start.sh && /app/post_start.sh"}
+  "postStartCommand": "chmod +x /app/post_start.sh && /app/post_start.sh"
+}

@@ -4,7 +4,7 @@ services:
       context: .  # Build from the Dockerfile
     container_name: label-studio
     volumes:
-      - /data:/label-studio/data:rw
+      - .:/app  # Syncs project files with container
     ports:
       - "8080:8080"  # Expose Label Studio on port 8080
     environment:

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Construct the message
-message="## [Click to Open Label Studio Demo](https://$CODESPACE_NAME-8080.app.github.dev/user/login/)"
+message="## [Click to Open Label Studio | Tool](https://$CODESPACE_NAME-8080.app.github.dev/user/login/)"
 echo "Debug: Constructed message."
 
 # Echo the message to the terminal
