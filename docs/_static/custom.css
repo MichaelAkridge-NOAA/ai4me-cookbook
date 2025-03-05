@@ -1,0 +1,14 @@
+/* Make the main content wider */
+.bd-container {
+    max-width: 95%;  /* Adjust the percentage to your preference */
+}
+
+/* Adjust width for Jupyter notebooks */
+.cell_output {
+    max-width: 95%;
+}
+
+/* Make Reveal.js slides wider */
+.reveal {
+    max-width: 90% !important;
+}

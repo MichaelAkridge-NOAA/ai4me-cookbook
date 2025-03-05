@@ -32,6 +32,7 @@ html:
   revealjs_theme: "black"  # Options: black, white, night, serif, etc.
   revealjs_scroll: true  #  Allow scrolling inside slides
   revealjs_auto_slide: 5000  #  Auto-slide every 5 seconds (optional)
+  extra_css: ["_static/custom.css"]
   favicon: "docs/images/favicon.ico"
   extra_footer: |
     <a href="mailto:michael.akridge@noaa.gov">Contact</a>  <a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook"> Github</a><br>
