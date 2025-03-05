@@ -42,13 +42,15 @@ parts:
     - file: content/04_module/02_ai4me_api_google_colab_demo.ipynb
     - file: content/04_module/03_model_maintenance.md
 
-  - caption: Q&A/Roundtable Discussions & Resources
+  - caption: Q&A/Roundtable Discussions
     chapters:
     - file: content/05_module/01_qa_roundtable.md
     - file: content/01_resources.md
 
   - caption: Resources
     chapters:
+    - file: content/01_resources.md
+    - file: content/02_faq.md
     - url: https://github.com/MichaelAkridge-NOAA/awesome-ocean-ai
       title: Awesome Ocean AI Resources
     - url: https://github.com/MichaelAkridge-NOAA/open-science-ai-showcase
