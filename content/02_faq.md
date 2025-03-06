@@ -47,8 +47,7 @@ A: TensorFlow, PyTorch, Ultralytics YOLO, OpenCV for preprocessing, and several 
 **Q: How do pandas and dplyr compare?**  
 A: Pandas is Python’s equivalent of dplyr, using methods like `.groupby()`, `.apply()`, and `.filter()`.
 
-**Q: How does object detection code differ?**  
-A: in Python, `YOLO('yolov8n.pt')` from `ultralytics` does the same.
-
 **Q: How do I debug Python if I’m used to R?**  
 A: Read error tracebacks, use `print()`, check 0-based indexing, and verify library installations.
+
+- [Learn More](https://rebeccabarter.com/blog/2023-09-11-from_r_to_python)
