@@ -6,4 +6,5 @@ Links:
 - https://github.com/HumanSignal/label-studio
 
 # Access The App
-Your application is available at this URL:## [Click to Open Label Studio | Tool](https://$CODESPACE_NAME-8080.app.github.dev/user/login/)
+Your application is available at this URL
+
