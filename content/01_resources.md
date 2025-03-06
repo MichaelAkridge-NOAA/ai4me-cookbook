@@ -22,6 +22,7 @@
 - https://notebooklm.google/
 
 ## Cheatsheets
+- https://moshima-pifsc.github.io/2025-01-ISC-OpenScienceTraining/assets/ref-Open_Science_Cheat_Sheet.html
 - https://www.asimovinstitute.org/neural-network-zoo/
 - https://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
 - https://matplotlib.org/cheatsheets/
