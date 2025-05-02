@@ -45,6 +45,11 @@ parts:
   - caption: Q&A/Roundtable Discussions
     chapters:
     - file: content/05_module/01_qa_roundtable.md
+
+  - caption: Hugging Face Examples
+    chapters:
+    - file: content/03_2025_Huggingface_User_Examples.ipynb
+
   - caption: Resources
     chapters:
     - file: content/01_resources.md
