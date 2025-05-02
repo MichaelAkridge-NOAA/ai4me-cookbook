@@ -48,7 +48,7 @@ parts:
 
   - caption: Hugging Face Examples
     chapters:
-    - file: content/03_2025_Huggingface_User_Examples_final_cleaned.ipynb
+    - file: content/03_2025_Huggingface_User_Examples.ipynb
 
   - caption: Resources
     chapters:
