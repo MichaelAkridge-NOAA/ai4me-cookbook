@@ -35,6 +35,12 @@ html:
   favicon: "docs/images/favicon.ico"
   extra_footer: |
     <a href="mailto:michael.akridge@noaa.gov">Contact</a>  <a href="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook"> Github</a><br>
+  theme:
+    name: sphinx_book_theme
+    options:
+      page_width: "100%"          # ← Full-width page container
+      content_width: "100%"       # ← Full-width main content
+      sidebar_width: "20rem"      # ← Optional: controls sidebar size
 # Launch button settings
 launch_buttons:
   notebook_interface: jupyterlab
