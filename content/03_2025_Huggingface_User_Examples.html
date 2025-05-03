@@ -504,10 +504,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifies-model-management-and-collaboration">Simplifies Model Management and Collaboration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#links">Links:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifies-model-management-and-collaboration">Simplifies Model Management and Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">Links:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">0: Setup:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-hugging-face-libraries">Install Hugging Face Libraries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#login-to-hf">Login to HF</a></li>
@@ -567,10 +565,11 @@ document.write(`
 <section id="simplifies-model-management-and-collaboration">
 <h2>Simplifies Model Management and Collaboration<a class="headerlink" href="#simplifies-model-management-and-collaboration" title="Link to this heading">#</a></h2>
 <blockquote>
-<div><h2 class="rubric" id="like-github-but-for-ai-ml">Like Github but for AI/ML</h2>
+<div><h3 class="rubric" id="like-github-but-for-ai-ml">Like Github but for AI/ML</h3>
 </div></blockquote>
+</section>
 <section id="links">
-<h3>Links:<a class="headerlink" href="#links" title="Link to this heading">#</a></h3>
+<h2>Links:<a class="headerlink" href="#links" title="Link to this heading">#</a></h2>
 <ul>
 <li><h4 class="rubric" id="website-https-huggingface-co">Website: <a class="reference external" href="https://huggingface.co/">https://huggingface.co/</a></h4>
 </li>
@@ -597,7 +596,6 @@ document.write(`
 </div></blockquote>
 </li>
 </ul>
-</section>
 </section>
 <hr class="docutils" />
 <section id="setup">
@@ -1445,7 +1443,7 @@ document.write(`
 <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 
 <span class="n">styled</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s1">&#39;class=&quot;dataframe table table-striped&quot;&#39;</span><span class="p">)</span> \
-    <span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot; Hugging Face Models: FathomNet&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot; Hugging Face Models: Akridge&quot;</span><span class="p">)</span> \
     <span class="o">.</span><span class="n">hide</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span> \
     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> \
     <span class="o">.</span><span class="n">background_gradient</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Downloads&quot;</span><span class="p">,</span> <span class="s2">&quot;Likes&quot;</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;YlGn&quot;</span><span class="p">)</span>
@@ -1456,124 +1454,124 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fetching model stats: 100%|██████████| 8/8 [00:01&lt;00:00,  7.42it/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fetching model stats: 100%|██████████| 8/8 [00:00&lt;00:00,  8.52it/s]
 </pre></div>
 </div>
 <div class="output text_html"><style type="text/css">
-#T_201e3_row0_col4 {
+#T_05b84_row0_col4 {
   background-color: #fdfedd;
   color: #000000;
 }
-#T_201e3_row0_col5, #T_201e3_row2_col5, #T_201e3_row3_col5, #T_201e3_row7_col4 {
+#T_05b84_row0_col5, #T_05b84_row2_col5, #T_05b84_row3_col5, #T_05b84_row7_col4 {
   background-color: #004529;
   color: #f1f1f1;
 }
-#T_201e3_row1_col4, #T_201e3_row1_col5, #T_201e3_row4_col5, #T_201e3_row5_col4, #T_201e3_row5_col5, #T_201e3_row6_col5, #T_201e3_row7_col5 {
+#T_05b84_row1_col4, #T_05b84_row1_col5, #T_05b84_row4_col5, #T_05b84_row5_col4, #T_05b84_row5_col5, #T_05b84_row6_col5, #T_05b84_row7_col5 {
   background-color: #ffffe5;
   color: #000000;
 }
-#T_201e3_row2_col4 {
+#T_05b84_row2_col4 {
   background-color: #004c2c;
   color: #f1f1f1;
 }
-#T_201e3_row3_col4 {
+#T_05b84_row3_col4 {
   background-color: #fcfed4;
   color: #000000;
 }
-#T_201e3_row4_col4 {
+#T_05b84_row4_col4 {
   background-color: #f9fdc4;
   color: #000000;
 }
-#T_201e3_row6_col4 {
+#T_05b84_row6_col4 {
   background-color: #92d183;
   color: #000000;
 }
 </style>
-<table id="T_201e3" class="dataframe table table-striped">
-  <caption> Hugging Face Models: FathomNet</caption>
+<table id="T_05b84" class="dataframe table table-striped">
+  <caption> Hugging Face Models: Akridge</caption>
   <thead>
     <tr>
-      <th id="T_201e3_level0_col0" class="col_heading level0 col0" >Model ID</th>
-      <th id="T_201e3_level0_col1" class="col_heading level0 col1" >Tags</th>
-      <th id="T_201e3_level0_col2" class="col_heading level0 col2" >Description</th>
-      <th id="T_201e3_level0_col3" class="col_heading level0 col3" >Task</th>
-      <th id="T_201e3_level0_col4" class="col_heading level0 col4" >Downloads</th>
-      <th id="T_201e3_level0_col5" class="col_heading level0 col5" >Likes</th>
-      <th id="T_201e3_level0_col6" class="col_heading level0 col6" >Last Modified</th>
+      <th id="T_05b84_level0_col0" class="col_heading level0 col0" >Model ID</th>
+      <th id="T_05b84_level0_col1" class="col_heading level0 col1" >Tags</th>
+      <th id="T_05b84_level0_col2" class="col_heading level0 col2" >Description</th>
+      <th id="T_05b84_level0_col3" class="col_heading level0 col3" >Task</th>
+      <th id="T_05b84_level0_col4" class="col_heading level0 col4" >Downloads</th>
+      <th id="T_05b84_level0_col5" class="col_heading level0 col5" >Likes</th>
+      <th id="T_05b84_level0_col6" class="col_heading level0 col6" >Last Modified</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_201e3_row0_col0" class="data row0 col0" ><a href="https://huggingface.co/akridge/yolo11n-sea-urchin-detector" target="_blank">akridge/yolo11n-sea-urchin-detector</a></td>
-      <td id="T_201e3_row0_col1" class="data row0 col1" >onnx, YOLO11n, yolo, yolo11, yolo11n, urchin, sea, marine-detection, object-detection, en, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, doi:10.57967/hf/3343, region:us</td>
-      <td id="T_201e3_row0_col2" class="data row0 col2" ></td>
-      <td id="T_201e3_row0_col3" class="data row0 col3" >object-detection</td>
-      <td id="T_201e3_row0_col4" class="data row0 col4" >2</td>
-      <td id="T_201e3_row0_col5" class="data row0 col5" >1</td>
-      <td id="T_201e3_row0_col6" class="data row0 col6" >2025-01-24T00:33:52.000Z</td>
+      <td id="T_05b84_row0_col0" class="data row0 col0" ><a href="https://huggingface.co/akridge/yolo11n-sea-urchin-detector" target="_blank">akridge/yolo11n-sea-urchin-detector</a></td>
+      <td id="T_05b84_row0_col1" class="data row0 col1" >onnx, YOLO11n, yolo, yolo11, yolo11n, urchin, sea, marine-detection, object-detection, en, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, doi:10.57967/hf/3343, region:us</td>
+      <td id="T_05b84_row0_col2" class="data row0 col2" ></td>
+      <td id="T_05b84_row0_col3" class="data row0 col3" >object-detection</td>
+      <td id="T_05b84_row0_col4" class="data row0 col4" >2</td>
+      <td id="T_05b84_row0_col5" class="data row0 col5" >1</td>
+      <td id="T_05b84_row0_col6" class="data row0 col6" >2025-01-24T00:33:52.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row1_col0" class="data row1 col0" ><a href="https://huggingface.co/akridge/yolo8-fish-detector-grayscale" target="_blank">akridge/yolo8-fish-detector-grayscale</a></td>
-      <td id="T_201e3_row1_col1" class="data row1 col1" >tensorboard, YOLOv8, yolo8n, yolo8, fish, en, dataset:akridge/MOUSS_fish_imagery_dataset_grayscale_small, base_model:Ultralytics/YOLOv8, base_model:finetune:Ultralytics/YOLOv8, region:us</td>
-      <td id="T_201e3_row1_col2" class="data row1 col2" ></td>
-      <td id="T_201e3_row1_col3" class="data row1 col3" ></td>
-      <td id="T_201e3_row1_col4" class="data row1 col4" >1</td>
-      <td id="T_201e3_row1_col5" class="data row1 col5" >0</td>
-      <td id="T_201e3_row1_col6" class="data row1 col6" >2025-01-24T00:33:00.000Z</td>
+      <td id="T_05b84_row1_col0" class="data row1 col0" ><a href="https://huggingface.co/akridge/yolo8-fish-detector-grayscale" target="_blank">akridge/yolo8-fish-detector-grayscale</a></td>
+      <td id="T_05b84_row1_col1" class="data row1 col1" >tensorboard, YOLOv8, yolo8n, yolo8, fish, en, dataset:akridge/MOUSS_fish_imagery_dataset_grayscale_small, base_model:Ultralytics/YOLOv8, base_model:finetune:Ultralytics/YOLOv8, region:us</td>
+      <td id="T_05b84_row1_col2" class="data row1 col2" ></td>
+      <td id="T_05b84_row1_col3" class="data row1 col3" ></td>
+      <td id="T_05b84_row1_col4" class="data row1 col4" >1</td>
+      <td id="T_05b84_row1_col5" class="data row1 col5" >0</td>
+      <td id="T_05b84_row1_col6" class="data row1 col6" >2025-01-24T00:33:00.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row2_col0" class="data row2 col0" ><a href="https://huggingface.co/akridge/yolo11-fish-detector-grayscale" target="_blank">akridge/yolo11-fish-detector-grayscale</a></td>
-      <td id="T_201e3_row2_col1" class="data row2 col1" >ultralytics, tflite, tensorboard, coreml, onnx, YOLO11n, yolo, yolo11, yolo11n, fish, object-detection, en, dataset:akridge/MOUSS_fish_imagery_dataset_grayscale_small, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, license:agpl-3.0, model-index, region:us</td>
-      <td id="T_201e3_row2_col2" class="data row2 col2" ></td>
-      <td id="T_201e3_row2_col3" class="data row2 col3" >object-detection</td>
-      <td id="T_201e3_row2_col4" class="data row2 col4" >41</td>
-      <td id="T_201e3_row2_col5" class="data row2 col5" >1</td>
-      <td id="T_201e3_row2_col6" class="data row2 col6" >2025-01-24T00:32:05.000Z</td>
+      <td id="T_05b84_row2_col0" class="data row2 col0" ><a href="https://huggingface.co/akridge/yolo11-fish-detector-grayscale" target="_blank">akridge/yolo11-fish-detector-grayscale</a></td>
+      <td id="T_05b84_row2_col1" class="data row2 col1" >ultralytics, tflite, tensorboard, coreml, onnx, YOLO11n, yolo, yolo11, yolo11n, fish, object-detection, en, dataset:akridge/MOUSS_fish_imagery_dataset_grayscale_small, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, license:agpl-3.0, model-index, region:us</td>
+      <td id="T_05b84_row2_col2" class="data row2 col2" ></td>
+      <td id="T_05b84_row2_col3" class="data row2 col3" >object-detection</td>
+      <td id="T_05b84_row2_col4" class="data row2 col4" >41</td>
+      <td id="T_05b84_row2_col5" class="data row2 col5" >1</td>
+      <td id="T_05b84_row2_col6" class="data row2 col6" >2025-01-24T00:32:05.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row3_col0" class="data row3 col0" ><a href="https://huggingface.co/akridge/yolo11-segment-fish-grayscale" target="_blank">akridge/yolo11-segment-fish-grayscale</a></td>
-      <td id="T_201e3_row3_col1" class="data row3 col1" >tensorboard, YOLO11n-seg, yolo, yolo11, yolo11n, yolo11n-seg, fish, Segmentation, image-segmentation, en, dataset:akridge/MOUSS_fish_segment_dataset_grayscale, base_model:Ultralytics/YOLO11, base_model:finetune:Ultralytics/YOLO11, region:us</td>
-      <td id="T_201e3_row3_col2" class="data row3 col2" ></td>
-      <td id="T_201e3_row3_col3" class="data row3 col3" >image-segmentation</td>
-      <td id="T_201e3_row3_col4" class="data row3 col4" >3</td>
-      <td id="T_201e3_row3_col5" class="data row3 col5" >1</td>
-      <td id="T_201e3_row3_col6" class="data row3 col6" >2025-01-24T00:34:32.000Z</td>
+      <td id="T_05b84_row3_col0" class="data row3 col0" ><a href="https://huggingface.co/akridge/yolo11-segment-fish-grayscale" target="_blank">akridge/yolo11-segment-fish-grayscale</a></td>
+      <td id="T_05b84_row3_col1" class="data row3 col1" >tensorboard, YOLO11n-seg, yolo, yolo11, yolo11n, yolo11n-seg, fish, Segmentation, image-segmentation, en, dataset:akridge/MOUSS_fish_segment_dataset_grayscale, base_model:Ultralytics/YOLO11, base_model:finetune:Ultralytics/YOLO11, region:us</td>
+      <td id="T_05b84_row3_col2" class="data row3 col2" ></td>
+      <td id="T_05b84_row3_col3" class="data row3 col3" >image-segmentation</td>
+      <td id="T_05b84_row3_col4" class="data row3 col4" >3</td>
+      <td id="T_05b84_row3_col5" class="data row3 col5" >1</td>
+      <td id="T_05b84_row3_col6" class="data row3 col6" >2025-01-24T00:34:32.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row4_col0" class="data row4 col0" ><a href="https://huggingface.co/akridge/yolo11m-sea-urchin-detector" target="_blank">akridge/yolo11m-sea-urchin-detector</a></td>
-      <td id="T_201e3_row4_col1" class="data row4 col1" >onnx, YOLO11m, yolo, yolo11, yolo11m, urchin, sea, marine-detection, object-detection, en, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, doi:10.57967/hf/3342, region:us</td>
-      <td id="T_201e3_row4_col2" class="data row4 col2" ></td>
-      <td id="T_201e3_row4_col3" class="data row4 col3" >object-detection</td>
-      <td id="T_201e3_row4_col4" class="data row4 col4" >5</td>
-      <td id="T_201e3_row4_col5" class="data row4 col5" >0</td>
-      <td id="T_201e3_row4_col6" class="data row4 col6" >2025-01-27T19:45:21.000Z</td>
+      <td id="T_05b84_row4_col0" class="data row4 col0" ><a href="https://huggingface.co/akridge/yolo11m-sea-urchin-detector" target="_blank">akridge/yolo11m-sea-urchin-detector</a></td>
+      <td id="T_05b84_row4_col1" class="data row4 col1" >onnx, YOLO11m, yolo, yolo11, yolo11m, urchin, sea, marine-detection, object-detection, en, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, doi:10.57967/hf/3342, region:us</td>
+      <td id="T_05b84_row4_col2" class="data row4 col2" ></td>
+      <td id="T_05b84_row4_col3" class="data row4 col3" >object-detection</td>
+      <td id="T_05b84_row4_col4" class="data row4 col4" >5</td>
+      <td id="T_05b84_row4_col5" class="data row4 col5" >0</td>
+      <td id="T_05b84_row4_col6" class="data row4 col6" >2025-01-27T19:45:21.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row5_col0" class="data row5 col0" ><a href="https://huggingface.co/akridge/yolo11x-sea-urchin-detector" target="_blank">akridge/yolo11x-sea-urchin-detector</a></td>
-      <td id="T_201e3_row5_col1" class="data row5 col1" >tensorboard, onnx, YOLO11x, yolo, yolo11, yolo11x, urchin, sea, marine-detection, object-detection, en, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, region:us</td>
-      <td id="T_201e3_row5_col2" class="data row5 col2" ></td>
-      <td id="T_201e3_row5_col3" class="data row5 col3" >object-detection</td>
-      <td id="T_201e3_row5_col4" class="data row5 col4" >1</td>
-      <td id="T_201e3_row5_col5" class="data row5 col5" >0</td>
-      <td id="T_201e3_row5_col6" class="data row5 col6" >2025-01-27T19:42:34.000Z</td>
+      <td id="T_05b84_row5_col0" class="data row5 col0" ><a href="https://huggingface.co/akridge/yolo11x-sea-urchin-detector" target="_blank">akridge/yolo11x-sea-urchin-detector</a></td>
+      <td id="T_05b84_row5_col1" class="data row5 col1" >tensorboard, onnx, YOLO11x, yolo, yolo11, yolo11x, urchin, sea, marine-detection, object-detection, en, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, region:us</td>
+      <td id="T_05b84_row5_col2" class="data row5 col2" ></td>
+      <td id="T_05b84_row5_col3" class="data row5 col3" >object-detection</td>
+      <td id="T_05b84_row5_col4" class="data row5 col4" >1</td>
+      <td id="T_05b84_row5_col5" class="data row5 col5" >0</td>
+      <td id="T_05b84_row5_col6" class="data row5 col6" >2025-01-27T19:42:34.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row6_col0" class="data row6 col0" ><a href="https://huggingface.co/akridge/noaa-esd-coral-bleaching-vit-classifier-v1" target="_blank">akridge/noaa-esd-coral-bleaching-vit-classifier-v1</a></td>
-      <td id="T_201e3_row6_col1" class="data row6 col1" >transformers, onnx, safetensors, vit, image-classification, vision-transformer, coral, coral-bleaching, NOAA, marine-ecosystem, en, dataset:akridge/NOAA-ESD-CORAL-Bleaching-Dataset, base_model:google/vit-base-patch16-224, base_model:quantized:google/vit-base-patch16-224, license:agpl-3.0, model-index, autotrain_compatible, endpoints_compatible, region:us</td>
-      <td id="T_201e3_row6_col2" class="data row6 col2" ></td>
-      <td id="T_201e3_row6_col3" class="data row6 col3" >image-classification</td>
-      <td id="T_201e3_row6_col4" class="data row6 col4" >19</td>
-      <td id="T_201e3_row6_col5" class="data row6 col5" >0</td>
-      <td id="T_201e3_row6_col6" class="data row6 col6" >2025-02-26T17:26:08.000Z</td>
+      <td id="T_05b84_row6_col0" class="data row6 col0" ><a href="https://huggingface.co/akridge/noaa-esd-coral-bleaching-vit-classifier-v1" target="_blank">akridge/noaa-esd-coral-bleaching-vit-classifier-v1</a></td>
+      <td id="T_05b84_row6_col1" class="data row6 col1" >transformers, onnx, safetensors, vit, image-classification, vision-transformer, coral, coral-bleaching, NOAA, marine-ecosystem, en, dataset:akridge/NOAA-ESD-CORAL-Bleaching-Dataset, base_model:google/vit-base-patch16-224, base_model:quantized:google/vit-base-patch16-224, license:agpl-3.0, model-index, autotrain_compatible, endpoints_compatible, region:us</td>
+      <td id="T_05b84_row6_col2" class="data row6 col2" ></td>
+      <td id="T_05b84_row6_col3" class="data row6 col3" >image-classification</td>
+      <td id="T_05b84_row6_col4" class="data row6 col4" >19</td>
+      <td id="T_05b84_row6_col5" class="data row6 col5" >0</td>
+      <td id="T_05b84_row6_col6" class="data row6 col6" >2025-02-26T17:26:08.000Z</td>
     </tr>
     <tr>
-      <td id="T_201e3_row7_col0" class="data row7 col0" ><a href="https://huggingface.co/akridge/yolo11n-cls-noaa-esd-coral-bleaching" target="_blank">akridge/yolo11n-cls-noaa-esd-coral-bleaching</a></td>
-      <td id="T_201e3_row7_col1" class="data row7 col1" >ultralytics, onnx, YOLO11n-cls, yolo, yolo11, yolo11n, coral-bleaching, image-classification, NOAA, marine-ecosystem, en, dataset:akridge/NOAA-ESD-CORAL-Bleaching-Dataset, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, license:agpl-3.0, region:us</td>
-      <td id="T_201e3_row7_col2" class="data row7 col2" ></td>
-      <td id="T_201e3_row7_col3" class="data row7 col3" >image-classification</td>
-      <td id="T_201e3_row7_col4" class="data row7 col4" >42</td>
-      <td id="T_201e3_row7_col5" class="data row7 col5" >0</td>
-      <td id="T_201e3_row7_col6" class="data row7 col6" >2025-02-26T17:25:57.000Z</td>
+      <td id="T_05b84_row7_col0" class="data row7 col0" ><a href="https://huggingface.co/akridge/yolo11n-cls-noaa-esd-coral-bleaching" target="_blank">akridge/yolo11n-cls-noaa-esd-coral-bleaching</a></td>
+      <td id="T_05b84_row7_col1" class="data row7 col1" >ultralytics, onnx, YOLO11n-cls, yolo, yolo11, yolo11n, coral-bleaching, image-classification, NOAA, marine-ecosystem, en, dataset:akridge/NOAA-ESD-CORAL-Bleaching-Dataset, base_model:Ultralytics/YOLO11, base_model:quantized:Ultralytics/YOLO11, license:agpl-3.0, region:us</td>
+      <td id="T_05b84_row7_col2" class="data row7 col2" ></td>
+      <td id="T_05b84_row7_col3" class="data row7 col3" >image-classification</td>
+      <td id="T_05b84_row7_col4" class="data row7 col4" >42</td>
+      <td id="T_05b84_row7_col5" class="data row7 col5" >0</td>
+      <td id="T_05b84_row7_col6" class="data row7 col6" >2025-02-26T17:25:57.000Z</td>
     </tr>
   </tbody>
 </table>
@@ -3276,10 +3274,8 @@ Score: 0.79
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifies-model-management-and-collaboration">Simplifies Model Management and Collaboration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#links">Links:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifies-model-management-and-collaboration">Simplifies Model Management and Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">Links:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">0: Setup:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-hugging-face-libraries">Install Hugging Face Libraries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#login-to-hf">Login to HF</a></li>
