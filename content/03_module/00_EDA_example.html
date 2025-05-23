@@ -737,7 +737,7 @@ names: [&#39;fish&#39;]
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 📌 Step 9: Class Distribution Analysis</span>
 <span class="n">class_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">label_path</span> <span class="ow">in</span> <span class="n">label_paths</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">label_path</span> <span class="ow">in</span> <span class="n">val_label_paths</span><span class="p">:</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">label_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
         <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
@@ -942,7 +942,7 @@ names: [&#39;fish&#39;]
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 📌 Step 11: Bounding Box Size Distribution</span>
 <span class="n">bbox_sizes</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">label_path</span> <span class="ow">in</span> <span class="n">label_paths</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">label_path</span> <span class="ow">in</span> <span class="n">val_label_paths</span><span class="p">:</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">label_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
         <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
@@ -994,7 +994,7 @@ names: [&#39;fish&#39;]
 
 <span class="c1"># Test on a few images</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-    <span class="n">plot_sample_image</span><span class="p">(</span><span class="n">image_paths</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label_paths</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">plot_sample_image</span><span class="p">(</span><span class="n">val_label_paths</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">val_label_paths</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -1009,7 +1009,7 @@ names: [&#39;fish&#39;]
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 📌 Step 13: Check for Corrupt Images</span>
 <span class="n">corrupt_images</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="k">for</span> <span class="n">img_path</span> <span class="ow">in</span> <span class="n">image_paths</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">img_path</span> <span class="ow">in</span> <span class="n">val_label_paths</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">img</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
