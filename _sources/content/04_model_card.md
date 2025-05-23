@@ -78,8 +78,8 @@ Depends on data & task: Examples of failure mode:
 
 ---
 
-### Example Box (Object Detector)
-> *YOLO v11 Fish Detector – Grayscale* achieves **mAP50 0.81** with **Precision 0.78**, **Recall 0.84** at `--conf 0.25`.  Raise to `0.5` for ~90 % precision.  Model card: <https://huggingface.co/akridge/yolo11-fish-detector-grayscale>.
+### Example Model Card (Object Detector)
+> *YOLO v11 Fish Detector – Grayscale* achieves **mAP50 0.85** with **Precision 0.88**, **Recall 0.86** at `--conf 0.75`.  Raise to `0.8` for ~90 % precision.  Model card: <https://huggingface.co/akridge/yolo11-fish-detector-grayscale>.
 
 ---
 ## 0. Model‑at‑a‑Glance Diagram
