@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Model Card – One‑Page Quick Guide (General Template) &#8212; AI4ME Cookbook</title>
+    <title>Model Card – One‑Page Quick Guide &#8212; AI4ME Cookbook</title>
   
   
   
@@ -427,7 +427,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Model Card – One‑Page Quick Guide (General Template)</h1>
+    <h1>Model Card – One‑Page Quick Guide</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -437,7 +437,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-a-model-card">Purpose of a Model Card</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-a-model-card">What is the Purpose of a Model Card</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc">To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-card-object-detector">Example Model Card (Object Detector)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-card-anatomy-60second-walkthrough">1. Model Card Anatomy (60‑Second Walk‑Through)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics-cheatsheet-per-task">2. Metrics Cheat‑Sheet (per task)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-correct-model-threshold-setting">3. Choosing the Correct Model Threshold Setting</a></li>
@@ -446,7 +450,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-not-to-use-a-model">6. When <em>Not</em> to Use a Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-versioning">7. Maintenance &amp; Versioning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copypaste-summary-template">📌 Copy‑Paste Summary (template)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-card-object-detector">Example Model Card (Object Detector)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelataglance-diagram">0. Model‑at‑a‑Glance Diagram</a><ul class="nav section-nav flex-column">
@@ -466,13 +469,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="model-card-onepage-quick-guide-general-template">
-<h1>Model Card – One‑Page Quick Guide (General Template)<a class="headerlink" href="#model-card-onepage-quick-guide-general-template" title="Link to this heading">#</a></h1>
-<section id="purpose-of-a-model-card">
-<h2>Purpose of a Model Card<a class="headerlink" href="#purpose-of-a-model-card" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).</p>
-</div></blockquote>
+  <section class="tex2jax_ignore mathjax_ignore" id="model-card-onepage-quick-guide">
+<h1>Model Card – One‑Page Quick Guide<a class="headerlink" href="#model-card-onepage-quick-guide" title="Link to this heading">#</a></h1>
+<section id="what-is-the-purpose-of-a-model-card">
+<h2>What is the Purpose of a Model Card<a class="headerlink" href="#what-is-the-purpose-of-a-model-card" title="Link to this heading">#</a></h2>
+<section id="to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc">
+<h3>To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).<a class="headerlink" href="#to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc" title="Link to this heading">#</a></h3>
+<p><a href="" target="_blank"><img src="./04_module/PR_curve..png" align="right" alt="logo" width="400"/></a></p>
+</section>
+<section id="example-model-card-object-detector">
+<h3>Example Model Card (Object Detector)<a class="headerlink" href="#example-model-card-object-detector" title="Link to this heading">#</a></h3>
+<p>YOLO11 Fish Detector – Grayscale reaches mean Average Precision (mAP) of 0.937 on the validation set, with precision 0.885 and recall 0.861 at the default confidence threshold (–conf 0.25). If you raise the threshold toward 0.8, precision climbs toward ~0.90, while recall falls proportionally (see PR-curve).</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="model-card-anatomy-60second-walkthrough">
@@ -643,13 +651,6 @@ document.write(`
 <div><p><em>“Using <code class="docutils literal notranslate"><span class="pre">&lt;task‑specific</span> <span class="pre">threshold&gt;</span></code>, <strong>&lt;MODEL_NAME&gt;</strong> scores <strong><metric></strong> on the hold‑out set.  Lowering threshold to <code class="docutils literal notranslate"><span class="pre">&lt;x&gt;</span></code> increases recall to <code class="docutils literal notranslate"><span class="pre">&lt;y&gt;</span></code> at the cost of precision.  See model card for full FP/FN analysis.”</em></p>
 </div></blockquote>
 </section>
-<hr class="docutils" />
-<section id="example-model-card-object-detector">
-<h3>Example Model Card (Object Detector)<a class="headerlink" href="#example-model-card-object-detector" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p><em>YOLO v11 Fish Detector – Grayscale</em> achieves <strong>mAP50 0.85</strong> with <strong>Precision 0.88</strong>, <strong>Recall 0.86</strong> at <code class="docutils literal notranslate"><span class="pre">--conf</span> <span class="pre">0.75</span></code>.  Raise to <code class="docutils literal notranslate"><span class="pre">0.8</span></code> for ~90 % precision.  Model card: <a class="reference external" href="https://huggingface.co/akridge/yolo11-fish-detector-grayscale">https://huggingface.co/akridge/yolo11-fish-detector-grayscale</a>.</p>
-</div></blockquote>
-</section>
 </section>
 <hr class="docutils" />
 <section id="modelataglance-diagram">
@@ -738,7 +739,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-a-model-card">Purpose of a Model Card</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-a-model-card">What is the Purpose of a Model Card</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc">To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-card-object-detector">Example Model Card (Object Detector)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-card-anatomy-60second-walkthrough">1. Model Card Anatomy (60‑Second Walk‑Through)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics-cheatsheet-per-task">2. Metrics Cheat‑Sheet (per task)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-correct-model-threshold-setting">3. Choosing the Correct Model Threshold Setting</a></li>
@@ -747,7 +752,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-not-to-use-a-model">6. When <em>Not</em> to Use a Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-versioning">7. Maintenance &amp; Versioning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copypaste-summary-template">📌 Copy‑Paste Summary (template)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-card-object-detector">Example Model Card (Object Detector)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelataglance-diagram">0. Model‑at‑a‑Glance Diagram</a><ul class="nav section-nav flex-column">

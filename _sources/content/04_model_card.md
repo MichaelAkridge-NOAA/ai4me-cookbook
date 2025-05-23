@@ -1,6 +1,9 @@
-# Model Card – One‑Page Quick Guide (General Template)
-## Purpose of a Model Card
-> To give users a consistent, one‑glance explainer for **any** AI model you publish(classifier, detector, segmenter, & etc). 
+# Model Card – One‑Page Quick Guide
+## What is the Purpose of a Model Card
+### To give users a consistent, one‑glance explainer for **any** AI model you publish(classifier, detector, segmenter, & etc). 
+<a href="" target="_blank"><img src="./04_module/PR_curve..png" align="right" alt="logo" width="400"/></a>
+### Example Model Card (Object Detector)
+YOLO11 Fish Detector – Grayscale reaches mean Average Precision (mAP) of 0.937 on the validation set, with precision 0.885 and recall 0.861 at the default confidence threshold (--conf 0.25). If you raise the threshold toward 0.8, precision climbs toward ~0.90, while recall falls proportionally (see PR-curve).
 
 ---
 ## 1. Model Card Anatomy (60‑Second Walk‑Through)
@@ -76,10 +79,6 @@ Depends on data & task: Examples of failure mode:
 ### 📌 Copy‑Paste Summary (template)
 > *“Using `<task‑specific threshold>`, **<MODEL_NAME>** scores **<metric>** on the hold‑out set.  Lowering threshold to `<x>` increases recall to `<y>` at the cost of precision.  See model card for full FP/FN analysis.”*
 
----
-
-### Example Model Card (Object Detector)
-> *YOLO v11 Fish Detector – Grayscale* achieves **mAP50 0.85** with **Precision 0.88**, **Recall 0.86** at `--conf 0.75`.  Raise to `0.8` for ~90 % precision.  Model card: <https://huggingface.co/akridge/yolo11-fish-detector-grayscale>.
 
 ---
 ## 0. Model‑at‑a‑Glance Diagram
