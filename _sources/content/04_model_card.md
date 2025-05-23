@@ -1,11 +1,16 @@
 # Model Card – One‑Page Quick Guide
 ## What is the Purpose of a Model Card
-### To give users a consistent, one‑glance explainer for **any** AI model you publish(classifier, detector, segmenter, & etc). 
-<a href="" target="_blank"><img src="./04_module/PR_curve..png" align="right" alt="logo" width="400"/></a>
+<a href="" target="_blank"><img src="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/blob/7e2bbf26ff973343e912faab61650c04b2d6cd98/content/05_module/PR_curve.png" align="right" alt="logo" width="600"/></a>
+To give users a consistent, one‑glance explainer for **any** AI model you publish(classifier, detector, segmenter, & etc). 
 ### Example Model Card (Object Detector)
+- https://huggingface.co/akridge/yolo11-fish-detector-grayscale
+### Overview:
+This fish-finder model usually spots about **8 out of every 10 fish** in a photo and only occasionally mistakes coral or rocks for fish. If you turn the **confidence setting up**, it will produce **fewer false postives**, but it might overlook a few more fish in the process.
+### Technical: 
 YOLO11 Fish Detector – Grayscale reaches mean Average Precision (mAP) of 0.937 on the validation set, with precision 0.885 and recall 0.861 at the default confidence threshold (--conf 0.25). If you raise the threshold toward 0.8, precision climbs toward ~0.90, while recall falls proportionally (see PR-curve).
 
----
+
+
 ## 1. Model Card Anatomy (60‑Second Walk‑Through)
 | 🔍 Section | What it tells you | Questions it answers |
 |-----------|------------------|----------------------|

@@ -438,8 +438,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-a-model-card">What is the Purpose of a Model Card</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc">To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-card-object-detector">Example Model Card (Object Detector)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technical">Technical:</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-card-anatomy-60second-walkthrough">1. Model Card Anatomy (60‑Second Walk‑Through)</a></li>
@@ -473,16 +474,23 @@ document.write(`
 <h1>Model Card – One‑Page Quick Guide<a class="headerlink" href="#model-card-onepage-quick-guide" title="Link to this heading">#</a></h1>
 <section id="what-is-the-purpose-of-a-model-card">
 <h2>What is the Purpose of a Model Card<a class="headerlink" href="#what-is-the-purpose-of-a-model-card" title="Link to this heading">#</a></h2>
-<section id="to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc">
-<h3>To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).<a class="headerlink" href="#to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc" title="Link to this heading">#</a></h3>
-<p><a href="" target="_blank"><img src="./04_module/PR_curve..png" align="right" alt="logo" width="400"/></a></p>
-</section>
+<p><a href="" target="_blank"><img src="https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/blob/7e2bbf26ff973343e912faab61650c04b2d6cd98/content/05_module/PR_curve.png" align="right" alt="logo" width="600"/></a>
+To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).</p>
 <section id="example-model-card-object-detector">
 <h3>Example Model Card (Object Detector)<a class="headerlink" href="#example-model-card-object-detector" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://huggingface.co/akridge/yolo11-fish-detector-grayscale">https://huggingface.co/akridge/yolo11-fish-detector-grayscale</a></p></li>
+</ul>
+</section>
+<section id="overview">
+<h3>Overview:<a class="headerlink" href="#overview" title="Link to this heading">#</a></h3>
+<p>This fish-finder model usually spots about <strong>8 out of every 10 fish</strong> in a photo and only occasionally mistakes coral or rocks for fish. If you turn the <strong>confidence setting up</strong>, it will produce <strong>fewer false postives</strong>, but it might overlook a few more fish in the process.</p>
+</section>
+<section id="technical">
+<h3>Technical:<a class="headerlink" href="#technical" title="Link to this heading">#</a></h3>
 <p>YOLO11 Fish Detector – Grayscale reaches mean Average Precision (mAP) of 0.937 on the validation set, with precision 0.885 and recall 0.861 at the default confidence threshold (–conf 0.25). If you raise the threshold toward 0.8, precision climbs toward ~0.90, while recall falls proportionally (see PR-curve).</p>
 </section>
 </section>
-<hr class="docutils" />
 <section id="model-card-anatomy-60second-walkthrough">
 <h2>1. Model Card Anatomy (60‑Second Walk‑Through)<a class="headerlink" href="#model-card-anatomy-60second-walkthrough" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -740,8 +748,9 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-a-model-card">What is the Purpose of a Model Card</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-give-users-a-consistent-oneglance-explainer-for-any-ai-model-you-publish-classifier-detector-segmenter-etc">To give users a consistent, one‑glance explainer for <strong>any</strong> AI model you publish(classifier, detector, segmenter, &amp; etc).</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-card-object-detector">Example Model Card (Object Detector)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technical">Technical:</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-card-anatomy-60second-walkthrough">1. Model Card Anatomy (60‑Second Walk‑Through)</a></li>
