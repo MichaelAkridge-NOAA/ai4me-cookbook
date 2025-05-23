@@ -36,7 +36,7 @@ parts:
   - caption: Module 4 | Model Eval, Deployment & Management
     numbered: true
     chapters:
-    - file: content/04_model_card.md
+    - file: content/04_module/00_model_card.md
     - file: content/04_module/04_model_eval.md
     - file: content/04_module/00_model_deployment.md
     - file: content/04_module/01_ai4me_api.md
