@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>34. Model Management &#8212; AI4ME Cookbook</title>
+    <title>35. Model Management &#8212; AI4ME Cookbook</title>
   
   
   
@@ -62,7 +62,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Q&amp;A | Roundtable Discussion" href="../05_module/01_qa_roundtable.html" />
-    <link rel="prev" title="31. AI4ME | AI for Marine Ecosystems API Demo" href="02_ai4me_api_google_colab_demo.html" />
+    <link rel="prev" title="32. AI4ME | AI for Marine Ecosystems API Demo" href="02_ai4me_api_google_colab_demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -216,15 +216,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="04_model_eval.html">26. Model Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_model_card.html">26. Model Card – One‑Page Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_model_eval.html">27. Model Evaluation</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="00_model_deployment.html">29. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_ai4me_api.html">30. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_ai4me_api_google_colab_demo.html">31. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_model_deployment.html">30. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_ai4me_api.html">31. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_ai4me_api_google_colab_demo.html">32. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">34. Model Management</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">35. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions</span></p>
 <ul class="nav bd-sidenav">
@@ -437,15 +438,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control">34.1. Model Version Control</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-hugging-face-with-git">34.1.1. Using Hugging Face with Git</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">34.1.2. Example Model Repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control">35.1. Model Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-hugging-face-with-git">35.1.1. Using Hugging Face with Git</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">35.1.2. Example Model Repo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">34.2. Maintenance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read">34.3. Read:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">34.3.1. Model-Maintenance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">34.3.2. Data Drift Machine Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">35.2. Maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read">35.3. Read:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">35.3.1. Model-Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">35.3.2. Data Drift Machine Learning</a></li>
 </ul>
 </li>
 </ul>
@@ -460,11 +461,11 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="model-management">
-<h1><span class="section-number">34. </span>Model Management<a class="headerlink" href="#model-management" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">35. </span>Model Management<a class="headerlink" href="#model-management" title="Link to this heading">#</a></h1>
 <section id="model-version-control">
-<h2><span class="section-number">34.1. </span>Model Version Control<a class="headerlink" href="#model-version-control" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">35.1. </span>Model Version Control<a class="headerlink" href="#model-version-control" title="Link to this heading">#</a></h2>
 <section id="using-hugging-face-with-git">
-<h3><span class="section-number">34.1.1. </span>Using Hugging Face with Git<a class="headerlink" href="#using-hugging-face-with-git" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">35.1.1. </span>Using Hugging Face with Git<a class="headerlink" href="#using-hugging-face-with-git" title="Link to this heading">#</a></h3>
 <p>Hugging Face provides a Git-based system (like Github) for managing model versions, making it easy to track changes, collaborate, and deploy updates efficiently. Each model repository on Hugging Face operates like a Git repository, allowing you to push updates, create branches, and maintain different versions.</p>
 <ul class="simple">
 <li><p>Branches: You can use branches to develop new features, experiment with different training strategies, or maintain stable and experimental versions of your model (e.g., main, dev, v1.0, v2.0).</p></li>
@@ -474,20 +475,20 @@ document.write(`
 </ul>
 </section>
 <section id="example-model-repo">
-<h3><span class="section-number">34.1.2. </span><a class="reference external" href="https://huggingface.co/akridge">Example Model Repo</a><a class="headerlink" href="#example-model-repo" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">35.1.2. </span><a class="reference external" href="https://huggingface.co/akridge">Example Model Repo</a><a class="headerlink" href="#example-model-repo" title="Link to this heading">#</a></h3>
 <p><img alt="" src="../../_images/s4.png" /></p>
 </section>
 </section>
 <section id="maintenance">
-<h2><span class="section-number">34.2. </span>Maintenance<a class="headerlink" href="#maintenance" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">35.2. </span>Maintenance<a class="headerlink" href="#maintenance" title="Link to this heading">#</a></h2>
 </section>
 <section id="read">
-<h2><span class="section-number">34.3. </span>Read:<a class="headerlink" href="#read" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">35.3. </span>Read:<a class="headerlink" href="#read" title="Link to this heading">#</a></h2>
 <section id="model-maintenance">
-<h3><span class="section-number">34.3.1. </span><a class="reference external" href="https://www.ultralytics.com/blog/optimize-computer-vision-solutions-with-smart-model-maintenance">Model-Maintenance</a><a class="headerlink" href="#model-maintenance" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">35.3.1. </span><a class="reference external" href="https://www.ultralytics.com/blog/optimize-computer-vision-solutions-with-smart-model-maintenance">Model-Maintenance</a><a class="headerlink" href="#model-maintenance" title="Link to this heading">#</a></h3>
 </section>
 <section id="data-drift-machine-learning">
-<h3><span class="section-number">34.3.2. </span><a class="reference external" href="https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/">Data Drift Machine Learning</a><a class="headerlink" href="#data-drift-machine-learning" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">35.3.2. </span><a class="reference external" href="https://spotintelligence.com/2024/04/08/data-drift-in-machine-learning/">Data Drift Machine Learning</a><a class="headerlink" href="#data-drift-machine-learning" title="Link to this heading">#</a></h3>
 </section>
 </section>
 </section>
@@ -528,7 +529,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">31. </span>AI4ME | AI for Marine Ecosystems API Demo</p>
+        <p class="prev-next-title"><span class="section-number">32. </span>AI4ME | AI for Marine Ecosystems API Demo</p>
       </div>
     </a>
     <a class="right-next"
@@ -556,15 +557,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control">34.1. Model Version Control</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-hugging-face-with-git">34.1.1. Using Hugging Face with Git</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">34.1.2. Example Model Repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-version-control">35.1. Model Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-hugging-face-with-git">35.1.1. Using Hugging Face with Git</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-model-repo">35.1.2. Example Model Repo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">34.2. Maintenance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read">34.3. Read:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">34.3.1. Model-Maintenance</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">34.3.2. Data Drift Machine Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">35.2. Maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read">35.3. Read:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-maintenance">35.3.1. Model-Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-drift-machine-learning">35.3.2. Data Drift Machine Learning</a></li>
 </ul>
 </li>
 </ul>
