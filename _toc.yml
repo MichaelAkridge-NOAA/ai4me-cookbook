@@ -32,6 +32,7 @@ parts:
     - file: content/03_module/02_dataset_prep_example.ipynb
     - file: content/03_module/03_model_training.md
     - file: content/03_module/03_model_training_example.ipynb
+    - file: content/03_module/04_quick_finetune_demo.md
 
   - caption: Module 4 | Model Eval, Deployment & Management
     numbered: true
