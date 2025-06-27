@@ -462,7 +462,7 @@ document.write(`
 <section id="environment-setup">
 <h2><span class="section-number">27.1. </span>1. Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Install the <strong>Ultralytics</strong> package, which provides the YOLOv8 framework.</p></li>
+<li><p>Install the <strong>Ultralytics</strong> package, which provides the YOLO11 framework.</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ultralytics
 </pre></div>
@@ -493,10 +493,10 @@ document.write(`
 <section id="fine-tune-a-baseline-model">
 <h2><span class="section-number">27.3. </span>3. Fine-Tune a Baseline Model<a class="headerlink" href="#fine-tune-a-baseline-model" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Start from a pretrained checkpoint (e.g., <code class="docutils literal notranslate"><span class="pre">yolov8n.pt</span></code>).</p></li>
+<li><p>Start from a pretrained checkpoint (e.g., <code class="docutils literal notranslate"><span class="pre">yolo11n.pt</span></code>).</p></li>
 <li><p>Run training with a command similar to:</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yolo<span class="w"> </span><span class="nv">task</span><span class="o">=</span>detect<span class="w"> </span><span class="nv">mode</span><span class="o">=</span>train<span class="w"> </span><span class="nv">model</span><span class="o">=</span>yolov8n.pt<span class="w"> </span><span class="nv">data</span><span class="o">=</span>data.yaml<span class="w"> </span><span class="nv">epochs</span><span class="o">=</span><span class="m">50</span><span class="w"> </span><span class="nv">imgsz</span><span class="o">=</span><span class="m">640</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yolo<span class="w"> </span><span class="nv">task</span><span class="o">=</span>detect<span class="w"> </span><span class="nv">mode</span><span class="o">=</span>train<span class="w"> </span><span class="nv">model</span><span class="o">=</span>yolo11n.pt<span class="w"> </span><span class="nv">data</span><span class="o">=</span>data.yaml<span class="w"> </span><span class="nv">epochs</span><span class="o">=</span><span class="m">50</span><span class="w"> </span><span class="nv">imgsz</span><span class="o">=</span><span class="m">640</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -523,7 +523,7 @@ document.write(`
 <ul class="simple">
 <li><p>Fine-tuning leverages pretrained models to reduce data requirements and shorten training time.</p></li>
 <li><p>Maintain a consistent dataset structure and ensure labels are accurate.</p></li>
-<li><p>Ultralytics provides simple commands to train, validate, and export models for fisheries detection tasks.</p></li>
+<li><p>Ultralytics provides simple commands to train, validate, and export models for fisheries detection tasks while streamline the process.</p></li>
 </ul>
 </section>
 </section>
