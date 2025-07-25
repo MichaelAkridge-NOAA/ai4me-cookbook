@@ -2,6 +2,16 @@
 ## AI for Marine Ecosystems (AI4ME)
 Useful information and code to help open science AI/ML efforts for marine ecosystems
 
+### 20250725 | Links
+- [AI4ME Github Repo](https://github.com/MichaelAkridge-NOAA/ai4me-cookbook)
+- [Slides](https://michaelakridge-noaa.github.io/ai4me-cookbook/content/01_module/01_AI_ML_Vision_CNN.html)
+- [CNN Explainer](https://poloclub.github.io/cnn-explainer/)
+- [ESIP AI Ready Data Checklist](https://github.com/ESIPFed/data-readiness/blob/main/checklist-published/ai-ready-data-checklist-v.1.0.md)
+- [Simple Training Notebook Example](https://github.com/MichaelAkridge-NOAA/ai4me-cookbook/blob/main/content/03_module/03_model_training_example.ipynb)
+- [Ultralytics](https://github.com/ultralytics/ultralytics)
+    - https://docs.ultralytics.com/modes/train/#train-settings
+    - https://docs.ultralytics.com/usage/cfg/#augmentation-settings
+
 ###  Workshop | Part 1
 Workshop Goals: 
 - Equip users with a shared understanding of AI/ML(object detection) workflows and fundamentals
