@@ -1,18 +1,19 @@
+version: '3.8'
+
 services:
   label-studio:
     build:
-      context: .  # Build from the Dockerfile
-    container_name: label-studio
-    volumes:
-      - .:/app  # Syncs project files with container
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "8080:8080"  # Expose Label Studio on port 8080
+      - "8080:8080"
     environment:
-      - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
-      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/app/data
-      - SPACE_HOST=0.0.0.0
-      - DEBUG=True
       - USE_X_FORWARDED_HOST=true
       - USE_X_FORWARDED_PORT=true
       - SECURE_PROXY_SSL_HEADER=HTTP_X_FORWARDED_PROTO,https
-    restart: unless-stopped
+    volumes:
+      - labelstudio-data:/label-studio/data
+      - .:/app
+
+volumes:
+  labelstudio-data:

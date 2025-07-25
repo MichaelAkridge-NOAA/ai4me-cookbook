@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Ensure README exists
+if [ ! -f /app/README.md ]; then
+    echo "Debug: README.md not found, creating now."
+    touch /app/README.md
+fi
+
 # Construct the message
 message="## [Click to Open Label Studio | Tool](https://$CODESPACE_NAME-8080.app.github.dev/user/login/)"
 echo "Debug: Constructed message."
