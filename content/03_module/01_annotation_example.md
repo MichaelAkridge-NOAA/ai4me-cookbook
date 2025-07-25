@@ -13,7 +13,7 @@ pip install label-studio
 ````
 ### Once in Codespace, wait or click bottom right to view build progress
 ![](docs/s1.png)
-### A readme should open up once ready
+### A readme should open up once ready. Label Studio may still take a some time to startup
 ![](docs/s2.png)
 ### Click link and it will open the Label Studio App
 ![](docs/s3.png)
