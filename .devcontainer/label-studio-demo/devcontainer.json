@@ -1,6 +1,6 @@
 {
   "name": "Label Studio | AI4ME Annotation Tool",
-  "dockerComposeFile": "./docker-compose.yml",
+  "dockerComposeFile": "docker-compose.yml",
   "service": "label-studio",
   "workspaceFolder": "/app",
   "settings": {
@@ -13,5 +13,5 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postStartCommand": "chmod +x /app/post_start.sh && /app/post_start.sh"
+  "postStartCommand": "chmod +x .devcontainer/post_start.sh && .devcontainer/post_start.sh"
 }
