@@ -1,6 +1,13 @@
-FROM heartexlabs/label-studio:latest
+FROM heartexlabs/label-studio:develop
+
+ENV LABEL_STUDIO_DEPLOYMENT_TYPE=docker
+ENV USE_ENFORCE_CSRF_CHECKS=0
+ENV SESSION_COOKIE_SAMESITE=None
+ENV CSRF_COOKIE_SAMESITE=None
+ENV SESSION_COOKIE_SECURE=1
 
 WORKDIR /app
 
 COPY post_start.sh /app/post_start.sh
-RUN chmod +x /app/post_start.sh
+
+CMD exec label-studio --host=$SPACE_HOST

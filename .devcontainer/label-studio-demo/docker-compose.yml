@@ -8,9 +8,15 @@ services:
     ports:
       - "8080:8080"
     environment:
+      - LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK=0
       - USE_X_FORWARDED_HOST=true
       - USE_X_FORWARDED_PORT=true
       - SECURE_PROXY_SSL_HEADER=HTTP_X_FORWARDED_PROTO,https
+      - LABEL_STUDIO_DEPLOYMENT_TYPE=docker
+      - USE_ENFORCE_CSRF_CHECKS=0
+      - SESSION_COOKIE_SAMESITE=None
+      - CSRF_COOKIE_SAMESITE=None
+      - SESSION_COOKIE_SECURE=1
     volumes:
       - labelstudio-data:/label-studio/data
       - .:/app
