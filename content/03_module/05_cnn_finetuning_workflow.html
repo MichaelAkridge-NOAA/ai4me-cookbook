@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>27. Vision CNN Models for Fisheries &#8212; AI4ME Cookbook</title>
+    <title>Vision CNN Models for Fisheries &#8212; AI4ME Cookbook</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -61,8 +61,6 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="28. Model Card – One‑Page Quick Guide" href="../04_module/00_model_card.html" />
-    <link rel="prev" title="26. Quick Vision CNN Demo for Fisheries" href="04_quick_finetune_demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -197,7 +197,7 @@
 <li class="toctree-l1"><a class="reference internal" href="01_annotation_example.html">10. 🛠️ Exercise - Annotation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3 | AI/ML Model Development &amp; Training</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_EDA.html">11. Exploratory Data Analysis (EDA)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example.html">12. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 01</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_EDA_example_2.html">13. 🛠️ Exercise - Exploratory Data Analysis (EDA) | Example 02 Using FiftyOne Tool</a></li>
@@ -213,21 +213,19 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="04_quick_finetune_demo.html">26. Quick Vision CNN Demo for Fisheries</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">27. Vision CNN Models for Fisheries</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4 | Model Eval, Deployment &amp; Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_card.html">28. Model Card – One‑Page Quick Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">29. Model Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_card.html">26. Model Card – One‑Page Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/04_model_eval.html">27. Model Evaluation</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">32. Model Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">33. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">34. AI4ME | AI for Marine Ecosystems API Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/00_model_deployment.html">30. Model Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/01_ai4me_api.html">31. 🌊 AI for Marine Ecosystems (AI4ME) API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/02_ai4me_api_google_colab_demo.html">32. AI4ME | AI for Marine Ecosystems API Demo</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">37. Model Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_module/03_model_maintenance.html">35. Model Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q&amp;A/Roundtable Discussions</span></p>
 <ul class="nav bd-sidenav">
@@ -440,11 +438,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-setup">27.1. 1. Environment Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-dataset">27.2. 2. Prepare the Dataset</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fine-tune-a-baseline-model">27.3. 3. Fine-Tune a Baseline Model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluate-export">27.4. 4. Evaluate &amp; Export</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways">27.5. 5. Key Takeaways</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-setup">1. Environment Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-dataset">2. Prepare the Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fine-tune-a-baseline-model">3. Fine-Tune a Baseline Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluate-export">4. Evaluate &amp; Export</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways">5. Key Takeaways</a></li>
 </ul>
             </nav>
         </div>
@@ -457,10 +455,10 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vision-cnn-models-for-fisheries">
-<h1><span class="section-number">27. </span>Vision CNN Models for Fisheries<a class="headerlink" href="#vision-cnn-models-for-fisheries" title="Link to this heading">#</a></h1>
+<h1>Vision CNN Models for Fisheries<a class="headerlink" href="#vision-cnn-models-for-fisheries" title="Link to this heading">#</a></h1>
 <p>This short notebook outlines a practical workflow for fine-tuning a foundational vision model on fisheries imagery. It is designed for a one hour hands-on session.</p>
 <section id="environment-setup">
-<h2><span class="section-number">27.1. </span>1. Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">#</a></h2>
+<h2>1. Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Install the <strong>Ultralytics</strong> package, which provides the YOLO11 framework.</p></li>
 </ul>
@@ -472,7 +470,7 @@ document.write(`
 </ul>
 </section>
 <section id="prepare-the-dataset">
-<h2><span class="section-number">27.2. </span>2. Prepare the Dataset<a class="headerlink" href="#prepare-the-dataset" title="Link to this heading">#</a></h2>
+<h2>2. Prepare the Dataset<a class="headerlink" href="#prepare-the-dataset" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Organize your data using the YOLO directory structure:</p></li>
 </ul>
@@ -491,7 +489,7 @@ document.write(`
 </ul>
 </section>
 <section id="fine-tune-a-baseline-model">
-<h2><span class="section-number">27.3. </span>3. Fine-Tune a Baseline Model<a class="headerlink" href="#fine-tune-a-baseline-model" title="Link to this heading">#</a></h2>
+<h2>3. Fine-Tune a Baseline Model<a class="headerlink" href="#fine-tune-a-baseline-model" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Start from a pretrained checkpoint (e.g., <code class="docutils literal notranslate"><span class="pre">yolo11n.pt</span></code>).</p></li>
 <li><p>Run training with a command similar to:</p></li>
@@ -504,7 +502,7 @@ document.write(`
 </ul>
 </section>
 <section id="evaluate-export">
-<h2><span class="section-number">27.4. </span>4. Evaluate &amp; Export<a class="headerlink" href="#evaluate-export" title="Link to this heading">#</a></h2>
+<h2>4. Evaluate &amp; Export<a class="headerlink" href="#evaluate-export" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Evaluate on the validation set:</p></li>
 </ul>
@@ -519,7 +517,7 @@ document.write(`
 </div>
 </section>
 <section id="key-takeaways">
-<h2><span class="section-number">27.5. </span>5. Key Takeaways<a class="headerlink" href="#key-takeaways" title="Link to this heading">#</a></h2>
+<h2>5. Key Takeaways<a class="headerlink" href="#key-takeaways" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Fine-tuning leverages pretrained models to reduce data requirements and shorten training time.</p></li>
 <li><p>Maintain a consistent dataset structure and ensure labels are accurate.</p></li>
@@ -558,24 +556,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="04_quick_finetune_demo.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">26. </span>Quick Vision CNN Demo for Fisheries</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../04_module/00_model_card.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">28. </span>Model Card – One‑Page Quick Guide</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -592,11 +572,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-setup">27.1. 1. Environment Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-dataset">27.2. 2. Prepare the Dataset</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fine-tune-a-baseline-model">27.3. 3. Fine-Tune a Baseline Model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluate-export">27.4. 4. Evaluate &amp; Export</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways">27.5. 5. Key Takeaways</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-setup">1. Environment Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-the-dataset">2. Prepare the Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fine-tune-a-baseline-model">3. Fine-Tune a Baseline Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluate-export">4. Evaluate &amp; Export</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways">5. Key Takeaways</a></li>
 </ul>
   </nav></div>
 
