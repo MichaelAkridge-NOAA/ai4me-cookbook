@@ -1,4 +1,7 @@
 FROM heartexlabs/label-studio:develop
+WORKDIR /app
+
+COPY ./ ./
 
 ENV LABEL_STUDIO_DEPLOYMENT_TYPE=docker
 ENV USE_ENFORCE_CSRF_CHECKS=0
