@@ -6,8 +6,4 @@ ENV SESSION_COOKIE_SAMESITE=None
 ENV CSRF_COOKIE_SAMESITE=None
 ENV SESSION_COOKIE_SECURE=1
 
-WORKDIR /app
-
-COPY post_start.sh /app/post_start.sh
-
 CMD exec label-studio --host=$SPACE_HOST
