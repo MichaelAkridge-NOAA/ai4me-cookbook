@@ -10,4 +10,9 @@ services:
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
       - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/app/data
+      - SPACE_HOST=0.0.0.0
+      - DEBUG=True
+      - USE_X_FORWARDED_HOST=true
+      - USE_X_FORWARDED_PORT=true
+      - SECURE_PROXY_SSL_HEADER=HTTP_X_FORWARDED_PROTO,https
     restart: unless-stopped
